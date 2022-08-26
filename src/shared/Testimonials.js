@@ -56,7 +56,7 @@ const Testimonials = () => {
         ref={scrollRef}
       >
         {reviews.map((review) => (
-          <div data-aos="flip-right">
+          <div data-aos="flip-right" key={review.id}>
           <div className="testimonial">
             <p>{review.text}</p>
             <p

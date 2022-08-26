@@ -13,16 +13,16 @@ const GetInTouch = () => {
   }
 
   return (
-    <div style={{ margin: "5rem 0rem" }}>
+    <div style={{ margin: "5rem 0rem" }} data-aos="fade-up">
       <h1 style={{marginBottom:"2rem", textAlign:"center"}}>Get In Touch</h1>
-      <form class="row g-3">
-        <div class="col-md-4">
-          <label for="validationDefault01" class="form-label">
+      <form className="row g-3">
+        <div className="col-md-4">
+          <label htmlFor="validationDefault01" className="form-label">
             First name
           </label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="validationDefault01"
             name="first_name"
             value={data.first_name}
@@ -30,13 +30,13 @@ const GetInTouch = () => {
             required
           />
         </div>
-        <div class="col-md-4">
-          <label for="validationDefault02" class="form-label">
+        <div className="col-md-4">
+          <label htmlFor="validationDefault02" className="form-label">
             Last name
           </label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             name="last_name"
             id="validationDefault02"
             value={data.last_name}
@@ -44,17 +44,17 @@ const GetInTouch = () => {
             required
           />
         </div>
-        <div class="col-md-4">
-          <label for="validationDefaultUsername" class="form-label">
+        <div className="col-md-4">
+          <label htmlFor="validationDefaultUsername" className="form-label">
             Email
           </label>
-          <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2">
+          <div className="input-group">
+            <span className="input-group-text" id="inputGroupPrepend2">
               @
             </span>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               name="email"
               id="validationDefaultUsername"
               aria-describedby="inputGroupPrepend2"
@@ -63,18 +63,18 @@ const GetInTouch = () => {
             />
           </div>
         </div>
-        <div class="input-group">
-          <span class="input-group-text"> Message </span>
+        <div className="input-group">
+          <span className="input-group-text"> Message </span>
           <textarea
-            class="form-control"
+            className="form-control"
             name="message"
             aria-label="With textarea"
             onChange={onChange}
             style={{ height: "10rem" }}
           ></textarea>
         </div>
-        <div class="col-12" style={{textAlign:"center"}}>
-          <button class="btn btn-primary" type="submit">
+        <div className="col-12" style={{textAlign:"center"}}>
+          <button className="btn btn-primary" type="submit">
             Submit form
           </button>
         </div>
