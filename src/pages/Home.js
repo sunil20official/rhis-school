@@ -19,6 +19,7 @@ const Home = () => {
         id="carouselExampleCaptions"
         class="carousel slide"
         data-bs-ride="carousel"
+        style={{marginTop:"1rem"}}
       >
         <div class="carousel-indicators">
           <button
@@ -44,7 +45,7 @@ const Home = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={img1} class="d-block w-100 car-img" alt="..." />
+            <img src={img1} class="d-block w-100 carousel-img" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -53,7 +54,7 @@ const Home = () => {
             </div>
           </div>
           <div class="carousel-item">
-            <img src={img2} class="d-block w-100 car-img" alt="..." />
+            <img src={img2} class="d-block w-100 carousel-img" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -62,7 +63,7 @@ const Home = () => {
             </div>
           </div>
           <div class="carousel-item">
-            <img src={img3} class="d-block w-100 car-img" alt="..." />
+            <img src={img3} class="d-block w-100 carousel-img" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
@@ -96,7 +97,7 @@ const Home = () => {
         </div>
       </div>
       <div id="story" className="story-section">
-        <h1 style={{fontFamily:"cursive"}}>Our Story</h1>
+        <h1>Our Story</h1>
         <p className="story-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

@@ -78,6 +78,7 @@ ul {
 	text-align: center;
 	line-height: 40px;
 	color: #ffffff;
+	border-radius: 50%;
 	transition: all 0.5s ease;
 }
 
@@ -86,7 +87,7 @@ ul {
 	background-color: #ffffff;
 }
 
-.footer-col > ul{
+.footer-col > ul {
 	padding: 0;
 }
 

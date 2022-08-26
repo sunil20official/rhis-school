@@ -1,4 +1,9 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import './Footer.css';
 
@@ -60,20 +65,23 @@ const Footer = () => {
 
 					<div className='footer-col'>
 						<h4>Follow Us</h4>
-						<ul>
-							<li>
-								<a href='#'>FaceBook</a>
-							</li>
-							<li>
-								<a href='#'>Twitter</a>
-							</li>
-							<li>
-								<a href='#'>Instagram</a>
-							</li>
-							<li>
-								<a href='#'>LinkedIn</a>
-							</li>
-						</ul>
+						<div className='social-links'>
+							<a href='#'>
+								<FontAwesomeIcon icon={faFacebook} />
+							</a>
+
+							<a href='#'>
+								<FontAwesomeIcon icon={faTwitter} />
+							</a>
+
+							<a href='#'>
+								<FontAwesomeIcon icon={faInstagram} />
+							</a>
+
+							<a href='#'>
+								<FontAwesomeIcon icon={faLinkedin} />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
