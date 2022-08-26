@@ -30,12 +30,12 @@ const Testimonials = () => {
     useEffect(() => {
       const el = elRef.current;
       if (el) {
-        const onWheel = e => {
+        const onWheel = (e) => {
           if (e.deltaY === 0) return;
           e.preventDefault();
           el.scrollTo({
             left: el.scrollLeft + e.deltaY,
-            behavior: "smooth"
+            behavior: "smooth",
           });
         };
         el.addEventListener("wheel", onWheel);
@@ -49,12 +49,25 @@ const Testimonials = () => {
 
   return (
     <div>
-      Testimonials
-      <div id="container" className="testimonial-container no-scrollbar" ref={scrollRef}>
+      <h1 style={{marginBottom:"2rem", textAlign:"center"}}>Testimonials</h1>
+      <div
+        id="container"
+        className="testimonial-container no-scrollbar"
+        ref={scrollRef}
+      >
         {reviews.map((review) => (
           <div className="testimonial">
             <p>{review.text}</p>
-            <p style={{color:"black" , fontSize:"16px" , fontWeight:"600" , letterSpacing:"0.5px"}}>{review.author}</p>
+            <p
+              style={{
+                color: "black",
+                fontSize: "16px",
+                fontWeight: "600",
+                letterSpacing: "0.5px",
+              }}
+            >
+              {'~ '+review.author}
+            </p>
           </div>
         ))}
       </div>

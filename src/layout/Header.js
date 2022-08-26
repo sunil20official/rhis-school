@@ -25,20 +25,42 @@ const Header = () => {
             style={{ flexDirection: "row-reverse" }}
           >
             <ul class="navbar-nav mb-2 mb-lg-0 nav-content">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#!">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
+            <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   About Us
                 </a>
+                <ul
+                  class="dropdown-menu nav-content-dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#!">
+                      Our Story
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#!">
+                      Sports Facilities
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#!">
+                      Events and Functions
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="./"
+                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -67,19 +89,52 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Academics
+                </a>
+                <ul
+                  class="dropdown-menu nav-content-dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#!">
+                      Syllabus
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#!">
+                      Faculty 
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#!">
+                      Parent's Login
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item" style={{padding:"5px 0px"}}>
                 <button
                   type="button"
-                  class="btn btn-info nav-link"
+                  class="btn btn-info nav-link get-in-touch"
                   style={{
                     borderRadius: "10px",
                     padding: "5px 10px",
                     fontSize: "13px",
                     fontWeight: "bold",
                     letterSpacing: "1px",
+                    border:"none"
                   }}
                 >
-                  Contact Us
+                  Get In Touch
                 </button>
               </li>
             </ul>
