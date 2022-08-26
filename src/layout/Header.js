@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-right">
         <div class="container-fluid">
           <a class="navbar-brand scale-up-center" href="#!">
             LOGO
@@ -127,11 +127,13 @@ const Header = () => {
                   class="btn btn-info nav-link get-in-touch"
                   style={{
                     borderRadius: "10px",
-                    padding: "5px 10px",
+                    padding: "5px 0px",
                     fontSize: "13px",
                     fontWeight: "bold",
                     letterSpacing: "1px",
-                    border:"none"
+                    border:"none",
+                    boxShadow: 'none',
+
                   }}
                 >
                   Get In Touch

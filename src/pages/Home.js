@@ -20,6 +20,7 @@ const Home = () => {
         class="carousel slide"
         data-bs-ride="carousel"
         style={{marginTop:"1rem"}}
+        data-aos="zoom-out"
       >
         <div class="carousel-indicators">
           <button
@@ -96,7 +97,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faDownLong} />
         </div>
       </div>
-      <div id="story" className="story-section">
+      <div id="story" className="story-section" data-aos="zoom-out">
         <h1>Our Story</h1>
         <p className="story-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
