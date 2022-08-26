@@ -4,6 +4,7 @@ import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 import Header from "./layout/Header";
 import Home from "./pages/Home";
+import GetInTouch from './pages/GetInTouch/GetInTouch';
 import Footer from './layout/Footer/Footer';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Header />
         <div className="App container-lg">
           <Home />
+          <GetInTouch/>
         </div>
         <Footer />
       </div>

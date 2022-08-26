@@ -11,6 +11,7 @@
 }
 
 .scroll-top {
+  z-index: 100000;
   position: fixed;
   height: 50px;
   width: 50px;
@@ -72,7 +73,7 @@
 }
 
 .carousel-img {
-  height: 75vh;
+  height: 70vh;
   border-radius: 25px;
 }
 

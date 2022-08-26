@@ -17,9 +17,9 @@ const Home = () => {
     <>
       <div
         id="carouselExampleCaptions"
-        class="carousel slide"
+        class="carousel slide carousel-fade"
         data-bs-ride="carousel"
-        style={{marginTop:"1rem"}}
+        style={{marginTop:"0.5rem"}}
         data-aos="zoom-out"
       >
         <div class="carousel-indicators">
