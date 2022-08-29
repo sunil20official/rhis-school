@@ -1,0 +1,30 @@
+.whatweoffer{
+  background-color: #f4c119;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 2rem 0rem;
+}
+
+.icon-container {
+  display: flex;
+  padding: 20px;
+  justify-content:space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-div{
+  min-width: 250px;
+  margin: 20px;
+  cursor: pointer;
+  transition:all 0.8s ease-in-out;
+}
+
+.icon-div:hover{
+  background-color: white;
+  color: #f4c119;
+  transform: scale(1.1);
+  border-radius: 10px;
+}

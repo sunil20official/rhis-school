@@ -7,7 +7,7 @@
 }
 
 .App {
-  height: 500vh;
+  height: max-content;
 }
 
 .scroll-top {
@@ -44,25 +44,26 @@
   font-weight: 600;
 }
 
-.nav-content > li:hover{
+.nav-content > li:hover {
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   border-radius: 10px;
   color: white !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
   box-shadow: none;
 }
 
-.get-in-touch{
+.get-in-touch {
   background: transparent !important;
 }
 
-.get-in-touch:hover,:focus{
+.get-in-touch:hover,
+:focus {
   background: transparent !important;
   border: none;
 }
@@ -70,11 +71,6 @@
 .nav-content-dropdown {
   font-size: 13px;
   border-radius: 15px;
-}
-
-.carousel-img {
-  height: 70vh;
-  border-radius: 25px;
 }
 
 .scroll-container {
@@ -110,6 +106,12 @@
   padding: 30px;
 }
 
+.testimonialmain {
+  background-color: #fafafa;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+  padding: 50px;
+}
+
 .testimonial-container {
   cursor: grab;
   display: flex;
@@ -135,6 +137,10 @@
   color: #8d91a3;
 }
 
+.testimonial-text{
+  
+}
+
 .testimonial:hover {
   transform: scale(1.05, 1.1);
   border-radius: 5px;
@@ -154,7 +160,9 @@
   display: none;
 }
 
+/* this will apply above 992px */
 @media screen and (min-width: 992px) {
+  
   .nav-link {
     margin: 0rem 1rem;
     transition: all 0.3s ease-in-out;
@@ -166,17 +174,42 @@
   }
 }
 
+/* media query for phone screen */
+@media screen and (max-width: 576px) {
+  .carousel-img {
+    height: 50vh;
+  }
+  .testimonialmain {
+    background-color: #fafafa;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+    padding: 20px;
+  }
+  .testimonial {
+    font-family: "Poppins";
+    font-size: 14px;
+    flex-shrink: 0;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+  
+    background-color: #fafafa;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+    transition: all 0.5s ease-in-out;
+    color: #8d91a3;
+  }
+}
+
+/* this will apply from 0-992px */
 @media screen and (max-width: 992px) {
-  .nav-content > li:hover{
+  .nav-content > li:hover {
     padding: 7px;
     background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
     border-radius: 10px;
     color: white !important;
   }
-  .get-in-touch:hover,:focus{
-    padding: 10px !important;
-    border: none;
-  }
-  
 }
-

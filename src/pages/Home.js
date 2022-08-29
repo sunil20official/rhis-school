@@ -6,97 +6,24 @@ import img2 from "../media/robert-collins-tvc5imO5pXk-unsplash.jpg";
 import img3 from "../media/sigmund-OV44gxH71DU-unsplash.jpg";
 
 import Testimonials from "../shared/Testimonials";
+import WhatWeOffer from "../shared/whatWeOffer/WhatWeOffer";
+import Staff from "../shared/staff/Staff";
+import CountUp from "../shared/countup/CountUp";
 
 const Home = () => {
   const onScroll = () => {
     document
-      .getElementById("story")
+      .getElementById("whatweoffer")
       .scrollIntoView({ block: "start", behavior: "smooth" });
   };
   return (
     <>
-      <div
-        id="carouselExampleCaptions"
-        className="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-        style={{marginTop:"0.5rem"}}
-        data-aos="zoom-out"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={img1} className="d-block w-100 carousel-img" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src={img2} className="d-block w-100 carousel-img" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src={img3} className="d-block w-100 carousel-img" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
       <div className="scroll-container">
         <div className="scroll" onClick={onScroll}>
           <FontAwesomeIcon icon={faDownLong} />
         </div>
       </div>
+      <WhatWeOffer />
       <div id="story" className="story-section" data-aos="zoom-out">
         <h1>Our Story</h1>
         <p className="story-text">
@@ -112,6 +39,8 @@ const Home = () => {
         </p>
       </div>
       <Testimonials/>
+      <CountUp/>
+      <Staff/>
     </>
   );
 };

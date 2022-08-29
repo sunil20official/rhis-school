@@ -1,0 +1,62 @@
+*{
+  text-decoration: none !important;
+}
+
+.fixed-top-bar{
+  height: 1.5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+  padding: 0px 10px;
+  background: #ec6607;
+}
+
+.logo-container{
+  position: fixed;
+  top: 1.5rem;
+  left: 150px;
+}
+
+.logo-image{
+  width: 150px;
+  height: auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.list-container{
+  float: right;
+  padding: 0 15px;
+  margin: 0 15px;
+}
+
+.list-container > ul > li{
+  display: inline-block;
+  padding: 0 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.list-container > ul > li >a{
+  color: black !important;
+  padding: 0 2px;
+}
+
+
+.list-container > ul > li > a:hover{
+  background-color: blue;
+  color: white !important;
+}
+
+/* bar will be visible on screen > = 800px */
+@media screen and (max-width:850px) {
+  .list-container {
+    display: none;
+  }
+  .logo-container{
+    display: block !important;
+    position: fixed !important;
+    top: 1.5rem !important;
+    right: 150px !important;
+  }
+}

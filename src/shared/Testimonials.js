@@ -48,9 +48,10 @@ const Testimonials = () => {
   const scrollRef = useHorizontalScroll();
 
   return (
-    <div>
-      <h1 style={{marginBottom:"2rem", textAlign:"center"}}>Testimonials</h1>
+    <div className="testimonialmain">
+      <h1 style={{marginBottom:"2rem", textAlign:"center"}}>What Parents Say</h1>
       <div
+        style={{backgroundColor:'white'}}
         id="container"
         className="testimonial-container no-scrollbar"
         ref={scrollRef}
