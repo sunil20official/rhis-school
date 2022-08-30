@@ -57,6 +57,10 @@
     display: block !important;
     position: fixed !important;
     top: 1.5rem !important;
-    right: 150px !important;
+    right: 5px !important;
+  }
+  .logo-image{
+    width: 80px;
+    float: right;
   }
 }

@@ -1,0 +1,10 @@
+.admn-form > div{
+  margin: 20px 0px;
+}
+
+@media screen and (min-width:1000px) {
+  .admn-form{
+    max-width: 60%;
+    margin: auto;
+  }
+}

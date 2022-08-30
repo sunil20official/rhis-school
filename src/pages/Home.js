@@ -4,7 +4,7 @@ import { faDownLong } from "@fortawesome/free-solid-svg-icons";
 import img1 from "../media/artem-kniaz-DqgMHzeio7g-unsplash.jpg";
 import img2 from "../media/robert-collins-tvc5imO5pXk-unsplash.jpg";
 import img3 from "../media/sigmund-OV44gxH71DU-unsplash.jpg";
-
+import Carousel from "../shared/carousel/Carousel";
 import Testimonials from "../shared/Testimonials";
 import WhatWeOffer from "../shared/whatWeOffer/WhatWeOffer";
 import Staff from "../shared/staff/Staff";
@@ -18,7 +18,9 @@ const Home = () => {
   };
   return (
     <>
-      <div className="scroll-container">
+    <Carousel/>
+    <div className="container-lg">
+    <div className="scroll-container">
         <div className="scroll" onClick={onScroll}>
           <FontAwesomeIcon icon={faDownLong} />
         </div>
@@ -41,6 +43,7 @@ const Home = () => {
       <Testimonials/>
       <CountUp/>
       <Staff/>
+    </div>
     </>
   );
 };

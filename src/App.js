@@ -2,6 +2,7 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./layout/Header";
 import Home from "./pages/Home";
@@ -12,6 +13,9 @@ import img2 from "./media/robert-collins-tvc5imO5pXk-unsplash.jpg";
 import img3 from "./media/sigmund-OV44gxH71DU-unsplash.jpg";
 import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
+import Management from "./shared/management/Management";
+import Admission from "./pages/admissions/Admission";
+import About from "./pages/GetInTouch/About";
 
 function App() {
   const scrollToTop = () => {
@@ -24,7 +28,7 @@ function App() {
   return (
     <Router>
       <>
-      <TopBar/>
+        <TopBar />
         <div className="scroll-top" onClick={scrollToTop}>
           <FontAwesomeIcon icon={faAngleUp} />
         </div>
@@ -32,12 +36,15 @@ function App() {
           <div style={{ margin: "0rem" }}>
             <Header />
           </div>
-          <Carousel/>
           <div className="container-lg">
-            <Home />
-            <GetInTouch />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/admission" element={<Admission />} />
+              <Route path="/getintouch" element={<GetInTouch />} />
+            </Routes>
           </div>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </>
     </Router>

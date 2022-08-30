@@ -58,16 +58,6 @@
   box-shadow: none;
 }
 
-.get-in-touch {
-  background: transparent !important;
-}
-
-.get-in-touch:hover,
-:focus {
-  background: transparent !important;
-  border: none;
-}
-
 .nav-content-dropdown {
   font-size: 13px;
   border-radius: 15px;

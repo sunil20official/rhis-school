@@ -1,0 +1,39 @@
+.main-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+}
+
+.form-container{
+  width: 50%;
+}
+
+.address-container{
+  width: 40%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.address{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+}
+
+
+/* screen greater than 900px */
+@media screen and (max-width:900px){
+  .main-container{
+    flex-direction: row;
+  }
+  .form-container{
+    width: 100%;
+  }
+  .address-container{
+    width: 100%;
+  }
+}

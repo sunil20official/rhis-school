@@ -1,84 +1,61 @@
-import React from 'react';
+import React from "react";
+import "./Footer.css";
 
-import './Footer.css';
+import {AiOutlineInstagram , AiOutlineLinkedin , AiFillTwitterCircle , AiOutlineYoutube} from 'react-icons/ai';
+import {FiFacebook} from 'react-icons/fi'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-	return (
-		<div className='footer'>
-			<div className='container'>
-				<div className='row'>
-					<div className='footer-col'>
-						<h4>Our School</h4>
-						<ul>
-							<li>
-								<a href='#'>Academic Cirricular</a>
-							</li>
-							<li>
-								<a href='#'>Visit Us</a>
-							</li>
-							<li>
-								<a href='#'>Contact Us</a>
-							</li>
-							<li>
-								<a href='#'>Public Information</a>
-							</li>
-						</ul>
-					</div>
-
-					<div className='footer-col'>
-						<h4>Our Facilites</h4>
-						<ul>
-							<li>
-								<a href='#'>Libraries</a>
-							</li>
-							<li>
-								<a href='#'>Conferences</a>
-							</li>
-							<li>
-								<a href='#'>Sports Events</a>
-							</li>
-							<li>
-								<a href='#'>Cultural Events</a>
-							</li>
-						</ul>
-					</div>
-
-					<div className='footer-col'>
-						<h4>Connect with us </h4>
-						<ul>
-							<li>
-								<a href='#'>New Students</a>
-							</li>
-							<li>
-								<a href='#'>Alumni</a>
-							</li>
-							<li>
-								<a href='#'>Blogs</a>
-							</li>
-						</ul>
-					</div>
-
-					<div className='footer-col'>
-						<h4>Follow Us</h4>
-						<ul>
-							<li>
-								<a href='#'>FaceBook</a>
-							</li>
-							<li>
-								<a href='#'>Twitter</a>
-							</li>
-							<li>
-								<a href='#'>Instagram</a>
-							</li>
-							<li>
-								<a href='#'>LinkedIn</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+  return (
+		<div className="footer-main">
+    <div className="footer-container">
+      <div className="useful-links-container">
+        <h5>USEFUL LINKS </h5>
+        <ul className="useful-links-list">
+          <li><Link to='/'>Blogs</Link></li>
+          <li><Link to='/'>FAQs</Link></li>
+          <li><Link to='/'>Contact Us</Link></li>
+          <li><Link to='/'>Career</Link></li>
+        </ul>
+      </div>
+      <div className="academics-links-container">
+        <h5>ACADEMICS</h5>
+        <ul className="useful-links-list">
+          <li><Link to='/'>CBSE</Link></li>
+          <li><Link to='/'>ICSE</Link></li>
+          <li><Link to='/'>IGCSE</Link></li>
+          <li><Link to='/'>IB</Link></li>
+        </ul>
+      </div>
+      <div className="newsletter-container">
+        <h5 style={{marginTop:"10px"}}>NEWSLETTER</h5>
+        <div className="news-letter">
+          <input className="newsletterinput" type="email" placeholder="" />
+          <button className="newsletterbtn">send</button>
+        </div>
+      </div>
+      <div className="social-links-container">
+        <h5 style={{marginTop:"10px"}}> GET SOCIAL </h5>
+        <ul className="useful-links-list">
+          <li><Link to='/'><AiOutlineInstagram style={{fontSize:"30px"}}/></Link></li>
+          <li><Link to='/'><FiFacebook style={{fontSize:"30px"}}/></Link></li>
+          <li><Link to='/'><AiOutlineLinkedin style={{fontSize:"30px"}}/></Link></li>
+          <li><Link to='/'><AiFillTwitterCircle style={{fontSize:"30px"}}/></Link></li>
+          <li><Link to='/'><AiOutlineYoutube style={{fontSize:"30px"}}/></Link></li>
+        </ul>
+      </div>
+    </div>
+		<hr className="line"></hr>
+		<div className="bottom">
+			<p className="bottom-links"><Link to='/'>Site Map</Link> 
+			<Link to='/'>Privacy Policy</Link> 
+			<Link to='/'>Terms of use</Link></p>
+			<p className="copyright">
+				copyright 2022 Royal Hills Internationsl School , All Rights Reserved
+			</p>
 		</div>
-	);
+		</div>
+  );
 };
 
 export default Footer;

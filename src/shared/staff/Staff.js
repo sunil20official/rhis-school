@@ -4,7 +4,7 @@ import staffuser from "../../media/staffuser.jpg";
 
 const Staff = () => {
   return (
-    <div style={{ backgroundColor: "#2366b5", padding: "1rem 0rem" }}>
+    <div style={{ backgroundColor: "#f89503", padding: "1rem 0rem", margin:"3rem 0rem" }}>
       <h1 style={{ margin: "2rem 0rem", textAlign: "center", color: "white" }}>
         Meet Our Staff
       </h1>
