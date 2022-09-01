@@ -1,6 +1,6 @@
 import React from 'react';
-import Management from '../../shared/management/Management';
-import Staff from '../../shared/staff/Staff';
+import Management from '../shared/management/Management';
+import Staff from '../shared/staff/Staff';
 
 const About = () => {
   return (

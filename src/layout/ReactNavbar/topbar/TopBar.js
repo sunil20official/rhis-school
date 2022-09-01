@@ -20,13 +20,13 @@ const TopBar = () => {
             <Link to="tel:8766265528"><BsTelephone style={{fontSize:"24px" , padding:"0px 4px"}}/>12345679</Link>
           </li>
           <li>
-            <Link to="/">Admissions</Link>
+            <Link to="/admission">Admissions</Link>
           </li>
           <li>
             <Link to="/">Parent Login</Link>
           </li>
           <li>
-            <Link to="/">Get In Touch</Link>
+            <Link to="/getintouch">Get In Touch</Link>
           </li>
           <li>
             <Link to="/google.com"><FiFacebook style={{fontSize:"19px"}}/></Link>

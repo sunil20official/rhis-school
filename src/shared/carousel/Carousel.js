@@ -15,7 +15,7 @@ const Carousel = () => {
         id="carouselExampleCaptions"
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
-        style={{ marginTop: "0rem", position:"relative" }}
+        style={{ marginTop: "0rem", position:"relative" , left: "calc(-50vw + 50%)" , width:"100vw"}}
         data-aos="zoom-out"
       >
         <div className="top-right-menu">

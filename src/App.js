@@ -15,7 +15,7 @@ import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
 import Management from "./shared/management/Management";
 import Admission from "./pages/admissions/Admission";
-import About from "./pages/GetInTouch/About";
+import About from "./pages/About";
 
 function App() {
   const scrollToTop = () => {
