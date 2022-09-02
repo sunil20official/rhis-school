@@ -27,7 +27,7 @@ const Carousel = () => {
               <Link to='/academics'>Academics</Link><span className="vertical-bar">|</span>
             </li>
             <li>
-              <Link to='/admissions'>Admissions</Link><span className="vertical-bar">|</span>
+              <Link to='/admission'>Admissions</Link><span className="vertical-bar">|</span>
             </li>
             <li>
               <Link to='/kidslife'>Kid's Life</Link><span className="vertical-bar">|</span>
@@ -42,10 +42,10 @@ const Carousel = () => {
 
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active">
+          {/* <div className="carousel-item active">
             <img src={img1} className="d-block w-100 carousel-img" alt="..." />
-          </div>
-          <div className="carousel-item">
+          </div> */}
+          <div className="carousel-item active">
             <img src={img2} className="d-block w-100 carousel-img" alt="..." />
           </div>
           <div className="carousel-item">

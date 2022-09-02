@@ -323,10 +323,10 @@ const ReactNavbar = ({
                 ? `LinkIn ${link1AnimationTime}s`
                 : `LinkOut ${link1AnimationTime}s`,
             }}
-            to={link1Url}
+            to='/'
             onClick={closeBarOnClick}
           >
-            {link1Text}
+            Home
           </Link>
           <Link
             className="linksReactNavbar"
@@ -345,10 +345,32 @@ const ReactNavbar = ({
                 ? `LinkIn ${link2AnimationTime}s`
                 : `LinkOut ${link2AnimationTime}s`,
             }}
-            to={link2Url}
+            to='/about'
             onClick={closeBarOnClick}
           >
-            {link2Text}
+            About
+          </Link>
+          <Link
+            className="linksReactNavbar"
+            ref={link2}
+            style={{
+              fontSize: link2Size,
+              fontFamily: link2Family,
+              color: link2Color,
+              backgroundColor: link2BackgroundColor,
+              textDecoration: link2Decoration,
+              margin: link2Margin,
+              padding: link2Padding,
+              border: link2Border,
+              transition: `all ${link2Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link2AnimationTime}s`
+                : `LinkOut ${link2AnimationTime}s`,
+            }}
+            to='/getintouch'
+            onClick={closeBarOnClick}
+          >
+            Contact Us
           </Link>
         </div>
 
@@ -381,10 +403,10 @@ const ReactNavbar = ({
                 ? `LinkIn ${link3AnimationTime}s`
                 : `LinkOut ${link3AnimationTime}s`,
             }}
-            to={link3Url}
+            to='/admission'
             onClick={closeBarOnClick}
           >
-            {link3Text}
+            Admission
           </Link>
           <Link
             className="linksReactNavbar"
@@ -403,10 +425,54 @@ const ReactNavbar = ({
                 ? `LinkIn ${link4AnimationTime}s`
                 : `LinkOut ${link4AnimationTime}s`,
             }}
-            to={link4Url}
+            to='about'
             onClick={closeBarOnClick}
           >
-            {link4Text}
+            Management
+          </Link>
+          <Link
+            className="linksReactNavbar"
+            ref={link4}
+            style={{
+              fontSize: link4Size,
+              fontFamily: link4Family,
+              color: link4Color,
+              backgroundColor: link4BackgroundColor,
+              textDecoration: link4Decoration,
+              margin: link4Margin,
+              padding: link4Padding,
+              border: link4Border,
+              transition: `all ${link4Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link4AnimationTime}s`
+                : `LinkOut ${link4AnimationTime}s`,
+            }}
+            to='about'
+            onClick={closeBarOnClick}
+          >
+            Parent's Login
+          </Link>
+          <Link
+            className="linksReactNavbar"
+            ref={link4}
+            style={{
+              fontSize: link4Size,
+              fontFamily: link4Family,
+              color: link4Color,
+              backgroundColor: link4BackgroundColor,
+              textDecoration: link4Decoration,
+              margin: link4Margin,
+              padding: link4Padding,
+              border: link4Border,
+              transition: `all ${link4Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link4AnimationTime}s`
+                : `LinkOut ${link4AnimationTime}s`,
+            }}
+            to='about'
+            onClick={closeBarOnClick}
+          >
+            Admin Login
           </Link>
         </div>
 

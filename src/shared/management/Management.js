@@ -13,7 +13,7 @@ const Management = () => {
         />
       </div>
       <div className="man-message-container">
-        <h4 style={{fontWeight:"700"}}>Dr. Sunil Kumar </h4>
+        <h4 style={{fontWeight:"700"}}>Dr. Principal Name </h4>
         <h5>Principal , Royal Hills International School</h5>
         <p className="management-message">
           Ryan Group is the realization of a vision. A vision to transform the

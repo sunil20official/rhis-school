@@ -64,8 +64,51 @@ body {
 .nav3 {
   left: 66%;
 }
-.nav4 {
-  left: 75%;
+.nav2 > a{
+  position: relative;
+}
+.nav2 > a:hover{
+  color: #0a58ca !important;
+}
+.nav3 > a{
+  position: relative;
+}
+.nav3 > a:hover{
+  color: #0a58ca !important;
+}
+
+.nav2 > a::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.nav3 > a::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.nav2 > a:hover::after{
+  transform: scaleX(1);
+}
+
+.nav3 > a:hover::after{
+  transform: scaleX(1);
 }
 
 @keyframes LogoleftIn {
@@ -157,11 +200,8 @@ body {
     flex-direction: column !important;
     justify-content: center !important;
   }
-  .logoReactNavbar {
-    width: 200% !important;
-  }
 
   .linksReactNavbar {
-    font-size: 2vmax !important;
+    font-size: 11px !important;
   }
 }
