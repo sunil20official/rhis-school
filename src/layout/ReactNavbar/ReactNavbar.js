@@ -270,7 +270,8 @@ const ReactNavbar = ({
           className="nav1"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: navColor1,
+            backgroundImage: 'linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)',
+            opacity:'0.9',
             flexDirection: nav1FlexDirection,
             alignItems: nav1alignItems,
             justifyContent: nav1justifyContent,
@@ -299,7 +300,8 @@ const ReactNavbar = ({
           className="nav2"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: navColor2,
+            backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)',
+            opacity:'0.9',
             flexDirection: nav2FlexDirection,
             alignItems: nav2alignItems,
             justifyContent: nav2justifyContent,
@@ -379,7 +381,8 @@ const ReactNavbar = ({
           className="nav3"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: navColor3,
+            backgroundImage: 'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
+            opacity:'0.9',
             flexDirection: nav3FlexDirection,
             alignItems: nav3alignItems,
             justifyContent: nav3justifyContent,
