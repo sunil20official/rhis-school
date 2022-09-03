@@ -4,6 +4,8 @@
   text-align: center;
   padding: 20px;
   margin: 2rem 0rem;
+  border: solid 10px rgb(221, 238, 36);
+  border-radius: 20px;
 }
 
 .icon-container {

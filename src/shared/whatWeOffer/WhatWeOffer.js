@@ -1,16 +1,16 @@
-import {} from "@fortawesome/react-fontawesome";
-import { GrDiamond } from "react-icons/gr";
-import { AiOutlineHeart } from "react-icons/ai";
+
 import { AiOutlineStar } from "react-icons/ai";
 import { AiOutlineCalendar } from "react-icons/ai";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import React from "react";
 import "./whatWeOffer.css";
 
 const WhatWeOffer = () => {
   return (
     <div id="whatweoffer" className="whatweoffer">
-      <h1 style={{ textAlign: "center" }}>What We Offer</h1>
+      <h1 style={{ textAlign: "center", marginTop: "2.5rem" }}>
+        What We Offer
+      </h1>
       <div className="icon-container">
         <div className="icon-div">
           <div data-aos="flip-left">

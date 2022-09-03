@@ -76,35 +76,6 @@
   border-radius: 15px;
 }
 
-.scroll-container {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0rem;
-}
-
-.scroll {
-  height: 60px;
-  width: 60px;
-  color: white;
-  background-color: #2366b5;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  animation: scrollAnim 1s alternate infinite;
-}
-
-@keyframes scrollAnim {
-  from{
-    transform: scale(1);
-  }
-  to{
-    transform: scale(1.2);
-  }
-}
-
 .story-section {
   margin: 3rem auto 0rem;
   padding: 2rem 0rem;

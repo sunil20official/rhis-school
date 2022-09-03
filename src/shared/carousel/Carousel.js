@@ -1,45 +1,82 @@
 import React from "react";
 import "./Carousel.css";
-import img1 from "../../media/artem-kniaz-DqgMHzeio7g-unsplash.jpg";
+
+import Typewriter from "typewriter-effect";
+
 import img2 from "../../media/robert-collins-tvc5imO5pXk-unsplash.jpg";
 import img3 from "../../media/sigmund-OV44gxH71DU-unsplash.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownLong } from "@fortawesome/free-solid-svg-icons";
 
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
+  const onScroll = () => {
+    document
+      .getElementById("whatweoffer")
+      .scrollIntoView({ block: "start", behavior: "smooth" });
+  };
+
   return (
     <div>
       <div
         id="carouselExampleCaptions"
         className="carousel slide carousel-fade"
         data-bs-ride="carousel"
-        style={{ marginTop: "0rem", position:"relative" , left: "calc(-50vw + 50%)" , width:"100vw"}}
+        style={{
+          marginTop: "0rem",
+          position: "relative",
+          left: "calc(-50vw + 50%)",
+          width: "100vw",
+        }}
         data-aos="zoom-out"
       >
         <div className="top-right-menu">
           <ul>
             <li>
-              <Link to='/about'>About</Link><span className="vertical-bar">|</span>
+              <Link to="/about">About</Link>
+              <span className="vertical-bar">|</span>
             </li>
             <li>
-              <Link to='/academics'>Academics</Link><span className="vertical-bar">|</span>
+              <Link to="/academics">Academics</Link>
+              <span className="vertical-bar">|</span>
             </li>
             <li>
-              <Link to='/admission'>Admissions</Link><span className="vertical-bar">|</span>
+              <Link to="/admission">Admissions</Link>
+              <span className="vertical-bar">|</span>
             </li>
             <li>
-              <Link to='/kidslife'>Kid's Life</Link><span className="vertical-bar">|</span>
+              <Link to="/kidslife">Kid's Life</Link>
+              <span className="vertical-bar">|</span>
             </li>
             <li>
-              <Link to='/parent-corner'>Parent Corner</Link><span className="vertical-bar">|</span>
+              <Link to="/parent-corner">Parent Corner</Link>
+              <span className="vertical-bar">|</span>
             </li>
             <li>
-              <Link to='/management'>Management Team</Link><span className="vertical-bar">|</span>
+              <Link to="/management">Management Team</Link>
+              <span className="vertical-bar">|</span>
             </li>
           </ul>
-
+        </div>
+        <div className="scl-name-main-container">
+          <div className="scl-name-container">
+            <h5 className="royalhills">
+              <Typewriter
+                options={{
+                  strings: [`"Royal Hills"`],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h5>
+            <p className="inter-scl">Internatinal School</p>
+          </div>
+        </div>
+        <div className="scroll-container">
+          <div className="scroll" onClick={onScroll}>
+            <FontAwesomeIcon className="arrow-scroll-down" icon={faDownLong} />
+          </div>
         </div>
         <div className="carousel-inner">
           {/* <div className="carousel-item active">
@@ -60,7 +97,7 @@ const Carousel = () => {
         >
           <div className="carousel-btn-container">
             <div className="carousel-btn">
-              <FontAwesomeIcon icon={faDownLong} className='rotate-prev' />
+              <FontAwesomeIcon icon={faDownLong} className="rotate-prev" />
             </div>
           </div>
         </button>
@@ -72,7 +109,7 @@ const Carousel = () => {
         >
           <div className="carousel-btn-container">
             <div className="carousel-btn">
-              <FontAwesomeIcon icon={faDownLong} className='rotate-next' />
+              <FontAwesomeIcon icon={faDownLong} className="rotate-next" />
             </div>
           </div>
         </button>

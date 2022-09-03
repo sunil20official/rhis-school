@@ -1,9 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownLong } from "@fortawesome/free-solid-svg-icons";
-import img1 from "../media/artem-kniaz-DqgMHzeio7g-unsplash.jpg";
-import img2 from "../media/robert-collins-tvc5imO5pXk-unsplash.jpg";
-import img3 from "../media/sigmund-OV44gxH71DU-unsplash.jpg";
+
 import Carousel from "../shared/carousel/Carousel";
 import Testimonials from "../shared/Testimonials";
 import WhatWeOffer from "../shared/whatWeOffer/WhatWeOffer";
@@ -11,20 +7,12 @@ import Staff from "../shared/staff/Staff";
 import CountUp from "../shared/countup/CountUp";
 
 const Home = () => {
-  const onScroll = () => {
-    document
-      .getElementById("whatweoffer")
-      .scrollIntoView({ block: "start", behavior: "smooth" });
-  };
+  
   return (
     <>
     <Carousel/>
     <div className="container-lg">
-    <div className="scroll-container">
-        <div className="scroll" onClick={onScroll}>
-          <FontAwesomeIcon icon={faDownLong} />
-        </div>
-      </div>
+    
       <WhatWeOffer />
       <div id="story" className="story-section" data-aos="zoom-out">
         <h1>Our Story</h1>
