@@ -8,13 +8,8 @@ import { useRef , useEffect} from "react";
 import Header from "./layout/Header";
 import Home from "./pages/Home";
 import GetInTouch from "./pages/GetInTouch/GetInTouch";
-import Carousel from "./shared/carousel/Carousel";
-import img1 from "./media/artem-kniaz-DqgMHzeio7g-unsplash.jpg";
-import img2 from "./media/robert-collins-tvc5imO5pXk-unsplash.jpg";
-import img3 from "./media/sigmund-OV44gxH71DU-unsplash.jpg";
 import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
-import Management from "./shared/management/Management";
 import Admission from "./pages/admissions/Admission";
 import About from "./pages/About";
 

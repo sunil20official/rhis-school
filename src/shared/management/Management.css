@@ -7,6 +7,8 @@
   background-color: #f2f2f2;
   box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
   margin-top: 3rem;
+  border: 10px solid hwb(272deg 18% 54% / 77%);
+  border-radius: 20px;
 }
 
 .man-image-container{

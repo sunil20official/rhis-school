@@ -428,7 +428,7 @@ const ReactNavbar = ({
                 ? `LinkIn ${link4AnimationTime}s`
                 : `LinkOut ${link4AnimationTime}s`,
             }}
-            to='about'
+            to='/about'
             onClick={closeBarOnClick}
           >
             Management
@@ -439,6 +439,7 @@ const ReactNavbar = ({
             style={{
               fontSize: link4Size,
               fontFamily: link4Family,
+              textAlign:'center',
               color: link4Color,
               backgroundColor: link4BackgroundColor,
               textDecoration: link4Decoration,
@@ -461,6 +462,7 @@ const ReactNavbar = ({
             style={{
               fontSize: link4Size,
               fontFamily: link4Family,
+              textAlign:'center',
               color: link4Color,
               backgroundColor: link4BackgroundColor,
               textDecoration: link4Decoration,

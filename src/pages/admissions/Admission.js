@@ -6,6 +6,7 @@ const Admission = () => {
     <div style={{ margin: "5rem 0rem" }}>
       <h3
         style={{
+          color:"white",
           textAlign: "center",
           borderBottom: "3px solid #f89503",
           width: "60%",
@@ -83,15 +84,6 @@ const Admission = () => {
             <option value="1">Ajmer</option>
             <option value="2">Aurangabad</option>
             <option value="2">banglore</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
-            <option value="2">Aurangabad</option>
           </select>
         </div>
         <div className="col-md-6">
@@ -115,6 +107,7 @@ const Admission = () => {
       {/* faq section below the admission enquiry */}
 
       <h1 style={{
+        color:"whitesmoke",
         borderBottom:"3px solid #f89503",
         textAlign:"center",
         padding:"15px 0px",

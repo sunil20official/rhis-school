@@ -1,5 +1,6 @@
 .admn-form > div{
   margin: 20px 0px;
+  color: whitesmoke;
 }
 
 @media screen and (min-width:1000px) {
