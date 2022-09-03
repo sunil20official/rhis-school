@@ -26,7 +26,19 @@
   border-radius: 100%;
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   color: white;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
+  animation: scrollBtnAnim 1s alternate infinite;
+}
+
+@keyframes scrollBtnAnim {
+  from{
+    transform: scale(1);
+    bottom: 5%;
+  }
+  to{
+    transform: scale(1.1);
+    bottom: 7%;
+  }
 }
 
 .scroll-top:hover {
@@ -81,6 +93,16 @@
   align-items: center;
   align-content: center;
   cursor: pointer;
+  animation: scrollAnim 1s alternate infinite;
+}
+
+@keyframes scrollAnim {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
 }
 
 .story-section {
