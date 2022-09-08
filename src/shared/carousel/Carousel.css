@@ -151,7 +151,8 @@
 }
 
 .top-right-menu > ul > li >a:hover{
-  color: blue;
+  color: #91e1c7;
+  font-weight: 900;
 }
 
 .vertical-bar{

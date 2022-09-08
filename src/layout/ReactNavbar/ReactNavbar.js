@@ -358,6 +358,7 @@ const ReactNavbar = ({
             style={{
               fontSize: link2Size,
               fontFamily: link2Family,
+              textAlign:'center',
               color: link2Color,
               backgroundColor: link2BackgroundColor,
               textDecoration: link2Decoration,

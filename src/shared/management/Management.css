@@ -15,11 +15,25 @@
   flex:1;
   margin: 10px;
   align-self: baseline;
+  animation: imageAnim 2s;
+}
+
+@keyframes imageAnim {
+  from{
+    transform: translateX(-500px);
+  }
 }
 
 .man-message-container{
   flex: 2;
   padding: 16px;
+  animation: msgAnim 2s;
+}
+
+@keyframes msgAnim {
+  from{
+    transform: translateX(500px);
+  }
 }
 
 .management-image{

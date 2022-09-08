@@ -1,12 +1,17 @@
 import React from "react";
 import "./TopBar.css";
 
-import {AiOutlineInstagram , AiOutlineLinkedin , AiFillTwitterCircle , AiOutlineYoutube} from 'react-icons/ai';
-import {FiFacebook} from 'react-icons/fi';
-import {BsTelephone} from 'react-icons/bs';
+import {
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+  AiFillTwitterCircle,
+  AiOutlineYoutube,
+} from "react-icons/ai";
+import { FiFacebook } from "react-icons/fi";
+import { BsTelephone } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
-import logo from '../../../media/footerLogo.png';
+import logo from "../../../media/footerLogo.png";
 
 const TopBar = () => {
   return (
@@ -17,31 +22,47 @@ const TopBar = () => {
       <div className="list-container">
         <ul>
           <li>
-            <Link to="tel:8766265528"><BsTelephone style={{fontSize:"24px" , padding:"0px 4px"}}/>12345679</Link>
+            <Link to="tel:8766265528">
+              <BsTelephone style={{ fontSize: "24px", padding: "0px 4px" }} />
+              12345679
+            </Link>
           </li>
           <li>
             <Link to="/admission">Admissions</Link>
           </li>
           <li>
-            <Link to="/">Parent Login</Link>
+            <a href="http://erp.rhis.co.in/" rel="noreferrer" target="_blank">
+              Parent Login
+            </a>
+            {/* <Link to="http://erp.rhis.co.in/">Parent Login</Link> */}
           </li>
           <li>
             <Link to="/getintouch">Get In Touch</Link>
           </li>
           <li>
-            <Link to="/google.com"><FiFacebook style={{fontSize:"19px"}}/></Link>
+            <Link to="/google.com">
+              <FiFacebook style={{ fontSize: "19px" }} />
+            </Link>
           </li>
           <li>
-            <Link to="/"><AiOutlineInstagram style={{fontSize:"19px"}}/></Link>
+            <Link to="/">
+              <AiOutlineInstagram style={{ fontSize: "19px" }} />
+            </Link>
           </li>
           <li>
-            <Link to="/"><AiOutlineLinkedin style={{fontSize:"19px"}}/></Link>
+            <Link to="/">
+              <AiOutlineLinkedin style={{ fontSize: "19px" }} />
+            </Link>
           </li>
           <li>
-            <Link to="/"><AiFillTwitterCircle style={{fontSize:"19px"}}/></Link>
+            <Link to="/">
+              <AiFillTwitterCircle style={{ fontSize: "19px" }} />
+            </Link>
           </li>
           <li>
-            <Link to="/"><AiOutlineYoutube style={{fontSize:"19px"}}/></Link>
+            <Link to="/">
+              <AiOutlineYoutube style={{ fontSize: "19px" }} />
+            </Link>
           </li>
         </ul>
       </div>

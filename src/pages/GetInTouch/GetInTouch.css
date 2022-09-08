@@ -10,12 +10,26 @@
 
 .form-container{
   width: 50%;
+  animation: getInTouchAnim 2s;
 }
 
 .address-container{
   width: 40%;
   margin: 10px;
   padding: 10px;
+  animation: addressAnim 2s;
+}
+
+@keyframes getInTouchAnim {
+  from{
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes addressAnim {
+  from{
+    transform: translateY(500px);
+  }
 }
 
 .address{

@@ -3,6 +3,16 @@
   color: whitesmoke;
 }
 
+.admn-form{
+  animation: formAnim 2s;
+}
+
+@keyframes formAnim {
+  from{
+    transform: translateY(800px);
+  }
+}
+
 @media screen and (min-width:1000px) {
   .admn-form{
     max-width: 60%;
