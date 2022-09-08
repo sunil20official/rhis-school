@@ -39,8 +39,12 @@
   font-size: 15px;
 }
 
+.map{
+  width: 80%;
+}
 
-/* screen greater than 900px */
+
+/* screen smaller than 900px */
 @media screen and (max-width:900px){
   .main-container{
     flex-direction: row;
@@ -50,5 +54,8 @@
   }
   .address-container{
     width: 100%;
+  }
+  .map{
+    width: 95%;
   }
 }
