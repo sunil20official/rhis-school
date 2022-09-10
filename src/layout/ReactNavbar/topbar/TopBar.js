@@ -11,7 +11,7 @@ import { FiFacebook } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
-import logo from "../../../media/footerLogo.png";
+import logo from "../../../media/logo-rhis-cropped.jpeg";
 
 const TopBar = () => {
   return (
@@ -31,8 +31,8 @@ const TopBar = () => {
             <Link to="/admission">Admissions</Link>
           </li>
           <li>
-            <a href="http://erp.rhis.co.in/" rel="noreferrer" target="_blank">
-              Parent Login
+            <a href="https://rhis.nletschool.com/site/login" rel="noreferrer" target="_blank">
+              ERP Login
             </a>
             {/* <Link to="http://erp.rhis.co.in/">Parent Login</Link> */}
           </li>

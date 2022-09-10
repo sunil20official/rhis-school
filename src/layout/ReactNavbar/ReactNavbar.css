@@ -111,6 +111,67 @@ body {
   transform: scaleX(1);
 }
 
+.custom-dropdown{
+  background: none !important;;
+  color: black!important;
+  border: none!important;
+  font-weight: 900 !important;
+}
+
+.custom-dropdown:focus{
+  box-shadow: none!important;
+}
+
+.custom-dropdown:focus-visible{
+  border: none!important;
+}
+
+.custom-dropdown-menu{
+  background-color: #337c87 !important;
+  min-width: 8rem !important;
+  text-align: center !important;
+}
+
+.about-transform{
+  transform: translate(-50px,50px) !important;
+}
+
+
+.academics-transform{
+  transform: translate(-30px,50px) !important;
+}
+
+.admission-transform{
+  transform: translate(-25px,50px) !important;
+}
+
+.about-transform{
+  transform: translate(-50px,50px) !important;
+}
+
+.custom-dropdown-menu > li{
+  text-align: center !important;
+}
+
+.custom-dropdown-menu > li > a{
+  text-align: center !important;
+  border-radius: 5px !important;
+  width:min-content !important;
+  margin: 0px auto !important;
+  color: black !important;
+  font-size: 13px;
+  font-weight: 900;
+  transition: 00ms all ease-in-out;
+}
+
+.custom-dropdown-menu > li > a:hover{
+  color: #ea7d2a !important;
+}
+
+.nav-mobile{
+  display: none !important;
+}
+
 @keyframes LogoleftIn {
   from {
     transform: translateX(-100vw);
@@ -167,7 +228,40 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  -----------  mobile design below 800px ---------- */
+/*  -----------  mobile design below 800px ---------- */
+/*  -----------  mobile design below 800px ---------- */
+/*  -----------  mobile design below 800px ---------- */
+/*  -----------  mobile design below 800px ---------- */
+
+
+
+
 @media screen and (max-width: 800px) {
+  .nav{
+    display: none !important;
+  }
+
+  .nav-mobile{
+    display: flex !important;
+  }
+
   .menuBurger {
     width: 40px;
     height: 35px;
@@ -184,24 +278,54 @@ body {
     z-index: 1000;
   }
   .nav1 {
-    flex-direction: column;
+    display: none !important;
   }
+
   .nav2 {
     flex-direction: column !important;
     justify-content: center !important;
+    left: 0% !important;
+    width: 100% !important;
   }
 
   .nav3 {
     flex-direction: column !important;
     justify-content: center !important;
+    left: 50% !important;
+    width: 50% !important;
   }
 
-  .nav4 {
-    flex-direction: column !important;
-    justify-content: center !important;
-  }
-
-  .linksReactNavbar {
+  .font-11 {
     font-size: 11px !important;
   }
+
+  .custom-dropdown-menu > li > a{
+    text-align: center !important;
+    font-size: 12px !important;
+    border-radius: 5px !important;
+    width:min-content !important;
+    margin: 0px auto !important;
+  }
+
+  .custom-dropdown-menu{
+    min-width: 7rem !important;
+    text-align: center;
+  }
+
+  .trans-about{
+    transform: translate(-70px,40px) !important;
+  }
+
+  .trans-academics{
+    transform: translate(-40px,40px) !important;
+  }
+
+  .trans-admission{
+    transform: translate(-37px,40px) !important;
+  }
+
+  .trans-careers{
+    transform: translate(-70px,40px) !important;
+  }
+
 }

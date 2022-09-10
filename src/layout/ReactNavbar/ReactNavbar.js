@@ -35,18 +35,6 @@ const ReactNavbar = ({
   nav3Transition = nav2Transition + 0.6,
   nav4Transition = nav3Transition + 0.6,
 
-  link1Text = "Text 1",
-  link2Text = "Text 2",
-  link3Text = "Text 3",
-  link4Text = "Text 4",
-  link5Text = "Text 5",
-  link6Text = "Text 6",
-  link1Url = "/text1",
-  link2Url = "/text2",
-  link3Url = "/text3",
-  link4Url = "/text4",
-  link5Url = "/text5",
-  link6Url = "/text6",
   link1Size = "1vmax",
   link2Size = link1Size,
   link3Size = link2Size,
@@ -134,8 +122,6 @@ const ReactNavbar = ({
   const link2 = useRef(null);
   const link3 = useRef(null);
   const link4 = useRef(null);
-  const link5 = useRef(null);
-  const link6 = useRef(null);
 
   const menuToggleHandler = () => {
     if (menuToggle) {
@@ -185,29 +171,29 @@ const ReactNavbar = ({
       link1.current.style.color = link1Color;
     });
 
-    link2.current.addEventListener("mouseover", () => {
-      link2.current.style.color = link2ColorHover;
-    });
+    // link2.current.addEventListener("mouseover", () => {
+    //   link2.current.style.color = link2ColorHover;
+    // });
 
-    link2.current.addEventListener("mouseleave", () => {
-      link2.current.style.color = link2Color;
-    });
+    // link2.current.addEventListener("mouseleave", () => {
+    //   link2.current.style.color = link2Color;
+    // });
 
-    link3.current.addEventListener("mouseover", () => {
-      link3.current.style.color = link3ColorHover;
-    });
+    // link3.current.addEventListener("mouseover", () => {
+    //   link3.current.style.color = link3ColorHover;
+    // });
 
-    link3.current.addEventListener("mouseleave", () => {
-      link3.current.style.color = link3Color;
-    });
+    // link3.current.addEventListener("mouseleave", () => {
+    //   link3.current.style.color = link3Color;
+    // });
 
-    link4.current.addEventListener("mouseover", () => {
-      link4.current.style.color = link4ColorHover;
-    });
+    // link4.current.addEventListener("mouseover", () => {
+    //   link4.current.style.color = link4ColorHover;
+    // });
 
-    link4.current.addEventListener("mouseleave", () => {
-      link4.current.style.color = link4Color;
-    });
+    // link4.current.addEventListener("mouseleave", () => {
+    //   link4.current.style.color = link4Color;
+    // });
 
     const search = document.querySelector("#searchIcon");
     const cart = document.querySelector("#cartIcon");
@@ -270,8 +256,8 @@ const ReactNavbar = ({
           className="nav1"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundImage: 'linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)',
-            opacity:'0.9',
+            backgroundColor: "whitesmoke",
+            opacity: "1",
             flexDirection: nav1FlexDirection,
             alignItems: nav1alignItems,
             justifyContent: nav1justifyContent,
@@ -300,14 +286,449 @@ const ReactNavbar = ({
           className="nav2"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundImage: 'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)',
-            opacity:'0.9',
+            backgroundColor: "whitesmoke",
+            opacity: "1",
             flexDirection: nav2FlexDirection,
             alignItems: nav2alignItems,
             justifyContent: nav2justifyContent,
             transition: `all ${nav2Transition}s`,
           }}
         >
+
+          {/* -------------------------------------- Home page on large school ------------------------------ */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Home
+            </Link>
+          </Link>
+
+          {/* -------------------------- About Us dropdown links for large screen ----------------------- */}
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu about-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/about/rhis"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Royal Hills International School
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/roots"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Roots – A Play School
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/directordesk"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Director’s Desk
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/principal-msg"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Principal Message
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/social-initiatives"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Social Initiatives
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+
+          {/* -------------------------- academics dropdown links for large screen ----------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Academics
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu academics-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/academics/academic-program"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Academic Program
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/academics/co-curricular-activities"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Co-curricular Program
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/academics/transport"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Transport
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/academics/we-care"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    We Care
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+
+          {/* -------------------------- admission dropdown links for large screen ----------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admission
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu admission-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/admission/admission-procedure"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Admission Procedure
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/admission/fee-structure"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Fee Structure
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+
+        </div>
+
+        {/* ----------------------------------------- NAV PART 3 ------------------------------------------- */}
+        <div
+          className="nav3"
+          style={{
+            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
+            backgroundColor: "whitesmoke",
+            opacity: "1",
+            flexDirection: nav3FlexDirection,
+            alignItems: nav3alignItems,
+            justifyContent: nav3justifyContent,
+            transition: `all ${nav3Transition}s`,
+          }}
+        >
+
+          {/* -------------------------- career page  for large screen ----------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/careers"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/careers"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Careers
+            </Link>
+          </Link>
+
+          {/* ------------------------------------- Gallery Page on large screen --------------------------------- */}
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/gallery"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/gallery"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Gallery
+            </Link>
+          </Link>
+
+          {/* -------------------------------------- Franchise page on large school ------------------------------ */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/franchise"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/franchise"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Franchise
+            </Link>
+          </Link>
+
+          {/* -------------------------------------- Contact Us page on large school ------------------------------ */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/contact-us"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/contact-us"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Contact Us
+            </Link>
+          </Link>
+        </div>
+      </div>
+
+      <div className="nav-mobile">
+        {/* --------------------NAV PART 2 for mobile screen  -------------------------------- */}
+        <div
+          className="nav2"
+          style={{
+            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
+            backgroundColor: "whitesmoke",
+            opacity: "0.9",
+            flexDirection: nav2FlexDirection,
+            alignItems: nav2alignItems,
+            justifyContent: nav2justifyContent,
+            transition: `all ${nav2Transition}s`,
+          }}
+        >
+          {/* ----------------------------------- Home link ---------------------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Home
+            </Link>
+          </Link>
+
+          {/*------------------------------------- about us dropdown links --------------------------------  */}
+
           <Link
             className="linksReactNavbar"
             ref={link1}
@@ -325,165 +746,298 @@ const ReactNavbar = ({
                 ? `LinkIn ${link1AnimationTime}s`
                 : `LinkOut ${link1AnimationTime}s`,
             }}
-            to='/'
-            onClick={closeBarOnClick}
+            to="/"
+            // onClick={closeBarOnClick}
           >
-            Home
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu trans-about"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Royal Hills International School
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    Roots – A Play School
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    Director’s Desk
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    Principal Message
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    Social Initiatives
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </Link>
+
+          {/* ----------------------------------- academics links dropdown ---------------------------------- */}
+
           <Link
             className="linksReactNavbar"
-            ref={link2}
+            ref={link1}
             style={{
-              fontSize: link2Size,
-              fontFamily: link2Family,
-              color: link2Color,
-              backgroundColor: link2BackgroundColor,
-              textDecoration: link2Decoration,
-              margin: link2Margin,
-              padding: link2Padding,
-              border: link2Border,
-              transition: `all ${link2Transition}s`,
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
               animation: menuToggle
-                ? `LinkIn ${link2AnimationTime}s`
-                : `LinkOut ${link2AnimationTime}s`,
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
             }}
-            to='/about'
-            onClick={closeBarOnClick}
+            to="/"
+            // onClick={closeBarOnClick}
           >
-            About
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Academics
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu trans-academics"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Academic Program
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    Co-curricular Program
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    Transport
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    We Care
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </Link>
+
+          {/* ----------------------------------- addmission links dropdown ---------------------------------- */}
+
           <Link
             className="linksReactNavbar"
-            ref={link2}
+            ref={link1}
             style={{
-              fontSize: link2Size,
-              fontFamily: link2Family,
-              textAlign:'center',
-              color: link2Color,
-              backgroundColor: link2BackgroundColor,
-              textDecoration: link2Decoration,
-              margin: link2Margin,
-              padding: link2Padding,
-              border: link2Border,
-              transition: `all ${link2Transition}s`,
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
               animation: menuToggle
-                ? `LinkIn ${link2AnimationTime}s`
-                : `LinkOut ${link2AnimationTime}s`,
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
             }}
-            to='/getintouch'
-            onClick={closeBarOnClick}
+            to="/"
+            // onClick={closeBarOnClick}
           >
-            Contact Us
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admission
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu trans-admission"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Admission Procedure
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" class="dropdown-item">
+                    Fee Structure
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+
+          {/* ----------------------------------- Career link ---------------------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/careers"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/careers"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Careers
+            </Link>
+          </Link>
+
+          {/* ----------------------------------- Gallery link ---------------------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/gallery"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/gallery"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Gallery
+            </Link>
+          </Link>
+
+          {/* ----------------------------------- Franchise link ---------------------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/franchise"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/franchise"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Franchise
+            </Link>
+          </Link>
+
+          {/* ----------------------------------- Contact Us link ---------------------------------- */}
+
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/contact-us"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/contact-us"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Contact Us
+            </Link>
           </Link>
         </div>
-
-        {/* --------------------NAV PART 3-------------------------------- */}
-        <div
-          className="nav3"
-          style={{
-            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundImage: 'linear-gradient(120deg, #f6d365 0%, #fda085 100%)',
-            opacity:'0.9',
-            flexDirection: nav3FlexDirection,
-            alignItems: nav3alignItems,
-            justifyContent: nav3justifyContent,
-            transition: `all ${nav3Transition}s`,
-          }}
-        >
-          <Link
-            className="linksReactNavbar"
-            ref={link3}
-            style={{
-              fontSize: link3Size,
-              fontFamily: link3Family,
-              color: link3Color,
-              backgroundColor: link3BackgroundColor,
-              textDecoration: link3Decoration,
-              margin: link3Margin,
-              padding: link3Padding,
-              border: link3Border,
-              transition: `all ${link3Transition}s`,
-              animation: menuToggle
-                ? `LinkIn ${link3AnimationTime}s`
-                : `LinkOut ${link3AnimationTime}s`,
-            }}
-            to='/admission'
-            onClick={closeBarOnClick}
-          >
-            Admission
-          </Link>
-          <Link
-            className="linksReactNavbar"
-            ref={link4}
-            style={{
-              fontSize: link4Size,
-              fontFamily: link4Family,
-              color: link4Color,
-              backgroundColor: link4BackgroundColor,
-              textDecoration: link4Decoration,
-              margin: link4Margin,
-              padding: link4Padding,
-              border: link4Border,
-              transition: `all ${link4Transition}s`,
-              animation: menuToggle
-                ? `LinkIn ${link4AnimationTime}s`
-                : `LinkOut ${link4AnimationTime}s`,
-            }}
-            to='/about'
-            onClick={closeBarOnClick}
-          >
-            Management
-          </Link>
-          <Link
-            className="linksReactNavbar"
-            ref={link4}
-            style={{
-              fontSize: link4Size,
-              fontFamily: link4Family,
-              textAlign:'center',
-              color: link4Color,
-              backgroundColor: link4BackgroundColor,
-              textDecoration: link4Decoration,
-              margin: link4Margin,
-              padding: link4Padding,
-              border: link4Border,
-              transition: `all ${link4Transition}s`,
-              animation: menuToggle
-                ? `LinkIn ${link4AnimationTime}s`
-                : `LinkOut ${link4AnimationTime}s`,
-            }}
-            to='about'
-            onClick={closeBarOnClick}
-          >
-            Parent's Login
-          </Link>
-          <Link
-            className="linksReactNavbar"
-            ref={link4}
-            style={{
-              fontSize: link4Size,
-              fontFamily: link4Family,
-              textAlign:'center',
-              color: link4Color,
-              backgroundColor: link4BackgroundColor,
-              textDecoration: link4Decoration,
-              margin: link4Margin,
-              padding: link4Padding,
-              border: link4Border,
-              transition: `all ${link4Transition}s`,
-              animation: menuToggle
-                ? `LinkIn ${link4AnimationTime}s`
-                : `LinkOut ${link4AnimationTime}s`,
-            }}
-            to='about'
-            onClick={closeBarOnClick}
-          >
-            Admin Login
-          </Link>
-        </div>
-
-        {/* --------------------NAV PART 4-------------------------------- */}
-
       </div>
     </Fragment>
   );
