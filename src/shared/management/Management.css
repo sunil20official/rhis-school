@@ -6,7 +6,7 @@
   align-content: center;
   background-color: #f2f2f2;
   box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
-  margin-top: 3rem;
+  margin: 3rem auto 5rem;
   border: 10px solid hwb(272deg 18% 54% / 77%);
   border-radius: 20px;
 }
@@ -38,6 +38,7 @@
 
 .management-image{
   width: 100%;
+  border-radius: 50%;
 }
 
 .management-message{
@@ -48,7 +49,7 @@
   .management-container{
     display: flex;
     flex-direction: column;
-    margin: 2rem 5px;
+    margin: 2rem auto 5rem;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;

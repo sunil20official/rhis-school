@@ -382,7 +382,7 @@ const ReactNavbar = ({
                 </li>
                 <li>
                   <Link
-                    to="/about/principal-msg"
+                    to="/about/principalmsg"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
@@ -673,6 +673,14 @@ const ReactNavbar = ({
         </div>
       </div>
 
+
+
+
+
+
+
+      {/* ----------------------  this navbar will be visible on the small screen i.e., for the mobile only view ------------------ */}
+
       <div className="nav-mobile">
         {/* --------------------NAV PART 2 for mobile screen  -------------------------------- */}
         <div
@@ -792,7 +800,7 @@ const ReactNavbar = ({
               >
                 <li>
                   <Link
-                    to="/about"
+                    to="/about/rhis"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
@@ -800,22 +808,38 @@ const ReactNavbar = ({
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about/roots"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     Roots – A Play School
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about/directordesk"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     Director’s Desk
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about/principalmsg"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     Principal Message
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about/social-initiatives"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     Social Initiatives
                   </Link>
                 </li>
@@ -869,17 +893,29 @@ const ReactNavbar = ({
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     Co-curricular Program
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     Transport
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     We Care
                   </Link>
                 </li>
@@ -933,7 +969,11 @@ const ReactNavbar = ({
                   </Link>
                 </li>
                 <li>
-                  <Link to="about" class="dropdown-item">
+                  <Link
+                    to="about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
                     Fee Structure
                   </Link>
                 </li>

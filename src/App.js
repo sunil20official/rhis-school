@@ -15,6 +15,8 @@ import About from "./pages/About";
 import Rhis from './pages/about/rhis/Rhis';
 import Root from './pages/about/roots/Root';
 import DirectorDesk from "./pages/about/director-desk/DirectorDesk";
+import PrincipalMsg from "./pages/about/principal-msg/PrincipalMsg";
+import SocialInitiatives from "./pages/about/social-initiatives/SocialInitiatives";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -51,10 +53,15 @@ function App() {
           <div className="container-lg">
             <Routes>
               <Route path="/" element={<Home />} />
+
+              {/* ------------------- about ------page ----------- routes ------------ */}
               <Route path="/about" element={<About />} />
               <Route path="/about/rhis" element={<Rhis/>} />
               <Route path="/about/roots" element={<Root/>} />
               <Route path="/about/directordesk" element={<DirectorDesk/>} />
+              <Route path="/about/principalmsg" element={<PrincipalMsg/>} />
+              <Route path="/about/social-initiatives" element={<SocialInitiatives/>} />
+
               <Route path="/admission" element={<Admission />} />
               <Route path="/getintouch" element={<GetInTouch />} />
               <Route path="*" element={<NotFound />} />
