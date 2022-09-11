@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import { useRef, useEffect } from "react";
+// import { useRef, useEffect } from "react";
 
 import Header from "./layout/Header";
 import Home from "./pages/Home";
@@ -27,21 +27,21 @@ function App() {
     });
   };
 
-  const cursorRef = useRef(null);
+  // const cursorRef = useRef(null);
 
-  useEffect(() => {
-    document.addEventListener("mousemove", (e) => {
-      cursorRef.current.setAttribute(
-        "style",
-        "top: " + (e.pageY + 5) + "px; left: " + (e.pageX + 5) + "px;"
-      );
-    });
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener("mousemove", (e) => {
+  //     cursorRef.current.setAttribute(
+  //       "style",
+  //       "top: " + (e.pageY + 5) + "px; left: " + (e.pageX + 5) + "px;"
+  //     );
+  //   });
+  // }, []);
 
   return (
     <Router>
       <>
-        <div ref={cursorRef} className="cursor"></div>
+        {/* <div ref={cursorRef} className="cursor"></div> */}
         <TopBar />
         <div className="scroll-top" onClick={scrollToTop}>
           <FontAwesomeIcon icon={faAngleUp} />

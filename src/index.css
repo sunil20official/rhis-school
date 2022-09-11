@@ -3,7 +3,7 @@ body{
   /* cursor: none; */
 }
 
-.cursor{
+/* .cursor{
   height: 20px;
   width: 20px;
   position: absolute;
@@ -12,9 +12,9 @@ body{
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   animation: cursorAnim .5s alternate infinite;
-}
+} */
 
-.cursor::after{
+/* .cursor::after{
   content: '';
   width: 20px;
   height: 20px;
@@ -24,7 +24,7 @@ body{
   opacity: 0.5;
   top: -1px;
   left: -1px;
-}
+} */
 
 ::-webkit-scrollbar{
   width: 15px;
