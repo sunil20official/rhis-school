@@ -196,6 +196,14 @@
     left: 45%;
     z-index: 10;
   }
+
+  .scroll{
+    display: none !important;
+  }
+
+  .mr-top-4{
+    margin-top: 4rem !important;
+  }
 }
 
 @media screen and (max-width:850px) {

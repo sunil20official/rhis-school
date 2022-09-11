@@ -3,8 +3,8 @@ import "./Carousel.css";
 
 import Typewriter from "typewriter-effect";
 
-import img2 from "../../media/robert-collins-tvc5imO5pXk-unsplash.jpg";
-import img3 from "../../media/sigmund-OV44gxH71DU-unsplash.jpg";
+import img2 from "../../media/carousel-img-1.png";
+import img3 from "../../media/carousel-img-2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownLong } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,7 +21,7 @@ const Carousel = () => {
     <div>
       <div
         id="carouselExampleCaptions"
-        className="carousel slide carousel-fade"
+        className="carousel slide carousel-fade mr-top-4"
         data-bs-ride="carousel"
         style={{
           marginTop: "0rem",
@@ -86,7 +86,7 @@ const Carousel = () => {
             <img src={img2} className="d-block w-100 carousel-img" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={img3} className="d-block w-100 carousel-img" alt="..." />
+            <img src={img2} className="d-block w-100 carousel-img" alt="..." />
           </div>
         </div>
         <button
