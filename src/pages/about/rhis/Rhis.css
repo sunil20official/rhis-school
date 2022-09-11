@@ -1,0 +1,39 @@
+.main-container{
+  margin: 4rem auto;
+  padding: 20px;
+}
+
+.rhis-container{
+
+}
+
+.heading-cont{
+  text-align: center;
+  color: black;
+}
+
+.rhis-img-cont{
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.rhis-img{
+  width: 80%;
+  border-radius: 25px;
+}
+
+.rhis-text{
+  color: black;
+  margin: 3rem 20px 1rem;
+  padding: 0px 30px;
+  font-size: 16px;
+}
+
+@media screen and (max-width:300px) {
+  .rhis-text{
+    color: black;
+    margin: 0px 40px;
+    padding: 0px 30px;
+    font-size: 13px;
+  }
+}

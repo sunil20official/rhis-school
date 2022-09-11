@@ -12,6 +12,9 @@ import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
 import Admission from "./pages/admissions/Admission";
 import About from "./pages/About";
+import Rhis from './pages/about/rhis/Rhis';
+import Root from './pages/about/roots/Root';
+import DirectorDesk from "./pages/about/director-desk/DirectorDesk";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -49,6 +52,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/about/rhis" element={<Rhis/>} />
+              <Route path="/about/roots" element={<Root/>} />
+              <Route path="/about/directordesk" element={<DirectorDesk/>} />
               <Route path="/admission" element={<Admission />} />
               <Route path="/getintouch" element={<GetInTouch />} />
               <Route path="*" element={<NotFound />} />
