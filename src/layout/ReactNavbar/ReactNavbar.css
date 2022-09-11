@@ -48,7 +48,7 @@ body {
 .nav4 {
   padding: 2vmax;
   height: 100vh;
-  width: 33%;
+  width: 34%;
   box-sizing: border-box;
   font-family: "Roboto";
   z-index: 100;
@@ -224,6 +224,11 @@ body {
   to {
     transform: translateX(100vw);
   }
+}
+
+.bg-blue{
+  background-color: #337c87 !important;
+  color: whitesmoke !important;
 }
 
 

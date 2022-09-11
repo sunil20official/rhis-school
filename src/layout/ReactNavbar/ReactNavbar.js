@@ -155,21 +155,21 @@ const ReactNavbar = ({
       menuBurgerItem3.current.style.backgroundColor = burgerColor;
     });
 
-    logoRef.current.addEventListener("mouseover", () => {
-      logoRef.current.style.filter = `drop-shadow(0 0 ${logoHoverSize} ${logoHoverColor})`;
-    });
+    // logoRef.current.addEventListener("mouseover", () => {
+    //   logoRef.current.style.filter = `drop-shadow(0 0 ${logoHoverSize} ${logoHoverColor})`;
+    // });
 
-    logoRef.current.addEventListener("mouseleave", () => {
-      logoRef.current.style.filter = `none`;
-    });
+    // logoRef.current.addEventListener("mouseleave", () => {
+    //   logoRef.current.style.filter = `none`;
+    // });
 
-    link1.current.addEventListener("mouseover", () => {
-      link1.current.style.color = link1ColorHover;
-    });
+    // link1.current.addEventListener("mouseover", () => {
+    //   link1.current.style.color = link1ColorHover;
+    // });
 
-    link1.current.addEventListener("mouseleave", () => {
-      link1.current.style.color = link1Color;
-    });
+    // link1.current.addEventListener("mouseleave", () => {
+    //   link1.current.style.color = link1Color;
+    // });
 
     // link2.current.addEventListener("mouseover", () => {
     //   link2.current.style.color = link2ColorHover;
@@ -264,21 +264,15 @@ const ReactNavbar = ({
             transition: `all ${nav1Transition}s`,
           }}
         >
-          <img
-            className="logoReactNavbar"
-            src={logo}
-            style={{
-              cursor: "pointer",
-              width: logoWidth,
-              height: logoHeight,
-              transition: `all ${logoTransition}s`,
-              animation: menuToggle
-                ? `LogoleftIn ${logoAnimationTime}s`
-                : `LogoleftOut ${logoAnimationTime}s`,
-            }}
-            ref={logoRef}
-            alt="Not Passed"
-          />
+          <a
+            href="https://rhis.nletschool.com/site/login"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button type="button" class="btn bg-blue">
+              ERP Login
+            </button>
+          </a>
         </div>
 
         {/* --------------------NAV PART 2-------------------------------- */}
@@ -294,8 +288,7 @@ const ReactNavbar = ({
             transition: `all ${nav2Transition}s`,
           }}
         >
-
-          {/* -------------------------------------- Home page on large school ------------------------------ */}
+          {/* -------------------------------------- Home link on large screen ------------------------------ */}
 
           <Link
             className="linksReactNavbar"
@@ -540,7 +533,6 @@ const ReactNavbar = ({
               </ul>
             </div>
           </Link>
-
         </div>
 
         {/* ----------------------------------------- NAV PART 3 ------------------------------------------- */}
@@ -556,7 +548,6 @@ const ReactNavbar = ({
             transition: `all ${nav3Transition}s`,
           }}
         >
-
           {/* -------------------------- career page  for large screen ----------------------- */}
 
           <Link
@@ -696,6 +687,42 @@ const ReactNavbar = ({
             transition: `all ${nav2Transition}s`,
           }}
         >
+          {/* ----------------------------------- ERP login link ---------------------------------- */}
+
+          <a
+            href="https://rhis.nletschool.com/site/login"
+            target="_blank"
+            rel="noreferrer"
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            onClick={closeBarOnClick}
+          >
+            <a
+              href="https://rhis.nletschool.com/site/login"
+              target="_blank"
+              rel="noreferrer"
+              className="btn bg-blue custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              ERP Login
+            </a>
+          </a>
+
           {/* ----------------------------------- Home link ---------------------------------- */}
 
           <Link

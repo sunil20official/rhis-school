@@ -42,38 +42,22 @@
   padding: 10px;
 }
 
-.newsletter-container,
+.lerro-container,
 .social-links-container {
   padding: 20px 10px;
 }
 
-.newsletter-container {
+.lerro-container {
   align-self: flex-start;
+  max-width: 500px;
 }
 
 .news-letter {
-  display: flex;
-  justify-content: space-around;
   padding: 5px;
 }
 
-.newsletterinput {
-  padding: 5px 10px;
-  border: 3px solid #f89503;
-}
-
-.newsletterinput:focus {
-  background: whitesmoke;
-  padding: 5px 10px;
-}
-
-.newsletterbtn {
-  padding: 5px 10px;
-  border: none;
-  background-color: #f89503;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.lerro-intro{
+  font-size: 13px;
 }
 
 .line{
