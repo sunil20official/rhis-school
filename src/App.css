@@ -27,7 +27,7 @@
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   color: white;
   transition: all 1s ease-in-out;
-  animation: scrollBtnAnim 1s alternate infinite;
+  animation: scrollBtnAnim 2s alternate infinite;
 }
 
 @keyframes scrollBtnAnim {
