@@ -11,12 +11,22 @@ import GetInTouch from "./pages/GetInTouch/GetInTouch";
 import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
 import Admission from "./pages/admissions/Admission";
+
+//     about pages
 import About from "./pages/About";
 import Rhis from './pages/about/rhis/Rhis';
 import Root from './pages/about/roots/Root';
 import DirectorDesk from "./pages/about/director-desk/DirectorDesk";
 import PrincipalMsg from "./pages/about/principal-msg/PrincipalMsg";
 import SocialInitiatives from "./pages/about/social-initiatives/SocialInitiatives";
+
+//     academics pages
+import AcademicProgram from './pages/academics/academic-program/AcademicProgram';
+import CurricularActivity from './pages/academics/curricular-activity/CurricularActivity';
+import Transport from './pages/academics/transport/Transport';
+import WeCare from './pages/academics/we-care/WeCare';
+
+
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -50,7 +60,7 @@ function App() {
           <div style={{ margin: "0rem" }}>
             <Header />
           </div>
-          <div className="container-lg">
+          <div style={{overflowX:"hidden"}} className="container-lg">
             <Routes>
               <Route path="/" element={<Home />} />
 
@@ -62,9 +72,15 @@ function App() {
               <Route path="/about/principalmsg" element={<PrincipalMsg/>} />
               <Route path="/about/social-initiatives" element={<SocialInitiatives/>} />
 
-              <Route path="/admission" element={<Admission />} />
-              <Route path="/getintouch" element={<GetInTouch />} />
+              {/* ------------------- academics ------page ----------- routes ------------ */}
+
+              <Route path="/academics/academic-program" element={<AcademicProgram />} />
+              <Route path="/academics/cocurricular-activities" element={<CurricularActivity />} />
+              <Route path="/academics/transport" element={<Transport />} />
+              <Route path="/academics/wecare" element={<WeCare />} />
+
               <Route path="*" element={<NotFound />} />
+
             </Routes>
           </div>
           <Footer />

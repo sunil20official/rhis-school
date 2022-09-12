@@ -1,3 +1,48 @@
 .social-init-cont{
   margin: 6rem auto 6rem;
 }
+
+.social-init-p{
+  font-size: 1rem;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  padding: 10px 5px;
+  margin: 4rem 0rem;
+}
+
+.flex-rev{
+  flex-direction: row-reverse !important;
+}
+
+.img-cont{
+  flex: 4;
+  text-align: center;
+}
+
+.campaign-img{
+  width: 100%;
+}
+
+.text-cont{
+  flex: 6;
+}
+
+/*  -------------- css for the mobile screen ---------- */
+
+@media screen and (max-width:800px){
+  .social-init-p{
+    font-size: 0.8rem;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  .flex-rev{
+    flex-direction: column !important;
+  }
+}

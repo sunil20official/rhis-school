@@ -448,7 +448,7 @@ const ReactNavbar = ({
                 </li>
                 <li>
                   <Link
-                    to="/academics/co-curricular-activities"
+                    to="/academics/cocurricular-activities"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
@@ -688,7 +688,6 @@ const ReactNavbar = ({
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
             backgroundColor: "whitesmoke",
-            opacity: "0.9",
             flexDirection: nav2FlexDirection,
             alignItems: nav2alignItems,
             justifyContent: nav2justifyContent,
@@ -885,7 +884,7 @@ const ReactNavbar = ({
               >
                 <li>
                   <Link
-                    to="/about"
+                    to="/academics/academic-program"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
@@ -894,7 +893,7 @@ const ReactNavbar = ({
                 </li>
                 <li>
                   <Link
-                    to="about"
+                    to="/academics/cocurricular-activities"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >

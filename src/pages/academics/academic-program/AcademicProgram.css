@@ -1,0 +1,40 @@
+.academic-prog{
+  margin: 6rem auto;
+}
+
+.flex-academics{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-r{
+  flex-direction: row-reverse !important;
+}
+
+.txt-cont{
+  flex: 2;
+  font-size: 20px;
+}
+
+.img-cont{
+  flex: 1;
+}
+
+.img-kid{
+  width: 100%;
+}
+
+@media screen and (max-width:800px) {
+  .flex-academics{
+    flex-direction: column;
+  }
+  .txt-cont{
+    flex: 2;
+    font-size: 15px;
+  }
+  .flex-r{
+    flex-direction: column !important;
+  }
+}
