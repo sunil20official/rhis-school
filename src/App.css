@@ -6,6 +6,11 @@
   font-family: "Poppins";
 }
 
+:root{
+  --blue:#337c87;
+  --oranage: #ea7d2a;
+}
+
 .App {
   height: max-content;
   /* background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
@@ -185,6 +190,9 @@
     box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
     transition: all 0.5s ease-in-out;
     color: #8d91a3;
+  }
+  p{
+    font-size: 13px;
   }
 }
 

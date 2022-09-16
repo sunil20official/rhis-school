@@ -8,8 +8,8 @@ const CountUp = () => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <div style={{ margin: "2rem 0rem" }}>
-      <h1 style={{ textAlign: "center" }}> Heading </h1>
+    <div style={{ margin: "4rem 0rem" }}>
+      <h1 style={{ textAlign: "center" }}> Quality Education </h1>
       <div className="count-up-container">
         <div className="count-up">
           <ScrollTrigger

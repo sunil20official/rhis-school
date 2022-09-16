@@ -117,6 +117,7 @@ const ReactNavbar = ({
   const menuBurgerItem2 = useRef(null);
   const menuBurgerItem3 = useRef(null);
   const menuBurger = useRef(null);
+  const nav100 = useRef(null);
   const logoRef = useRef(null);
   const link1 = useRef(null);
   const link2 = useRef(null);
@@ -128,11 +129,14 @@ const ReactNavbar = ({
       menuBurgerItem1.current.classList.remove("menuBurgerItem1");
       menuBurgerItem2.current.classList.remove("menuBurgerItem2");
       menuBurgerItem3.current.classList.remove("menuBurgerItem3");
+      nav100.current.classList.remove("nav100");
+
       return setMenuToggle(false);
     }
     menuBurgerItem1.current.classList.add("menuBurgerItem1");
     menuBurgerItem2.current.classList.add("menuBurgerItem2");
     menuBurgerItem3.current.classList.add("menuBurgerItem3");
+    nav100.current.classList.add("nav100");
     setMenuToggle(true);
   };
 
@@ -140,6 +144,7 @@ const ReactNavbar = ({
     menuBurgerItem1.current.classList.remove("menuBurgerItem1");
     menuBurgerItem2.current.classList.remove("menuBurgerItem2");
     menuBurgerItem3.current.classList.remove("menuBurgerItem3");
+    nav100.current.classList.remove("nav100");
     return setMenuToggle(false);
   };
 
@@ -154,80 +159,6 @@ const ReactNavbar = ({
       menuBurgerItem2.current.style.backgroundColor = burgerColor;
       menuBurgerItem3.current.style.backgroundColor = burgerColor;
     });
-
-    // logoRef.current.addEventListener("mouseover", () => {
-    //   logoRef.current.style.filter = `drop-shadow(0 0 ${logoHoverSize} ${logoHoverColor})`;
-    // });
-
-    // logoRef.current.addEventListener("mouseleave", () => {
-    //   logoRef.current.style.filter = `none`;
-    // });
-
-    // link1.current.addEventListener("mouseover", () => {
-    //   link1.current.style.color = link1ColorHover;
-    // });
-
-    // link1.current.addEventListener("mouseleave", () => {
-    //   link1.current.style.color = link1Color;
-    // });
-
-    // link2.current.addEventListener("mouseover", () => {
-    //   link2.current.style.color = link2ColorHover;
-    // });
-
-    // link2.current.addEventListener("mouseleave", () => {
-    //   link2.current.style.color = link2Color;
-    // });
-
-    // link3.current.addEventListener("mouseover", () => {
-    //   link3.current.style.color = link3ColorHover;
-    // });
-
-    // link3.current.addEventListener("mouseleave", () => {
-    //   link3.current.style.color = link3Color;
-    // });
-
-    // link4.current.addEventListener("mouseover", () => {
-    //   link4.current.style.color = link4ColorHover;
-    // });
-
-    // link4.current.addEventListener("mouseleave", () => {
-    //   link4.current.style.color = link4Color;
-    // });
-
-    const search = document.querySelector("#searchIcon");
-    const cart = document.querySelector("#cartIcon");
-    const profile = document.querySelector("#profileIcon");
-
-    if (searchIcon) {
-      search.addEventListener("mouseover", () => {
-        search.style.color = searchIconColorHover;
-      });
-
-      search.addEventListener("mouseleave", () => {
-        search.style.color = searchIconColor;
-      });
-    }
-
-    if (cartIcon) {
-      cart.addEventListener("mouseover", () => {
-        cart.style.color = cartIconColorHover;
-      });
-
-      cart.addEventListener("mouseleave", () => {
-        cart.style.color = cartIconColor;
-      });
-    }
-
-    if (profileIcon) {
-      profile.addEventListener("mouseover", () => {
-        profile.style.color = profileIconColorHover;
-      });
-
-      profile.addEventListener("mouseleave", () => {
-        profile.style.color = profileIconColor;
-      });
-    }
   });
 
   return (
@@ -250,42 +181,18 @@ const ReactNavbar = ({
         ></div>
       </div>
 
-      <div className="nav">
+      <div ref={nav100} className="nav">
         {/* --------------------NAV PART 1-------------------------------- */}
         <div
           className="nav1"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: "whitesmoke",
-            opacity: "1",
-            flexDirection: nav1FlexDirection,
-            alignItems: nav1alignItems,
+            opacity: "0.8",
+            background: "whitesmoke",
+            flexDirection: "column",
+            alignItems: "end",
             justifyContent: nav1justifyContent,
             transition: `all ${nav1Transition}s`,
-          }}
-        >
-          <a
-            href="https://rhis.nletschool.com/site/login"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button type="button" class="btn bg-blue">
-              ERP Login
-            </button>
-          </a>
-        </div>
-
-        {/* --------------------NAV PART 2-------------------------------- */}
-        <div
-          className="nav2"
-          style={{
-            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundColor: "whitesmoke",
-            opacity: "1",
-            flexDirection: nav2FlexDirection,
-            alignItems: nav2alignItems,
-            justifyContent: nav2justifyContent,
-            transition: `all ${nav2Transition}s`,
           }}
         >
           {/* -------------------------------------- Home link on large screen ------------------------------ */}
@@ -359,7 +266,7 @@ const ReactNavbar = ({
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
-                    Royal Hills International School
+                    RHIS
                   </Link>
                 </li>
                 <li>
@@ -533,19 +440,20 @@ const ReactNavbar = ({
               </ul>
             </div>
           </Link>
+          {/*  */}
         </div>
 
-        {/* ----------------------------------------- NAV PART 3 ------------------------------------------- */}
+        {/* --------------------NAV PART 2-------------------------------- */}
         <div
-          className="nav3"
+          className="nav2"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
             backgroundColor: "whitesmoke",
-            opacity: "1",
-            flexDirection: nav3FlexDirection,
-            alignItems: nav3alignItems,
-            justifyContent: nav3justifyContent,
-            transition: `all ${nav3Transition}s`,
+            opacity: "0.8",
+            flexDirection: nav2FlexDirection,
+            alignItems: nav2alignItems,
+            justifyContent: nav2justifyContent,
+            transition: `all ${nav2Transition}s`,
           }}
         >
           {/* -------------------------- career page  for large screen ----------------------- */}
@@ -670,14 +578,88 @@ const ReactNavbar = ({
               Contact Us
             </Link>
           </Link>
+
+          {/* ---------------------  media page on large screen --------------------- */}
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu media-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/media/news"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    News
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/media/events"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Events
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+        </div>
+
+        {/* ----------------------------------------- NAV PART 3 ------------------------------------------- */}
+        <div
+          className="nav3"
+          style={{
+            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
+            backgroundColor: "whitesmoke",
+            opacity: "0.8",
+            flexDirection: nav3FlexDirection,
+            alignItems: "start",
+            justifyContent: nav3justifyContent,
+            transition: `all ${nav3Transition}s`,
+          }}
+        >
+          <a
+            href="https://rhis.nletschool.com/site/login"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button type="button" class="btn bg-blue">
+              ERP Login
+            </button>
+          </a>
         </div>
       </div>
-
-
-
-
-
-
 
       {/* ----------------------  this navbar will be visible on the small screen i.e., for the mobile only view ------------------ */}
 
@@ -1102,6 +1084,60 @@ const ReactNavbar = ({
             >
               Contact Us
             </Link>
+          </Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu media-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/media/news"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    News
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/media/events"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Events
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </Link>
         </div>
       </div>

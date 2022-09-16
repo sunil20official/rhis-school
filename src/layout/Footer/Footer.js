@@ -17,7 +17,11 @@ const Footer = () => {
       <div className="footer-container">
         <div className="lerro-container">
           <img
-            style={{ width: "200px",borderRadius:"10px",marginBottom:"15px"}}
+            style={{
+              width: "200px",
+              borderRadius: "10px",
+              marginBottom: "15px",
+            }}
             src={lerroLogo}
             alt="lerro learning foundation logo"
           />
@@ -27,7 +31,11 @@ const Footer = () => {
               Lerro Learning Foundation , registered on 17th may 2021 , in laid
               a foundation by establishing Royal Hills Internation School and
               RHIS-Junior - A Play School in Sitamarhi with objective of
-              establishing education institutions with holistic educations
+              establishing education institutions with holistic educations. The
+              prime objective of the of Lerro Learning Foundation is to provide
+              facilities for quality education to boys and girls of all ages by
+              establishing schools that offer pre-primary to middle stage
+              education.
             </p>
           </div>
         </div>

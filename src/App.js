@@ -28,6 +28,9 @@ import WeCare from './pages/academics/we-care/WeCare';
 
 
 import NotFound from "./pages/NotFound";
+import Franchise from "./pages/franchise/Franchise";
+import Career from "./pages/career/Career";
+import AdmissionProcedure from "./pages/admissions/admissionprocedure/AdmissionProcedure";
 
 function App() {
   const scrollToTop = () => {
@@ -73,11 +76,16 @@ function App() {
               <Route path="/about/social-initiatives" element={<SocialInitiatives/>} />
 
               {/* ------------------- academics ------page ----------- routes ------------ */}
-
               <Route path="/academics/academic-program" element={<AcademicProgram />} />
               <Route path="/academics/cocurricular-activities" element={<CurricularActivity />} />
               <Route path="/academics/transport" element={<Transport />} />
-              <Route path="/academics/wecare" element={<WeCare />} />
+              <Route path="/academics/we-care" element={<WeCare />} />
+
+              {/*-------------------------- admission page routes--------- */}
+              <Route path="/admission/admission-procedure" element={<AdmissionProcedure/>} />
+
+              <Route path="/franchise" element={<Franchise/>} />
+              <Route path="/careers" element={<Career/>} />
 
               <Route path="*" element={<NotFound />} />
 
