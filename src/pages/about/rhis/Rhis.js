@@ -25,32 +25,94 @@ const Rhis = () => {
         </div>
         <div>
           <p className="rhis-text">
-            There is a future we believe in, fostered by strong souls and
-            inventive minds. We believe the way to usher in change, is to
-            empower young minds with irs stellar education, thus creating the
-            enablers of tomorrow.
+            Royal Hills International School Junior was established to provide a
+            platform of great opportunities to every child. We endeavor to
+            provide exceptional care to our children in a safe and secure
+            environment where children feel loved and develop to their fullest
+            potential. Here children are not just given wings, but the school
+            also ensures that they develop strong Royal Hills International
+            School Junior. Most importantly, children are loved and made to feel
+            cherished so that they approach life with a positive attitude.
           </p>
           <p className="rhis-text">
-            Laying its foundation stone in 2021, Royal Hills International
-            School was set 1 iS up with a vision: To create leaders of tomorrow
-            by imparting education. free from all prejudices with a focus on the
-            holistic development of students.
+            The curriculum at Royal Hills International School Junior is
+            conceived in such a way that everything the child learns at the
+            preschool prepares him for an easy transition into Grade 1 in any
+            formal schools. This smooth step towards a bigger future is
+            accomplished via series of activities that are woven into academic
+            programs.
           </p>
           <p className="rhis-text">
-            RHIS offers a curriculum from Grades I onward, mapped as per the
-            Central Board of Secondary Education, New Delhi. At RHIS, we
-            encourage our student to learn, play and create new opportunities
-            for themselves. Education is not the process of teaching by the
-            teacher, it is the process to encourage the learning process of the
-            student.
+            We are here for upgrading all round development of the children and
+            facilitating the youthful minds to cope with ever – growing
+            challenges of life.
           </p>
           <p className="rhis-text">
-            Our main emphasis is on providing quality education and excellence
-            in all the fields to inspire the students to be morally upright and
-            possess qualities of integrity, truthfulness and honesty. Not only
-            this, we develop patriotic, social and ethical values among students
-            for developing responsive citizenship to revive the past glory of
-            Indian culture.
+            <ul>
+              <li>
+                <strong>FRIENDLY</strong>: All our teachers are fully trained
+                and treat children in a friendly manner.
+              </li>
+              <li>
+                <strong>QUALIFIED</strong>: Backed by a well-qualified team of
+                preschool teachers, we ensure to provide quality education.
+              </li>
+              <li>
+                <strong>EXPERIENCE</strong>: With immense experience, our early
+                childhood educators educate and care for children with .
+              </li>
+              <li>
+                <strong>PLAY AREAS</strong>: We have play spaces that your
+                children will surely love! Our play areas keep children
+                expressive & active.
+              </li>
+              <li>
+                <strong>EDUCATION </strong>: Educational Trips conducted during
+                a session to bring out the best in small children.
+              </li>
+              <li>
+                <strong>LEARNING</strong>: Extra-curricular activities like art
+                & Craft, dance class, conducted every week.
+              </li>
+            </ul>
+          </p>
+          <h4>Our Vision</h4>
+          <p className="rhis-text">
+            To establish an ideal preschool chain that leads in offering a
+            powerful foundation to young children who will joyfully take-off on
+            the journey to discover the world of happy thinking, learning and to
+            create global citizens.
+          </p>
+          <h4>Our Mission</h4>
+          <p className="rhis-text">
+            <ul>
+              <li>
+                <strong>Transformation of the Education System</strong>: To
+                revolutionize the education system so that children are imparted
+                'Education for Life' which encompasses not only knowledge but
+                also enhances the talents and life skills necessary for the
+                holistic development of the child.
+              </li>
+              <li>
+                <strong>Transformation of Parenting</strong>: To guide and
+                enlighten parents about positive parenting so as to enable them
+                to make their parenting experience richer, more joyful and more
+                rewarding.
+              </li>
+              <li>
+                <strong>
+                  Transformation in the role and status of teachers
+                </strong>
+                : To elevate the status and widen the horizons of teachers by
+                equipping them with knowledge, expertise and skills required to
+                transform them into leaders in education
+              </li>
+              <li>
+                To initiate a vibrant journey that taps, unlocks and enhances
+                the potentials of the pre-scholars who transform into courageous
+                and motivated individuals.
+              </li>
+            </ul>
           </p>
         </div>
       </div>

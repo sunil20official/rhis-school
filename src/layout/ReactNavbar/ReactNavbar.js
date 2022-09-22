@@ -951,7 +951,7 @@ const ReactNavbar = ({
                 </li>
                 <li>
                   <Link
-                    to="about"
+                    to="/admission/fee-structure"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >

@@ -5,10 +5,6 @@ import prospectus from '../../../media/pdfs/rhis-propectus.pdf';
 
 const AdmissionProcedure = () => {
 
-  const onButtonClick = () => {
-     window.open("../../../media/pdfs/rhis-propectus.pdf","_blank");
-}
-
   return (
     <div className="admn-proc-cont">
       <h1

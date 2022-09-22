@@ -41,25 +41,25 @@ const Carousel = () => {
               <Link to="/academics">Academics</Link>
               <span className="vertical-bar">|</span>
             </li>
-            <li>
+            {/* <li>
               <Link to="/admission">Admissions</Link>
               <span className="vertical-bar">|</span>
-            </li>
+            </li> */}
             <li>
               <Link to="/kidslife">Kid's Life</Link>
               <span className="vertical-bar">|</span>
             </li>
-            <li>
+            {/* <li>
               <Link to="/parent-corner">Parent Corner</Link>
               <span className="vertical-bar">|</span>
-            </li>
+            </li> */}
             <li>
               <Link to="/management">Management Team</Link>
               <span className="vertical-bar">|</span>
             </li>
           </ul>
         </div>
-        <div className="scl-name-main-container">
+        {/* <div className="scl-name-main-container">
           <div className="scl-name-container">
             <h5 className="royalhills">
               <Typewriter
@@ -72,7 +72,7 @@ const Carousel = () => {
             </h5>
             <p className="inter-scl">Internatinal School</p>
           </div>
-        </div>
+        </div> */}
         <div className="scroll-container">
           <div className="scroll" onClick={onScroll}>
             <FontAwesomeIcon className="arrow-scroll-down" icon={faDownLong} />

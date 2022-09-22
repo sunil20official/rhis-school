@@ -4,8 +4,8 @@ import lerroLogo from "../../media/lerroLogo.png";
 
 import {
   AiOutlineInstagram,
-  AiOutlineLinkedin,
-  AiFillTwitterCircle,
+  // AiOutlineLinkedin,
+  // AiFillTwitterCircle,
   AiOutlineYoutube,
 } from "react-icons/ai";
 import { FiFacebook } from "react-icons/fi";
@@ -75,8 +75,11 @@ const Footer = () => {
           </ul>
         </div>
         <div className="social-links-container">
-          <h5 style={{ marginTop: "10px" }}> GET SOCIAL </h5>
-          <ul className="useful-links-list">
+          <h5 style={{ marginTop: "10px", marginLeft: "25px" }}>
+            {" "}
+            GET SOCIAL{" "}
+          </h5>
+          <ul className="useful-links-list d-flex p-4">
             <li>
               <Link to="/">
                 <AiOutlineInstagram style={{ fontSize: "30px" }} />
@@ -87,16 +90,16 @@ const Footer = () => {
                 <FiFacebook style={{ fontSize: "30px" }} />
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/">
                 <AiOutlineLinkedin style={{ fontSize: "30px" }} />
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/">
                 <AiFillTwitterCircle style={{ fontSize: "30px" }} />
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/">
                 <AiOutlineYoutube style={{ fontSize: "30px" }} />

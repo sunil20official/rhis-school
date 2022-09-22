@@ -3,8 +3,8 @@ import "./TopBar.css";
 
 import {
   AiOutlineInstagram,
-  AiOutlineLinkedin,
-  AiFillTwitterCircle,
+  // AiOutlineLinkedin,
+  // AiFillTwitterCircle,
   AiOutlineYoutube,
 } from "react-icons/ai";
 import { FiFacebook } from "react-icons/fi";
@@ -49,16 +49,16 @@ const TopBar = () => {
               <AiOutlineInstagram style={{ fontSize: "19px" }} />
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/">
               <AiOutlineLinkedin style={{ fontSize: "19px" }} />
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to="/">
               <AiFillTwitterCircle style={{ fontSize: "19px" }} />
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/">
               <AiOutlineYoutube style={{ fontSize: "19px" }} />

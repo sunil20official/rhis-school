@@ -1,0 +1,16 @@
+.gallery-cont{
+  margin: 3rem auto;
+}
+.gallery-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+.gallery-img-cont{
+  border: 1px solid black;
+  padding: 5px;
+}
+.gallery-img{
+  width: 100%;
+  height: max-content;
+}

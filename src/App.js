@@ -31,6 +31,8 @@ import NotFound from "./pages/NotFound";
 import Franchise from "./pages/franchise/Franchise";
 import Career from "./pages/career/Career";
 import AdmissionProcedure from "./pages/admissions/admissionprocedure/AdmissionProcedure";
+import FeeStructure from "./pages/admissions/feestructure/FeeStructure";
+import Gallery from "./pages/gallery/Gallery";
 
 function App() {
   const scrollToTop = () => {
@@ -83,9 +85,12 @@ function App() {
 
               {/*-------------------------- admission page routes--------- */}
               <Route path="/admission/admission-procedure" element={<AdmissionProcedure/>} />
+              <Route path="/admission/fee-structure" element={<FeeStructure/>} />
 
               <Route path="/franchise" element={<Franchise/>} />
               <Route path="/careers" element={<Career/>} />
+              <Route path="/contact-us" element={<GetInTouch/>} />
+              <Route path="/gallery" element={<Gallery/>} />
 
               <Route path="*" element={<NotFound />} />
 
