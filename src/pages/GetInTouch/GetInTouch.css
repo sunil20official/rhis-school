@@ -13,15 +13,28 @@
 	animation: getInTouchAnim 2s;
 }
 
-.address-container {
+.address-container1 {
 	width: 100%;
 	margin: 10px;
 	padding: 10px;
 	animation: addressAnim 2s;
 }
 
-.branch-container {
+.address-container2 {
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+	animation: addressAnim 2s;
+}
+
+.branch-main-container {
 	margin-top: 10rem;
+}
+
+.branch-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 
 @keyframes getInTouchAnim {
@@ -60,5 +73,15 @@
 	}
 	.map {
 		width: 95%;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.main-container {
+		max-width: 60%;
+	}
+
+	.map {
+		max-width: 80%;
 	}
 }

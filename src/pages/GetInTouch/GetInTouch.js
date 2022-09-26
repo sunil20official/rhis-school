@@ -27,7 +27,7 @@ const GetInTouch = () => {
 								paddingBottom: '1rem',
 								textAlign: 'center',
 								borderBottom: '3px solid #f89503',
-								width: '25%',
+								// width: '35%',
 							}}
 						>
 							Get In Touch
@@ -132,7 +132,7 @@ const GetInTouch = () => {
 				</div>
 			</div>
 
-			<div style={{ textAlign: 'left', margin: '2rem 0rem' }}>
+			<div style={{ textAlign: 'center', margin: '2rem 0rem' }}>
 				<iframe
 					title='location of royal hills internation school'
 					src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin'
@@ -145,7 +145,7 @@ const GetInTouch = () => {
 				></iframe>
 			</div>
 
-			<div className='branch-container'>
+			<div className='branch-main-container'>
 				<h1
 					style={{
 						margin: '2rem auto',
@@ -157,13 +157,13 @@ const GetInTouch = () => {
 				>
 					Our Branches
 				</h1>
-				<div className='main-container'>
-					<div className='address-container'>
+				<div className='branch-container'>
+					<div className='address-container1'>
 						<h1
 							style={{
 								margin: '2rem auto',
 								borderBottom: '3px solid #f89503',
-								width: '30%',
+								// width: '30%',
 								paddingBottom: '2rem',
 								textAlign: 'center',
 							}}
@@ -189,28 +189,27 @@ const GetInTouch = () => {
 								<p style={{ width: '70%', marginBottom: '0px' }}>9999999999</p>
 							</div>
 						</div>
-					</div>
-				</div>
 
-				<div style={{ textAlign: 'center', margin: '2rem 0rem' }}>
-					<iframe
-						title='location of royal hills internation school'
-						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin'
-						className='map'
-						height='400'
-						style={{ border: '0px' }}
-						allowFullScreen=''
-						loading='lazy'
-						referrerpolicy='no-referrer-when-downgrade'
-					></iframe>
-				</div>
-				<div className='main-container'>
-					<div className='address-container'>
+						<div style={{ textAlign: 'center', margin: '2rem 0rem' }}>
+							<iframe
+								title='location of royal hills internation school'
+								src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin'
+								className='map'
+								height='400'
+								style={{ border: '0px' }}
+								allowFullScreen=''
+								loading='lazy'
+								referrerpolicy='no-referrer-when-downgrade'
+							></iframe>
+						</div>
+					</div>
+
+					<div className='address-container2'>
 						<h1
 							style={{
 								margin: '2rem auto',
 								borderBottom: '3px solid #f89503',
-								width: '30%',
+								// width: '30%',
 								paddingBottom: '2rem',
 								textAlign: 'center',
 							}}
@@ -236,19 +235,20 @@ const GetInTouch = () => {
 								<p style={{ width: '70%', marginBottom: '0px' }}>9999999999</p>
 							</div>
 						</div>
+
+						<div style={{ textAlign: 'center', margin: '2rem 0rem' }}>
+							<iframe
+								title='location of royal hills internation school'
+								src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin'
+								className='map'
+								height='400'
+								style={{ border: '0px' }}
+								allowFullScreen=''
+								loading='lazy'
+								referrerpolicy='no-referrer-when-downgrade'
+							></iframe>
+						</div>
 					</div>
-				</div>
-				<div style={{ textAlign: 'center', margin: '2rem 0rem' }}>
-					<iframe
-						title='location of royal hills internation school'
-						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin'
-						className='map'
-						height='400'
-						style={{ border: '0px' }}
-						allowFullScreen=''
-						loading='lazy'
-						referrerpolicy='no-referrer-when-downgrade'
-					></iframe>
 				</div>
 			</div>
 		</>
