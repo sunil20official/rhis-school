@@ -1,60 +1,64 @@
 .main-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  align-content: center;
-  flex-wrap: wrap;
-  margin: 2rem 0rem;
-  color: black;
+	align-content: center;
+	flex-wrap: wrap;
+	margin: 2rem 0rem;
+	color: black;
 }
 
 .form-container {
-  width: 100%;
-  animation: getInTouchAnim 2s;
+	width: 100%;
+	animation: getInTouchAnim 2s;
 }
 
 .address-container {
-  width: 50%;
-  margin: 10px;
-  padding: 10px;
-  animation: addressAnim 2s;
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+	animation: addressAnim 2s;
+}
+
+.branch-container {
+	margin-top: 10rem;
 }
 
 @keyframes getInTouchAnim {
-  from {
-    transform: translateY(-500px);
-  }
+	from {
+		transform: translateY(-500px);
+	}
 }
 
 @keyframes addressAnim {
-  from {
-    transform: translateY(500px);
-  }
+	from {
+		transform: translateY(500px);
+	}
 }
 
 .address {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 15px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 15px;
 }
 
 .map {
-  width: 100%;
+	width: 100%;
 }
 
 /* screen smaller than 900px */
 @media screen and (max-width: 900px) {
-  .main-container {
-    flex-direction: row;
-  }
-  .form-container {
-    width: 100%;
-  }
-  .address-container {
-    width: 100%;
-  }
-  .map {
-    width: 95%;
-  }
+	.main-container {
+		flex-direction: row;
+	}
+	.form-container {
+		width: 100%;
+	}
+	.address-container {
+		width: 100%;
+	}
+	.map {
+		width: 95%;
+	}
 }
