@@ -1,8 +1,6 @@
 import React from 'react';
 import './Carousel.css';
 
-import Typewriter from 'typewriter-effect';
-
 import img2 from '../../media/carousel-img-1.png';
 import img3 from '../../media/carousel-img-2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

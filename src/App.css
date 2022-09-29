@@ -191,6 +191,10 @@
 	width: 50%;
 } */
 
+.modal-hide{
+	display: none !important;
+}
+
 /* this will apply above 992px */
 @media screen and (min-width: 992px) {
 	.nav-link {

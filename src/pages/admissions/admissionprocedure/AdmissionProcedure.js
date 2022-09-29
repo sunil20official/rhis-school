@@ -1,7 +1,6 @@
 import React from 'react';
 import './AdminProcedure.css';
 import { Link } from 'react-router-dom';
-import prospectus from '../../../media/pdfs/rhis-propectus.pdf';
 
 const AdmissionProcedure = () => {
 	return (

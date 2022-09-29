@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+// import $ from 'jquery';
 
 import Carousel from '../shared/carousel/Carousel';
 import Testimonials from '../shared/Testimonials';
@@ -9,6 +10,28 @@ import RhisYouTube from '../shared/RhisYouTube';
 import PopupModal from '../shared/PopupModal';
 
 const Home = () => {
+	const [open, setOpen] = React.useState(false);
+	const handleClose = () => {
+		setOpen(false);
+		sessionStorage.setItem('popup', 'false');
+	};
+	useEffect(() => {
+		// sessionStorage.setItem('popup', { sessionStorage.getItem('popup') ? 'true' : 'false' });
+		{
+			!sessionStorage.getItem('popup') && sessionStorage.setItem('popup', 'true');
+		}
+		// if()
+		{
+			sessionStorage.getItem('popup') === 'true' &&
+				setTimeout(() => setOpen(sessionStorage.getItem('popup')), 2000);
+		}
+		// setOpen(true);
+	}, []);
+
+	window.onunload = function () {
+		sessionStorage.removeItem('popup');
+	};
+
 	return (
 		<>
 			<Carousel />
@@ -46,7 +69,7 @@ const Home = () => {
 
 				<Testimonials />
 				<RhisYouTube />
-				<PopupModal />
+				<PopupModal open={open} handleClose={handleClose} setOpen={setOpen} />
 				<CountUp />
 				<Staff />
 			</div>

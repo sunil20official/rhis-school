@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import GetInTouch from "./pages/GetInTouch/GetInTouch";
 import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
-import Admission from "./pages/admissions/Admission";
+// import Admission from "./pages/admissions/Admission";
 
 //     about pages
 import About from "./pages/About";
@@ -34,7 +34,9 @@ import AdmissionProcedure from "./pages/admissions/admissionprocedure/AdmissionP
 import FeeStructure from "./pages/admissions/feestructure/FeeStructure";
 import Gallery from "./pages/gallery/Gallery";
 
+
 function App() {
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

@@ -32,6 +32,7 @@ const RhisYouTube = () => {
 							className='text-white'
 							href='https://www.youtube.com/channel/UCDWrh2uxMcfctahqfEYGrRg'
 							target='_blank'
+							rel='noreferrer'
 						>
 							Visit Our Channel
 						</a>
