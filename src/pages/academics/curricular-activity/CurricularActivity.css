@@ -1,50 +1,56 @@
-.co-curr-act-cont{
-  margin: 4rem 0rem;
+.co-curr-act-cont {
+	margin: 4rem 0rem;
 }
 
-.grid-cont{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  text-align: center;
-  gap: 3rem;
-  align-items: center;
-  align-content: center;
-  margin: 4rem auto;
+.grid-cont {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	gap: 3rem;
+	align-items: center;
+	align-content: center;
+	margin: 4rem auto;
 }
 
-.grid-cont > div{
-  background-color: #4c54ed;
-  color: white;
-  padding: 20px 40px;
-  border-radius: 20px;
+.grid-cont > div {
+	background-color: #f0934d;
+	color: white;
+	padding: 20px 40px;
+	border-radius: 20px;
 }
 
-.grid-cont > div > p{
-  margin-bottom: 0px;
+.grid-cont > div:nth-child(odd) {
+	background-color: #278283;
 }
 
-@media screen and (max-width:1100px) {
-  .grid-cont{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    text-align: center;
-    gap: 3rem;
-    align-items: center;
-    align-content: center;
-    margin: 4rem auto;
-  }
+.grid-cont > div > p {
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+	.grid-cont {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		text-align: center;
+		gap: 3rem;
+		align-items: center;
+		align-content: center;
+		margin: 4rem auto;
+	}
 }
 
 /*   -----------  for mobile screen ----------- */
 
-@media screen and (max-width:576px){
-  .grid-cont{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    text-align: center;
-    gap: 3rem;
-    align-items: center;
-    align-content: center;
-    margin: 4rem auto;
-  }
+@media screen and (max-width: 576px) {
+	.grid-cont {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		text-align: center;
+		gap: 3rem;
+		align-items: center;
+		align-content: center;
+		margin: 4rem auto;
+	}
 }
+
+/* #4c54ed */

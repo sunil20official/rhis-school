@@ -4,7 +4,7 @@ import rhisImg from "../../../media/rhis-image.png";
 
 const Rhis = () => {
   return (
-    <div className="main-container">
+    <div className="main-container-rhis">
       <div className="rhis-container">
         <div className="heading-cont">
           <h1 style={{ textAlign: "center", minWidth: "400px" }}>

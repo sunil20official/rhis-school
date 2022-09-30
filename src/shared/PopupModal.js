@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
@@ -9,20 +9,21 @@ const style = {
 	top: '50%',
 	left: '50%',
 	transform: 'translate(-50%, -50%)',
-	width: 400,
+	width: 550,
 	bgcolor: 'background.paper',
-	border: '2px solid #000',
+	border: '1px solid white',
 	boxShadow: 24,
-	p: 4,
+	p: 0,
+	mt: 1.5,
 };
 
 export default function BasicModal({ open, handleClose, setOpen }) {
+	// eslint-disable-next-line
 	const handleOpen = () => setOpen(true);
 	// const handleClose = () => setOpen(false);
 
 	return (
 		<div>
-			<Button onClick={handleOpen}>Open modal</Button>
 			<Modal
 				open={open}
 				onClose={handleClose}
@@ -35,22 +36,15 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 							onClick={() => handleClose()}
 							style={{
 								position: 'absolute',
-								right: '23px',
-								top: '25px',
+								right: '2px',
+								top: '2px',
 								backgroundColor: 'white',
 							}}
 							type='button'
-							class='btn-close'
+							class='btn-close fs-6'
 						></button>
 					</Typography>
 					<Typography id='modal-modal-description' sx={{ mt: 2 }}>
-						{/* <div
-							class='modal fade'
-							id='exampleModal'
-							tabindex='-1'
-							aria-labelledby='exampleModalLabel'
-							aria-hidden='true'
-						> */}
 						<div class='modal-dialog '>
 							<div class='modal-content'>
 								<div class='modal-header '>
@@ -63,6 +57,22 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 								</div>
 								<div class='modal-body'>
 									<div class='row'>
+										<div className='col-md-12 mb-3'>
+											<select class='form-control' id='EClass'>
+												<option> - Select Academic Session - </option>
+												<option> 2022-2023 </option>
+												<option> 2023-2024 </option>
+											</select>
+										</div>
+
+										<div className='col-md-12 mb-3'>
+											<input
+												type='text'
+												class='form-control'
+												placeholder='Parent name'
+												aria-label='Parent name'
+											/>
+										</div>
 										<div class='col'>
 											<input
 												type='text'
@@ -81,7 +91,7 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 										</div>
 										<div class='col-md-12 mt-3'>
 											<input
-												type='number'
+												type=''
 												class='form-control'
 												placeholder='Phone Number'
 												aria-label='Phone Number'
@@ -89,7 +99,7 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 										</div>
 										<div className='col-md-12 mt-3'>
 											<select class='form-control' id='EClass'>
-												<option> Select Class </option>
+												<option> Select Grade </option>
 												<option> Nursery </option>
 												<option> Class I </option>
 												<option> Class II </option>
@@ -106,7 +116,7 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 												id='btnSuscribe'
 												class='btn btn-primary submit-pop'
 											>
-												Register
+												ENQUIRE NOW
 											</button>
 										</div>
 									</div>
