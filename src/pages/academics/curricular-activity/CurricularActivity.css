@@ -13,14 +13,10 @@
 }
 
 .grid-cont > div {
-	background-color: #f0934d;
+	background-color: #278283;
 	color: white;
 	padding: 20px 40px;
 	border-radius: 20px;
-}
-
-.grid-cont > div:nth-child(odd) {
-	background-color: #278283;
 }
 
 .grid-cont > div > p {

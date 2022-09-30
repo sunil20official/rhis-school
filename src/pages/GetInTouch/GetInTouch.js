@@ -18,8 +18,8 @@ const GetInTouch = () => {
 
 	return (
 		<>
-			<div className='main-container'>
-				<div className='form-container'>
+			<div className='get-in-touch-container'>
+				<div className='get-in-touch-form-container'>
 					<div style={{ margin: '5rem 0rem' }}>
 						<h1
 							style={{

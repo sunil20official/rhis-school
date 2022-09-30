@@ -1,4 +1,4 @@
-.main-container {
+.get-in-touch-container {
 	display: flex;
 	justify-content: center;
 
@@ -8,7 +8,7 @@
 	color: black;
 }
 
-.form-container {
+.get-in-touch-form-container {
 	width: 100%;
 	animation: getInTouchAnim 2s;
 }
@@ -62,11 +62,11 @@
 
 /* screen smaller than 900px */
 @media screen and (max-width: 900px) {
-	.main-container {
+	.get-in-touch-container {
 		flex-direction: row;
 	}
-	.form-container {
-		width: 100%;
+	.get-in-touch-form-container {
+		width: 60%;
 	}
 	.address-container {
 		width: 100%;
@@ -77,11 +77,22 @@
 }
 
 @media screen and (min-width: 900px) {
-	.main-container {
+	.get-in-touch-form-container {
 		max-width: 60%;
 	}
 
 	.map {
 		max-width: 80%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.branch-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.map {
+		width: 80%;
 	}
 }
