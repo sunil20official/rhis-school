@@ -48,7 +48,7 @@ body {
 	height: 100vh;
 	background-image: url(../../media/ss1.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100vh;
 	background-attachment: fixed;
 	/* background-color: red; */
 	animation: backimageset 1s;
