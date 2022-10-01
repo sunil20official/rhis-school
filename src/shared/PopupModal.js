@@ -9,7 +9,7 @@ const style = {
 	top: '50%',
 	left: '50%',
 	transform: 'translate(-50%, -50%)',
-	width: 550,
+	width: 450,
 	bgcolor: 'background.paper',
 	border: '1px solid white',
 	boxShadow: 24,
@@ -45,16 +45,8 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 						></button>
 					</Typography>
 					<Typography id='modal-modal-description' sx={{ mt: 2 }}>
-						<div class='modal-dialog '>
+						<div class='modal-dialog p-2'>
 							<div class='modal-content'>
-								<div class='modal-header '>
-									<img
-										src='https://www.kamalpublicschool.com/assets/images/AD-popup.jpg'
-										className='w-100'
-										style={{ position: 'relative' }}
-										alt=''
-									/>
-								</div>
 								<div class='modal-body'>
 									<div class='row'>
 										<div className='col-md-12 mb-3'>
