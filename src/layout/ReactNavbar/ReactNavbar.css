@@ -44,11 +44,11 @@ body {
 }
 
 .nav100 {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 	background-image: url(../../media/ss1.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100vh;
+	background-size: cover;
 	background-attachment: fixed;
 	/* background-color: red; */
 	animation: backimageset 1s;
@@ -94,16 +94,16 @@ body {
 	position: relative;
 }
 .nav3 > a:hover {
-	color: #0a58ca !important;
+	color: #0a58ca;
 }
 
 .nav2 > a::after {
 	position: absolute;
 	content: '';
-	width: 100%;
+	width: 30%;
 	height: 3px;
 	top: 100%;
-	left: 0;
+	left: 15px;
 	background: #ff7000;
 	transition: transform 0.5s;
 	transform: scaleX(0);
@@ -113,10 +113,10 @@ body {
 .nav1 > a::after {
 	position: absolute;
 	content: '';
-	width: 100%;
+	width: 50%;
 	height: 3px;
 	top: 100%;
-	left: 0;
+	left: 15px;
 	background: #ff7000;
 	transition: transform 0.5s;
 	transform: scaleX(0);
