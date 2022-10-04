@@ -145,8 +145,8 @@
 .top-right-menu {
 	text-align: right;
 	position: fixed;
-	top: 30px;
-	right: 100px;
+	top: 40px;
+	right: 200px;
 	z-index: 10000000;
 }
 
@@ -156,21 +156,29 @@
 	margin: 0 4px;
 	cursor: pointer;
 	background-color: #337c87;
+	color: whitesmoke;
 	border-radius: 20px;
 
 	padding: 5px 15px;
 	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+	transition: all ease-in-out 0.3s;
+}
+
+.top-right-menu > ul > li:hover{
+	background-color: whitesmoke;
+	color: #ea7d2a;
 }
 
 .top-right-menu > ul > li > a {
-	color: white;
+	color: inherit;
 	font-size: 14px;
 	font-weight: 500;
 	text-align: center;
+	transition: all ease-in-out 0.3s;
 }
 
 .top-right-menu > ul > li > a:hover {
-	color: #91e1c7;
+	color: #ea7d2a;
 	font-weight: 900;
 }
 

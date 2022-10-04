@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 const style = {
+	outline:'none',
 	position: 'absolute',
 	top: '50%',
 	left: '50%',
@@ -36,8 +37,8 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 							onClick={() => handleClose()}
 							style={{
 								position: 'absolute',
-								right: '2px',
-								top: '2px',
+								right: '10px',
+								top: '15px',
 								backgroundColor: 'white',
 							}}
 							type='button'
@@ -45,7 +46,7 @@ export default function BasicModal({ open, handleClose, setOpen }) {
 						></button>
 					</Typography>
 					<Typography id='modal-modal-description' sx={{ mt: 2 }}>
-						<div class='modal-dialog p-2'>
+						<div class='modal-dialog p-2' style={{marginTop:"35px"}}>
 							<div class='modal-content'>
 								<div class='modal-body'>
 									<div class='row'>
