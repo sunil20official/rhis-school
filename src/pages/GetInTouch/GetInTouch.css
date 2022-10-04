@@ -65,9 +65,9 @@
 	.get-in-touch-container {
 		flex-direction: row;
 	}
-	.get-in-touch-form-container {
+	/* .get-in-touch-form-container {
 		width: 60%;
-	}
+	} */
 	.address-container {
 		width: 100%;
 	}

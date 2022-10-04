@@ -1,6 +1,8 @@
 import React, { useState, useRef, Fragment, useEffect } from 'react';
 import './ReactNavbar.css';
 import { Link } from 'react-router-dom';
+import navImage from '../../media/ss1.png';
+
 const ReactNavbar = ({
 	burgerColor = 'black',
 	burgerColorHover = burgerColor,
@@ -162,956 +164,988 @@ const ReactNavbar = ({
 	});
 
 	return (
-		<Fragment>
-			<div className='menuBurger' ref={menuBurger} onClick={menuToggleHandler}>
-				<div
-					ref={menuBurgerItem1}
-					className='menuBurgerItem'
-					style={{ backgroundColor: burgerColor }}
-				></div>
-				<div
-					ref={menuBurgerItem2}
-					className='menuBurgerItem'
-					style={{ backgroundColor: burgerColor }}
-				></div>
-				<div
-					ref={menuBurgerItem3}
-					className='menuBurgerItem'
-					style={{ backgroundColor: burgerColor }}
-				></div>
-			</div>
+    <Fragment>
+      <div className="menuBurger" ref={menuBurger} onClick={menuToggleHandler}>
+        <div
+          ref={menuBurgerItem1}
+          className="menuBurgerItem"
+          style={{ backgroundColor: burgerColor }}
+        ></div>
+        <div
+          ref={menuBurgerItem2}
+          className="menuBurgerItem"
+          style={{ backgroundColor: burgerColor }}
+        ></div>
+        <div
+          ref={menuBurgerItem3}
+          className="menuBurgerItem"
+          style={{ backgroundColor: burgerColor }}
+        ></div>
+      </div>
 
-			<div ref={nav100} className='nav'>
-				{/* --------------------NAV PART 1-------------------------------- */}
-				<div
-					className='nav1'
-					style={{
-						transform: menuToggle ? 'translateY(0)' : 'translateY(-100vmax)',
-						opacity: '0.8',
-						background: 'whitesmoke',
-						flexDirection: 'column',
-						alignItems: 'left',
-						justifyContent: nav1justifyContent,
-						transition: `all ${nav1Transition}s`,
-					}}
-				>
-					{/* -------------------------------------- Home link on large screen ------------------------------ */}
+      <div ref={nav100} className="nav">
+        {/* --------------------NAV PART 1-------------------------------- */}
+        <div
+          className="nav1"
+          style={{
+            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
+            // opacity: '0.8',
+            // background: 'whitesmoke',
+            flexDirection: "column",
+            alignItems: "left",
+            justifyContent: nav1justifyContent,
+            transition: `all ${nav1Transition}s`,
+          }}
+        >
+          {/* -------------------------------------- Home link on large screen ------------------------------ */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 180px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						onClick={closeBarOnClick}
-					>
-						<Link
-							to='/'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-							margin=''
-						>
-							Home
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 180px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+              margin=""
+            >
+              Home
+            </Link>
+          </Link>
 
-					{/* -------------------------- About Us dropdown links for large screen ----------------------- */}
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 180px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								About Us
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu about-transform'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link to='/about/rhis' class='dropdown-item' onClick={closeBarOnClick}>
-										RHIS
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/about/roots'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Roots – A Play School
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/about/directordesk'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Director’s Desk
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/about/principalmsg'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Principal Message
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/about/social-initiatives'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Social Initiatives
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
+          {/* -------------------------- About Us dropdown links for large screen ----------------------- */}
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 180px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu about-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/about/rhis"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    RHIS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/roots"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Roots – A Play School
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/directordesk"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Director’s Desk
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/principalmsg"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Principal Message
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/about/social-initiatives"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Social Initiatives
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
 
-					{/* -------------------------- academics dropdown links for large screen ----------------------- */}
+          {/* -------------------------- academics dropdown links for large screen ----------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 180px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								Academics
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu academics-transform'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link
-										to='/academics/academic-program'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Academic Program
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/academics/cocurricular-activities'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Co-curricular Program
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/academics/transport'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Transport
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/academics/we-care'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										We Care
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 180px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Academics
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu academics-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/academics/academic-program"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Academic Program
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/academics/cocurricular-activities"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Co-curricular Program
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/academics/transport"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Transport
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/academics/we-care"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    We Care
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
 
-					{/* -------------------------- admission dropdown links for large screen ----------------------- */}
+          {/* -------------------------- admission dropdown links for large screen ----------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 180px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								Admission
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu admission-transform'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link
-										to='/admission/admission-procedure'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Admission Procedure
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/admission/fee-structure'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Fee Structure
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
-					{/*  */}
-				</div>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 180px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admission
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu admission-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/admission/admission-procedure"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Admission Procedure
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/admission/fee-structure"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Fee Structure
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+          {/*  */}
+        </div>
 
-				{/* --------------------NAV PART 2-------------------------------- */}
-				<div
-					className='nav2'
-					style={{
-						transform: menuToggle ? 'translateY(0)' : 'translateY(-100vmax)',
-						backgroundColor: 'whitesmoke',
-						opacity: '0.8',
-						flexDirection: nav2FlexDirection,
-						alignItems: nav3alignItems,
-						justifyContent: nav2justifyContent,
-						transition: `all ${nav2Transition}s`,
-					}}
-				>
-					{/* -------------------------- career page  for large screen ----------------------- */}
+        {/* --------------------NAV PART 2-------------------------------- */}
+        <div
+          className="nav2"
+          style={{
+            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
+            // backgroundColor: 'whitesmoke',
+            // opacity: '0.8',
+            flexDirection: nav2FlexDirection,
+            alignItems: nav3alignItems,
+            justifyContent: nav2justifyContent,
+            transition: `all ${nav2Transition}s`,
+          }}
+        >
+          {/* -------------------------- career page  for large screen ----------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 100px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/careers'
-						onClick={closeBarOnClick}
-					>
-						<Link
-							to='/careers'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Careers
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 100px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/careers"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/careers"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Careers
+            </Link>
+          </Link>
 
-					{/* ------------------------------------- Gallery Page on large screen --------------------------------- */}
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 100px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/gallery'
-						onClick={closeBarOnClick}
-					>
-						<Link
-							to='/gallery'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Gallery
-						</Link>
-					</Link>
+          {/* ------------------------------------- Gallery Page on large screen --------------------------------- */}
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 100px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/gallery"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/gallery"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Gallery
+            </Link>
+          </Link>
 
-					{/* -------------------------------------- Franchise page on large school ------------------------------ */}
+          {/* -------------------------------------- Franchise page on large school ------------------------------ */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 100px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/franchise'
-						onClick={closeBarOnClick}
-					>
-						<Link
-							to='/franchise'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Franchise
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 100px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/franchise"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/franchise"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Franchise
+            </Link>
+          </Link>
 
-					{/* -------------------------------------- Contact Us page on large school ------------------------------ */}
+          {/* -------------------------------------- Contact Us page on large school ------------------------------ */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 100px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/contact-us'
-						onClick={closeBarOnClick}
-					>
-						<Link
-							to='/contact-us'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Contact Us
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 100px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/contact-us"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/contact-us"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Contact Us
+            </Link>
+          </Link>
 
-					{/* ---------------------  media page on large screen --------------------- */}
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: '10px 0 10px 100px',
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								Media
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu media-transform'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link to='/media/news' class='dropdown-item' onClick={closeBarOnClick}>
-										News
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/media/events'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Events
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
-				</div>
+          {/* ---------------------  media page on large screen --------------------- */}
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 100px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu media-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/media/news"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    News
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/media/events"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Events
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+        </div>
 
-				{/* ----------------------------------------- NAV PART 3 ------------------------------------------- */}
-				<div
-					className='nav3'
-					style={{
-						transform: menuToggle ? 'translateY(0)' : 'translateY(-100vmax)',
-						backgroundColor: 'whitesmoke',
-						opacity: '0.8',
-						flexDirection: nav3FlexDirection,
-						alignItems: 'right',
-						justifyContent: nav3justifyContent,
-						transition: `all ${nav3Transition}s`,
-					}}
-				>
-					<a
-						href='https://rhis.nletschool.com/site/login'
-						target='_blank'
-						rel='noreferrer'
-					>
-						<button type='button' class='btn bg-blue'>
-							ERP Login
-						</button>
-					</a>
-				</div>
-			</div>
+        {/* ----------------------------------------- NAV PART 3 ------------------------------------------- */}
+        <div
+          className="nav3"
+          style={{
+            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
+            // backgroundColor: 'whitesmoke',
+            // opacity: '0.8',
+            flexDirection: nav3FlexDirection,
+            alignItems: "right",
+            justifyContent: nav3justifyContent,
+            transition: `all ${nav3Transition}s`,
+          }}
+        >
+          <a
+            href="https://rhis.nletschool.com/site/login"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button type="button" class="btn bg-blue">
+              ERP Login
+            </button>
+          </a>
+        </div>
+      </div>
 
-			{/* ----------------------  this navbar will be visible on the small screen i.e., for the mobile only view ------------------ */}
+      {/* ----------------------  this navbar will be visible on the small screen i.e., for the mobile only view ------------------ */}
 
-			<div className='nav-mobile'>
-				{/* --------------------NAV PART 2 for mobile screen  -------------------------------- */}
-				<div
-					className='nav2'
-					style={{
-						transform: menuToggle ? 'translateY(0)' : 'translateY(-100vmax)',
-						backgroundColor: 'whitesmoke',
-						flexDirection: nav2FlexDirection,
-						alignItems: nav2alignItems,
-						justifyContent: nav2justifyContent,
-						transition: `all ${nav2Transition}s`,
-					}}
-				>
-					{/* ----------------------------------- ERP login link ---------------------------------- */}
+      <div className="nav-mobile">
+        {/* --------------------NAV PART 2 for mobile screen  -------------------------------- */}
+        <div
+          className="nav2"
+          style={{
+            transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
+            backgroundImage: navImage,
+            flexDirection: nav2FlexDirection,
+            alignItems: nav2alignItems,
+            justifyContent: nav2justifyContent,
+            transition: `all ${nav2Transition}s`,
+          }}
+        >
+          {/* ----------------------------------- ERP login link ---------------------------------- */}
 
-					<a
-						href='https://rhis.nletschool.com/site/login'
-						target='_blank'
-						rel='noreferrer'
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						onClick={closeBarOnClick}
-					>
-						<a
-							href='https://rhis.nletschool.com/site/login'
-							target='_blank'
-							rel='noreferrer'
-							className='btn bg-blue custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							ERP Login
-						</a>
-					</a>
+          <a
+            href="https://rhis.nletschool.com/site/login"
+            target="_blank"
+            rel="noreferrer"
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            onClick={closeBarOnClick}
+          >
+            <a
+              href="https://rhis.nletschool.com/site/login"
+              target="_blank"
+              rel="noreferrer"
+              className="btn bg-blue custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+              style={{border:"1px solid whitesmoke !important"}}
+            >
+              ERP Login
+            </a>
+          </a>
 
-					{/* ----------------------------------- Home link ---------------------------------- */}
+          {/* ----------------------------------- Home link ---------------------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<Link
-							to='/'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Home
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Home
+            </Link>
+          </Link>
 
-					{/*------------------------------------- about us dropdown links --------------------------------  */}
+          {/*------------------------------------- about us dropdown links --------------------------------  */}
 
-					<Link
-						className='linksReactNavbar'
-						ref={link1}
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								About Us
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu trans-about'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link to='/about/rhis' class='dropdown-item' onClick={closeBarOnClick}>
-										Royal Hills International School
-									</Link>
-								</li>
-								<li>
-									<Link to='about/roots' class='dropdown-item' onClick={closeBarOnClick}>
-										Roots – A Play School
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='about/directordesk'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Director’s Desk
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='about/principalmsg'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Principal Message
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='about/social-initiatives'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Social Initiatives
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            ref={link1}
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu trans-about"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/about/rhis"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Royal Hills International School
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="about/roots"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Roots – A Play School
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="about/directordesk"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Director’s Desk
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="about/principalmsg"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Principal Message
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="about/social-initiatives"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Social Initiatives
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
 
-					{/* ----------------------------------- academics links dropdown ---------------------------------- */}
+          {/* ----------------------------------- academics links dropdown ---------------------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						ref={link1}
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								Academics
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu trans-academics'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link
-										to='/academics/academic-program'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Academic Program
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/academics/cocurricular-activities'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Co-curricular Program
-									</Link>
-								</li>
-								<li>
-									<Link to='about' class='dropdown-item' onClick={closeBarOnClick}>
-										Transport
-									</Link>
-								</li>
-								<li>
-									<Link to='about' class='dropdown-item' onClick={closeBarOnClick}>
-										We Care
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            ref={link1}
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Academics
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu trans-academics"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/academics/academic-program"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Academic Program
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/academics/cocurricular-activities"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Co-curricular Program
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Transport
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    We Care
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
 
-					{/* ----------------------------------- addmission links dropdown ---------------------------------- */}
+          {/* ----------------------------------- addmission links dropdown ---------------------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						ref={link1}
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								Admission
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu trans-admission'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link to='/about' class='dropdown-item' onClick={closeBarOnClick}>
-										Admission Procedure
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/admission/fee-structure'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Fee Structure
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            ref={link1}
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admission
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu trans-admission"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/about"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Admission Procedure
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/admission/fee-structure"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Fee Structure
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
 
-					{/* ----------------------------------- Career link ---------------------------------- */}
+          {/* ----------------------------------- Career link ---------------------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/careers'
-						// onClick={closeBarOnClick}
-					>
-						<Link
-							to='/careers'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Careers
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/careers"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/careers"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Careers
+            </Link>
+          </Link>
 
-					{/* ----------------------------------- Gallery link ---------------------------------- */}
+          {/* ----------------------------------- Gallery link ---------------------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/gallery'
-						// onClick={closeBarOnClick}
-					>
-						<Link
-							to='/gallery'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Gallery
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/gallery"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/gallery"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Gallery
+            </Link>
+          </Link>
 
-					{/* ----------------------------------- Franchise link ---------------------------------- */}
+          {/* ----------------------------------- Franchise link ---------------------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/franchise'
-						// onClick={closeBarOnClick}
-					>
-						<Link
-							to='/franchise'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Franchise
-						</Link>
-					</Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/franchise"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/franchise"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Franchise
+            </Link>
+          </Link>
 
-					{/* ----------------------------------- Contact Us link ---------------------------------- */}
+          {/* ----------------------------------- Contact Us link ---------------------------------- */}
 
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/contact-us'
-						// onClick={closeBarOnClick}
-					>
-						<Link
-							to='/contact-us'
-							className='btn btn-secondary custom-dropdown font-11'
-							type='button'
-							onClick={closeBarOnClick}
-						>
-							Contact Us
-						</Link>
-					</Link>
-					<Link
-						className='linksReactNavbar'
-						style={{
-							fontSize: link1Size,
-							fontFamily: link1Family,
-							color: link1Color,
-							backgroundColor: link1BackgroundColor,
-							textDecoration: link1Decoration,
-							margin: link1Margin,
-							padding: link1Padding,
-							border: link1Border,
-							transition: `all ${link1Transition}s`,
-							animation: menuToggle
-								? `LinkIn ${link1AnimationTime}s`
-								: `LinkOut ${link1AnimationTime}s`,
-						}}
-						to='/'
-						// onClick={closeBarOnClick}
-					>
-						<div class='dropdown'>
-							<button
-								className='btn btn-secondary dropdown-toggle custom-dropdown font-11'
-								type='button'
-								id='dropdownMenuButton1'
-								data-bs-toggle='dropdown'
-								aria-expanded='false'
-							>
-								Media
-							</button>
-							<ul
-								class='dropdown-menu custom-dropdown-menu media-transform'
-								aria-labelledby='dropdownMenuButton1'
-							>
-								<li>
-									<Link to='/media/news' class='dropdown-item' onClick={closeBarOnClick}>
-										News
-									</Link>
-								</li>
-								<li>
-									<Link
-										to='/media/events'
-										class='dropdown-item'
-										onClick={closeBarOnClick}
-									>
-										Events
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</Link>
-				</div>
-			</div>
-		</Fragment>
-	);
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/contact-us"
+            // onClick={closeBarOnClick}
+          >
+            <Link
+              to="/contact-us"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+            >
+              Contact Us
+            </Link>
+          </Link>
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: link1Margin,
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/"
+            // onClick={closeBarOnClick}
+          >
+            <div class="dropdown">
+              <button
+                className="btn btn-secondary dropdown-toggle custom-dropdown font-11"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Media
+              </button>
+              <ul
+                class="dropdown-menu custom-dropdown-menu media-transform"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <Link
+                    to="/media/news"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    News
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/media/events"
+                    class="dropdown-item"
+                    onClick={closeBarOnClick}
+                  >
+                    Events
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </Fragment>
+  );
 };
 
 export default ReactNavbar;

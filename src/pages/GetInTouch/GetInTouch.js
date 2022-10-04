@@ -20,7 +20,7 @@ const GetInTouch = () => {
 		<>
 			<div className='get-in-touch-container'>
 				<div className='get-in-touch-form-container'>
-					<div style={{ margin: '5rem 0rem' }}>
+					<div style={{ margin: '6rem 0rem' }}>
 						<h1
 							style={{
 								margin: '2rem auto',

@@ -7,11 +7,11 @@ const Rhis = () => {
     <div className="main-container-rhis">
       <div className="rhis-container">
         <div className="heading-cont">
-          <h1 style={{ textAlign: "center", minWidth: "400px" }}>
+          <h1 style={{ textAlign: "center"}}>
             Royal Hills
           </h1>
           <p
-            style={{ textAlign: "center", minWidth: "400px", fontSize: "20px" }}
+            style={{ textAlign: "center",fontSize: "20px"}}
           >
             Internatinal School
           </p>

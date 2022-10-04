@@ -195,6 +195,19 @@
 	display: none !important;
 }
 
+.form-control{
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 0px;
+}
+
+.form-control:focus,.form-control:focus-visible{
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 0px;
+	box-shadow: none;
+}
+
 /* this will apply above 992px */
 @media screen and (min-width: 992px) {
 	.nav-link {
