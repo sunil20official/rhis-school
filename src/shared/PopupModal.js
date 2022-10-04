@@ -25,6 +25,8 @@ export default function BasicModal({ open, handleClose, setOpen }) {
   const handleOpen = () => setOpen(true);
   // const handleClose = () => setOpen(false);
 
+  const [addYear, setAddYear] = React.useState("");
+
   return (
     <div>
       <Modal
@@ -63,13 +65,45 @@ export default function BasicModal({ open, handleClose, setOpen }) {
                 <div class="modal-body">
                   <div class="row">
                     <div className="col-md-12 mb-3">
-                      <select class="form-control" id="EClass">
+                      <select
+                        class="form-control"
+                        id="EClass"
+                        value={addYear}
+                        onChange={(e) => {
+                          setAddYear(e.target.value);
+                          console.log(
+                            "new date ************---------",
+                            addYear
+                          );
+                        }}
+                      >
                         <option> - Select Academic Session - </option>
-                        <option> 2022-2023 </option>
-                        <option> 2023-2024 </option>
+                        <option
+                          value={JSON.stringify(
+                            new Date().getFullYear() +
+                              "-" +
+                              parseInt(new Date().getFullYear() + 1)
+                          )}
+                        >
+                          {" "}
+                          {new Date().getFullYear() +
+                            "-" +
+                            parseInt(new Date().getFullYear() + 1)}
+                        </option>
+                        <option
+                          value={JSON.stringify(
+                            parseInt(new Date().getFullYear() + 1) +
+                              "-" +
+                              parseInt(new Date().getFullYear() + 2)
+                          )}
+                        >
+                          {" "}
+                          {parseInt(new Date().getFullYear() + 1) +
+                            "-" +
+                            parseInt(new Date().getFullYear() + 2)}
+                        </option>
                       </select>
                     </div>
-
                     <div className="col-md-12 mb-3">
                       <input
                         type="text"
@@ -114,7 +148,6 @@ export default function BasicModal({ open, handleClose, setOpen }) {
                         <option> Class VI </option>
                       </select>
                     </div>
-
                     <div class="text-center mt-3">
                       <button
                         style={{ backgroundColor: "#337c87" }}
