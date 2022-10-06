@@ -8,7 +8,42 @@
   color: black;
 }
 
-.get-in-touch-form-container {
+.get-in-touch-container::before,
+.get-in-touch-container::after{
+	opacity: 0.4;
+	z-index: -999;
+	content: '';
+	position: absolute;
+	height: 100px;
+	bottom: 50px;
+	right: 0;
+	left: 0;
+	background: #337c87;
+	transform: skewY(-3deg);
+	-webkit-transform: skewY(-3deg);
+	-moz-transform: skewY(-3deg);
+	-ms-transform: skewY(-3deg);
+}
+
+.branch-main-container::before,
+.branch-main-container::after{
+	opacity: 0.4;
+	z-index: -999;
+	content: '';
+	position: absolute;
+	height: 100px;
+	bottom: -970px;
+	right: 0;
+	left: 0;
+	background: #ea7d2a;
+	transform: skewY(-3deg);
+	-webkit-transform: skewY(-3deg);
+	-moz-transform: skewY(-3deg);
+	-ms-transform: skewY(-3deg);
+}
+
+.get-in-touch-form-container > div {
+	background: white;
   width: 100%;
   animation: getInTouchAnim 2s;
 }
@@ -44,7 +79,9 @@
 }
 
 .branch-main-container {
+	background: white;
   margin-top: 10rem;
+	margin-bottom: 2rem;
 	border: 1px solid black;
   border-radius: 10px;
 }
