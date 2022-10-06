@@ -137,16 +137,13 @@ export default function BasicModal({ open, handleClose, setOpen }) {
                       />
                     </div>
                     <div className="col-md-12 mt-3">
-                      <select class="form-control" id="EClass">
-                        <option> Select Grade </option>
-                        <option> Nursery </option>
-                        <option> Class I </option>
-                        <option> Class II </option>
-                        <option> Class II </option>
-                        <option> Class IV </option>
-                        <option> Class V </option>
-                        <option> Class VI </option>
-                      </select>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Grade or Class"
+                        aria-label="Grade"
+                      >
+                      </input>
                     </div>
                     <div class="text-center mt-3">
                       <button

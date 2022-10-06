@@ -1,98 +1,121 @@
 .get-in-touch-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 
-	align-content: center;
-	flex-wrap: wrap;
-	margin: 2rem 0rem;
-	color: black;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+  color: black;
 }
 
 .get-in-touch-form-container {
-	width: 100%;
-	animation: getInTouchAnim 2s;
+  width: 100%;
+  animation: getInTouchAnim 2s;
+}
+
+.get-in-touch-form-container > div {
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.address-container {
+  border: 1px solid black;
+  padding: 20px 30px 60px 30px;
+  border-radius: 10px;
 }
 
 .address-container1 {
-	width: 100%;
-	margin: 10px;
-	padding: 10px;
-	animation: addressAnim 2s;
+  width: 96%;
+  margin: 10px;
+  padding: 10px;
+  animation: addressAnim 2s;
+	border: 1px solid black;
+  border-radius: 10px;
 }
 
 .address-container2 {
-	width: 100%;
-	margin: 10px;
-	padding: 10px;
-	animation: addressAnim 2s;
+  width: 96%;
+  margin: 10px;
+  padding: 10px;
+  animation: addressAnim 2s;
+	border: 1px solid black;
+  border-radius: 10px;
 }
 
 .branch-main-container {
-	margin-top: 10rem;
+  margin-top: 10rem;
+	border: 1px solid black;
+  border-radius: 10px;
 }
 
 .branch-container {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 @keyframes getInTouchAnim {
-	from {
-		transform: translateY(-500px);
-	}
+  from {
+    transform: translateY(-500px);
+  }
 }
 
 @keyframes addressAnim {
-	from {
-		transform: translateY(500px);
-	}
+  from {
+    transform: translateY(500px);
+  }
 }
 
 .address {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
 }
 
 .map {
-	width: 100%;
+  width: 100%;
 }
 
 /* screen smaller than 900px */
 @media screen and (max-width: 900px) {
-	.get-in-touch-container {
-		flex-direction: row;
-	}
-	/* .get-in-touch-form-container {
+  .get-in-touch-container {
+    flex-direction: row;
+  }
+  /* .get-in-touch-form-container {
 		width: 60%;
 	} */
-	.address-container {
-		width: 100%;
-	}
-	.map {
-		width: 95%;
-	}
+  .address-container {
+    width: 100%;
+  }
+  .map {
+    width: 95%;
+  }
 }
 
 @media screen and (min-width: 900px) {
-	.get-in-touch-form-container {
-		max-width: 60%;
-	}
+  .get-in-touch-form-container {
+    max-width: 60%;
+  }
 
-	.map {
-		max-width: 80%;
-	}
+  .map {
+    max-width: 80%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-	.branch-container {
-		display: flex;
-		flex-direction: column;
-	}
+  .get-in-touch-form-container > div {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .branch-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-	.map {
-		width: 80%;
-	}
+  .map {
+    width: 80%;
+  }
 }
