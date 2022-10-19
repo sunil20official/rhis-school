@@ -18,7 +18,6 @@ const CurricularActivity = () => {
       <div className="co-curr-content">
         <p
           style={{
-            fontFamily: "cursive",
             fontWeight: "bold",
             fontSize: "14px",
           }}

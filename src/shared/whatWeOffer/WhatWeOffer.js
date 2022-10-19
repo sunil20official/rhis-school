@@ -8,7 +8,9 @@ import "./whatWeOffer.css";
 const WhatWeOffer = () => {
   return (
     <div id="whatweoffer" className="whatweoffer">
-      <h1 style={{ textAlign: "center", marginTop: "2.5rem" }}>
+      <h1 style={{ textAlign: "center", marginTop: "2.5rem" }}
+        className="heading-underline"
+      >
         What We Offer
       </h1>
       <div className="icon-container">

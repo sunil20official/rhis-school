@@ -35,6 +35,21 @@
 	animation: scrollBtnAnim 2s alternate infinite;
 }
 
+.heading-underline{
+  position: relative;
+}
+
+.heading-underline::after{
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 5px;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--oranage);
+}
+
 @keyframes scrollBtnAnim {
 	from {
 		transform: scale(1);

@@ -93,7 +93,7 @@ const AdmissionProcedure = () => {
 						</a>
 					</li>
 				</li>
-				<li>
+				{/* <li>
 					<Link to='/'>Prospectus RHIS</Link>
 				</li>
 				<li>
@@ -107,7 +107,7 @@ const AdmissionProcedure = () => {
 				</li>
 				<li>
 					<Link to='/'>Medical Form</Link>
-				</li>
+				</li> */}
 			</ul>
 			<br />
 			<br />

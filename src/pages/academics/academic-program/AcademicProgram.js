@@ -20,7 +20,6 @@ const AcademicProgram = () => {
         style={{
           textAlign: "center",
           fontWeight: "bold",
-          fontFamily: "cursive",
         }}
       >
         GIVE YOUR CHILD A HEAD START IN LIFE WITH SOME ADAVANTAGES

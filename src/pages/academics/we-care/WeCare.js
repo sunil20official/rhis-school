@@ -18,7 +18,6 @@ const WeCare = () => {
       <p
         style={{
           textAlign: "center",
-          fontFamily: "cursive",
         }}
       >
         YOUR CHILD’S SAFETY IS OUR PRIORITY
