@@ -29,7 +29,7 @@ const Carousel = () => {
         }}
         data-aos="zoom-out"
       >
-        <div className="top-right-menu">
+        {/* <div className="top-right-menu">
           <ul>
             <li>
               <Link to="/about/rhis">About</Link>
@@ -39,24 +39,18 @@ const Carousel = () => {
               <Link to="/academics/academic-program">Academics</Link>
               <span className="vertical-bar"></span>
             </li>
-            {/* <li>
-              <Link to="/admission">Admissions</Link>
-              <span className="vertical-bar">|</span>
-            </li> */}
+            
             <li>
               <Link to="/academics/we-care">We care</Link>
               <span className="vertical-bar"></span>
             </li>
-            {/* <li>
-              <Link to="/parent-corner">Parent Corner</Link>
-              <span className="vertical-bar">|</span>
-            </li> */}
+            
             <li>
               <Link to="/gallery">Gallery</Link>
               <span className="vertical-bar"></span>
             </li>
           </ul>
-        </div>
+        </div> */}
         {/* <div className="scl-name-main-container">
           <div className="scl-name-container">
             <h5 className="royalhills">

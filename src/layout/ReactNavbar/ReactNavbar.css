@@ -5,7 +5,7 @@ body {
   width: 3vmax;
   height: 60px;
   position: fixed;
-  top: 2vmax;
+  top: 1.5rem;
   left: 2vmax;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ body {
   transform: rotateZ(45deg);
   top: 2vmax;
   position: absolute;
-  background-color: whitesmoke !important;
+  background-color: #337c87 !important;
 }
 .menuBurgerItem2 {
   transform: translateX(-200%);
@@ -36,7 +36,7 @@ body {
   transform: rotateZ(-45deg);
   top: 2vmax;
   position: absolute;
-  background-color: whitesmoke !important;
+  background-color: #337c87 !important;
 }
 
 /*-------------------------- Navbar-------------------------- */
@@ -290,6 +290,23 @@ body {
     overflow: hidden;
     z-index: 1000;
   }
+
+  .menuBurgerItem1 {
+  transform: rotateZ(45deg);
+  top: 2vmax;
+  position: absolute;
+  background-color: whitesmoke !important;
+}
+.menuBurgerItem2 {
+  transform: translateX(-200%);
+}
+.menuBurgerItem3 {
+  transform: rotateZ(-45deg);
+  top: 2vmax;
+  position: absolute;
+  background-color: whitesmoke !important;
+}
+
   .nav1 {
     display: none !important;
   }

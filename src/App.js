@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import GetInTouch from "./pages/GetInTouch/GetInTouch";
 import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
+import NavbarTwo from "./layout/NavbarTwo/NavbarTwo";
 // import Admission from "./pages/admissions/Admission";
 
 //     about pages
@@ -66,6 +67,7 @@ function App() {
         <div className="App">
           <div style={{ margin: "0rem" }}>
             <Header />
+            <NavbarTwo/>
           </div>
           <div style={{overflowX:"hidden"}} className="container-lg">
             <Routes>
