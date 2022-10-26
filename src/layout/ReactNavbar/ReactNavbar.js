@@ -443,6 +443,38 @@ const ReactNavbar = ({
               </ul>
             </div>
           </Link>
+
+          {/* ------------------------------------- Gallery Page on large screen --------------------------------- */}
+          <Link
+            className="linksReactNavbar"
+            style={{
+              fontSize: link1Size,
+              fontFamily: link1Family,
+              color: link1Color,
+              backgroundColor: link1BackgroundColor,
+              textDecoration: link1Decoration,
+              margin: "10px 0 10px 180px",
+              padding: link1Padding,
+              border: link1Border,
+              transition: `all ${link1Transition}s`,
+              animation: menuToggle
+                ? `LinkIn ${link1AnimationTime}s`
+                : `LinkOut ${link1AnimationTime}s`,
+            }}
+            to="/gallery"
+            onClick={closeBarOnClick}
+          >
+            <Link
+              to="/gallery"
+              className="btn btn-secondary custom-dropdown font-11"
+              type="button"
+              onClick={closeBarOnClick}
+              margin=""
+            >
+              Gallery
+            </Link>
+          </Link>
+
           {/*  */}
         </div>
 
@@ -487,36 +519,6 @@ const ReactNavbar = ({
               onClick={closeBarOnClick}
             >
               Careers
-            </Link>
-          </Link>
-
-          {/* ------------------------------------- Gallery Page on large screen --------------------------------- */}
-          <Link
-            className="linksReactNavbar"
-            style={{
-              fontSize: link1Size,
-              fontFamily: link1Family,
-              color: link1Color,
-              backgroundColor: link1BackgroundColor,
-              textDecoration: link1Decoration,
-              margin: "10px 0 10px 100px",
-              padding: link1Padding,
-              border: link1Border,
-              transition: `all ${link1Transition}s`,
-              animation: menuToggle
-                ? `LinkIn ${link1AnimationTime}s`
-                : `LinkOut ${link1AnimationTime}s`,
-            }}
-            to="/gallery"
-            onClick={closeBarOnClick}
-          >
-            <Link
-              to="/gallery"
-              className="btn btn-secondary custom-dropdown font-11"
-              type="button"
-              onClick={closeBarOnClick}
-            >
-              Gallery
             </Link>
           </Link>
 
@@ -709,7 +711,7 @@ const ReactNavbar = ({
               className="btn bg-blue custom-dropdown font-11"
               type="button"
               onClick={closeBarOnClick}
-              style={{border:"1px solid whitesmoke !important"}}
+              style={{ border: "1px solid whitesmoke !important" }}
             >
               ERP Login
             </a>

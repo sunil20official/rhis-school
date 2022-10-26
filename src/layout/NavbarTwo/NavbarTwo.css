@@ -1,4 +1,4 @@
-.navbartwo{
+.navbartwo {
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -7,16 +7,36 @@
 }
 
 @keyframes navtwo {
-  from{
+  from {
     opacity: 0;
     transform: translateX(100vw);
   }
-  to{
+  to {
     opacity: 1;
   }
 }
 
-.navbartwo > div > div > ul > li > a{
+.navbartwo > div > div > ul > li > ul {
+  border: none;
+  padding-bottom: 0px;
+}
+
+.navbartwo > div > div > ul > li > ul > li > a{
+  font-size: 12px;
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.navbartwo > div > div > ul > li > ul > li > a:hover {
+  color: white;
+  background-color: #ea7d2a !important;
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.navbartwo > div > div > ul > li > a {
   color: #47484b;
   font-size: 12px;
   text-transform: uppercase;
@@ -24,21 +44,21 @@
   letter-spacing: 1px;
 }
 
-.navbartwo > div > div > ul > li > a:hover{
+.navbartwo > div > div > ul > li > a:hover {
   color: #47484b;
   transform: scale(1);
 }
 
-.navbartwo > div > div > ul > li > a > span > svg{
+.navbartwo > div > div > ul > li > a > span > svg {
   font-size: 20px;
   margin: 0px 5px 5px;
 }
 
-.aboutsvg > path{
+.aboutsvg > path {
   fill: #47484b;
 }
 
-.nav-erp-btn{
+.nav-erp-btn {
   background-color: #337c87;
   color: white !important;
   /* border-radius: 10px; */
@@ -46,7 +66,7 @@
   transition: all ease-in-out 700ms;
 }
 
-.nav-erp-btn:hover{
+.nav-erp-btn:hover {
   opacity: 0.9;
   background-color: #337c87;
   color: white !important;
@@ -54,10 +74,10 @@
   transform: scale(1.1) !important;
 }
 
-.nav-erp-svg > path{
+.nav-erp-svg > path {
   fill: white;
 }
 
-.custom-divider{
+.custom-divider {
   margin: 0px;
 }
