@@ -67,7 +67,7 @@ const Home = () => {
 					</p>
 				</div>
 
-				<Testimonials />
+				{/* <Testimonials /> */}
 				<RhisYouTube />
 				<PopupModal open={open} handleClose={handleClose} setOpen={setOpen} />
 				<CountUp />

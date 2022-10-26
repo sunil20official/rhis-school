@@ -69,7 +69,7 @@ function App() {
             <Header />
             <NavbarTwo/>
           </div>
-          <div style={{overflowX:"hidden"}} className="container-lg">
+          <div style={{}} className="container-lg">
             <Routes>
               <Route path="/" element={<Home />} />
 
