@@ -34,7 +34,10 @@ const DirectorDesk = () => {
 						available for one and all. From humble beginnings to one of the largest
 						privately run educational institutes in the country, the story of Ryan
 						Group is a tale written in spunk, enterprise and a compelling desire for
-						palpable social change. It was in 1976 that Dr. Augustine F. Pinto, a
+						palpable social change.
+						<br />
+						<br/>
+						It was in 1976 that Dr. Augustine F. Pinto, a
 						graduate from the reputed Loyola College, Chennai, laid the foundation of
 						this vision. The initial setbacks and challenges were never a concern for
 						this man who had tremendous faith in God and in his dream. It is his

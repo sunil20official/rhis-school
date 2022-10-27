@@ -6,6 +6,7 @@
   height: 1.5rem;
   width: 100%;
   position: fixed;
+  top: 0px;
   z-index: 100000;
   padding: 0px 10px;
   background-color: #ea7d2a ;

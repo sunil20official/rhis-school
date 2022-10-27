@@ -6,7 +6,7 @@ const RhisYouTube = () => {
 	return (
     <>
       <div className="youtube">
-        <div className="row">
+        <div className="row" style={{alignItems:"center"}}>
           <div className="col-md-6 youtube-text">
             <h3
               style={{
@@ -54,9 +54,6 @@ const RhisYouTube = () => {
           </div>
         </div>
       </div>
-			<div className='width-100vw'>
-				width 100%
-			</div>
     </>
   );
 };

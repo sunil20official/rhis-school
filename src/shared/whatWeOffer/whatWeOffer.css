@@ -2,11 +2,11 @@
 	position: relative;
 	width: 100vw;
 	left: calc(-50vw + 50%);
-	background-color: #f4c119;
+	background-color: #082a59;
 	color: white;
 	text-align: center;
 	padding: 30px 20px;
-	margin: 2rem 0rem;
+	margin: 0rem;
 }
 
 .icon-container {

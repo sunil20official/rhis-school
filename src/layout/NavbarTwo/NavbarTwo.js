@@ -151,8 +151,8 @@ const NavbarTwo = () => {
               <li class="nav-item">
                 <a
                   target="_blank"
-                  href="#"
-                  class="nav-link nav-erp-btn"
+                  href="#!"
+                  className="nav-link nav-erp-btn"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"

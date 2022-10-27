@@ -59,7 +59,7 @@
 }
 
 .nav-erp-btn {
-  background-color: #337c87;
+  background-color: #082a59;
   color: white !important;
   /* border-radius: 10px; */
   padding: 7px 14px !important;
@@ -68,7 +68,7 @@
 
 .nav-erp-btn:hover {
   opacity: 0.9;
-  background-color: #337c87;
+  background-color: #082a59;
   color: white !important;
   /* border-radius: 10px; */
   transform: scale(1.1) !important;
