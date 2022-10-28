@@ -27,7 +27,7 @@ body {
   transform: rotateZ(45deg);
   top: 2vmax;
   position: absolute;
-  background-color: #337c87 !important;
+  background-color: white !important;
 }
 .menuBurgerItem2 {
   transform: translateX(-200%);
@@ -36,7 +36,7 @@ body {
   transform: rotateZ(-45deg);
   top: 2vmax;
   position: absolute;
-  background-color: #337c87 !important;
+  background-color: white !important;
 }
 
 /*-------------------------- Navbar-------------------------- */
@@ -55,7 +55,8 @@ body {
   /* background-color: red; */
   animation: backimageset 1s;
   position: fixed;
-  z-index: 9;
+  top: 0;
+  z-index: 99;
 }
 
 @keyframes backimageset {

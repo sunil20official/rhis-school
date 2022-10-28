@@ -4,10 +4,8 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  background-color: #f2f2f2;
   box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
   margin: 3rem auto 5rem;
-  border: 10px solid hwb(272deg 18% 54% / 77%);
   border-radius: 20px;
 }
 

@@ -20,19 +20,19 @@
   padding: 0 20px;
 }
 
-.academic-block{
+.academic-block {
   width: 30%;
 }
 
-.sports-block{
+.sports-block {
   width: 30%;
 }
 
-.others-box-cont{
+.others-box-cont {
   width: 20%;
 }
 
-.partner-container > div{
+.partner-container > div {
   margin-bottom: 30px;
 }
 
@@ -67,11 +67,11 @@
   padding-bottom: 15px;
 }
 
-.others-box-cont{
+.others-box-cont {
   width: 15%;
 }
 
-.others-box{
+.others-box {
   text-align: center;
 }
 
@@ -81,4 +81,48 @@
   background: #fff;
   height: 350px;
   margin-top: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .facility-container > h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .facilities-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+  }
+
+  .facility-block-heading {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 40px;
+    padding: 30px 0;
+  }
+
+  .facilities-wrap > div {
+    padding: 0 20px;
+  }
+
+  .academic-block {
+    width: 100%;
+  }
+
+  .sports-block {
+    width: 100%;
+  }
+
+  .others-box-cont {
+    width: 100%;
+  }
+
+  .border-right {
+    display: none;
+  }
 }

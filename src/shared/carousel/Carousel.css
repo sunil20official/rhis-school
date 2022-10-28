@@ -70,8 +70,8 @@
 }
 
 .scroll {
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
 	color: white;
 	background-color: #082a59;
 	border-radius: 50%;
@@ -80,7 +80,7 @@
 	align-items: center;
 	align-content: center;
 	cursor: pointer;
-	animation: scrollAnim 1s alternate infinite;
+	/* animation: scrollAnim 1s alternate infinite; */
 }
 
 @keyframes scrollAnim {
@@ -93,7 +93,7 @@
 }
 
 .arrow-scroll-down {
-	animation: scrollArrowAnim 1s alternate infinite;
+	/* animation: scrollArrowAnim 1s alternate infinite; */
 }
 
 @keyframes scrollArrowAnim {

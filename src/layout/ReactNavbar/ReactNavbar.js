@@ -4,182 +4,182 @@ import { Link } from 'react-router-dom';
 import navImage from '../../media/ss1.png';
 
 const ReactNavbar = ({
-	burgerColor = 'black',
-	burgerColorHover = burgerColor,
-	navColor1 = 'rgb(35, 35, 35)',
-	navColor2 = navColor1,
-	navColor3 = navColor2,
-	navColor4 = navColor3,
-	logo,
-	logoWidth = '100px',
-	logoHeight = 'unset',
-	logoHoverSize = '15px',
-	logoHoverColor = 'green',
-	logoTransition = 0.5,
-	logoAnimationTime = 1,
+  burgerColor = "#082a59",
+  burgerColorHover = "#082a59",
+  navColor1 = "rgb(35, 35, 35)",
+  navColor2 = navColor1,
+  navColor3 = navColor2,
+  navColor4 = navColor3,
+  logo,
+  logoWidth = "100px",
+  logoHeight = "unset",
+  logoHoverSize = "15px",
+  logoHoverColor = "green",
+  logoTransition = 0.5,
+  logoAnimationTime = 1,
 
-	nav1FlexDirection = 'row',
-	nav2FlexDirection = 'row',
-	nav3FlexDirection = 'row',
-	nav4FlexDirection = 'row',
+  nav1FlexDirection = "row",
+  nav2FlexDirection = "row",
+  nav3FlexDirection = "row",
+  nav4FlexDirection = "row",
 
-	nav1alignItems = 'center',
-	nav1justifyContent = 'center',
-	nav2alignItems = 'center',
-	nav2justifyContent = 'center',
-	nav3alignItems = 'left',
-	nav3justifyContent = 'center',
-	nav4alignItems = 'center',
-	nav4justifyContent = 'center',
+  nav1alignItems = "center",
+  nav1justifyContent = "center",
+  nav2alignItems = "center",
+  nav2justifyContent = "center",
+  nav3alignItems = "left",
+  nav3justifyContent = "center",
+  nav4alignItems = "center",
+  nav4justifyContent = "center",
 
-	nav1Transition = 0.4,
-	nav2Transition = nav1Transition + 0.6,
-	nav3Transition = nav2Transition + 0.6,
-	nav4Transition = nav3Transition + 0.6,
+  nav1Transition = 0.4,
+  nav2Transition = nav1Transition + 0.6,
+  nav3Transition = nav2Transition + 0.6,
+  nav4Transition = nav3Transition + 0.6,
 
-	link1Size = '1vmax',
-	link2Size = link1Size,
-	link3Size = link2Size,
-	link4Size = link3Size,
-	link1Family = 'Roboto',
-	link2Family = link1Family,
-	link3Family = link2Family,
-	link4Family = link3Family,
-	link1Color = 'black',
-	link2Color = link1Color,
-	link3Color = link2Color,
-	link4Color = link3Color,
+  link1Size = "1vmax",
+  link2Size = link1Size,
+  link3Size = link2Size,
+  link4Size = link3Size,
+  link1Family = "Roboto",
+  link2Family = link1Family,
+  link3Family = link2Family,
+  link4Family = link3Family,
+  link1Color = "black",
+  link2Color = link1Color,
+  link3Color = link2Color,
+  link4Color = link3Color,
 
-	link1BackgroundColor = '',
-	link2BackgroundColor = link1BackgroundColor,
-	link3BackgroundColor = link2BackgroundColor,
-	link4BackgroundColor = link3BackgroundColor,
+  link1BackgroundColor = "",
+  link2BackgroundColor = link1BackgroundColor,
+  link3BackgroundColor = link2BackgroundColor,
+  link4BackgroundColor = link3BackgroundColor,
 
-	link1ColorHover = link1Color,
-	link2ColorHover = link1ColorHover,
-	link3ColorHover = link2ColorHover,
-	link4ColorHover = link3ColorHover,
-	link1Decoration = 'none',
-	link2Decoration = link1Decoration,
-	link3Decoration = link2Decoration,
-	link4Decoration = link3Decoration,
-	link1Margin = '0',
-	link2Margin = link1Margin,
-	link3Margin = link2Margin,
-	link4Margin = link3Margin,
-	link1Padding = '0',
-	link2Padding = link1Padding,
-	link3Padding = link2Padding,
-	link4Padding = link3Padding,
-	link1Border = 'none',
-	link2Border = link1Border,
-	link3Border = link2Border,
-	link4Border = link3Border,
-	link1Transition = 0.5,
-	link2Transition = link1Transition,
-	link3Transition = link2Transition,
-	link4Transition = link3Transition,
-	link1AnimationTime = 1.5,
-	link2AnimationTime = link1AnimationTime + 0.5,
-	link3AnimationTime = link2AnimationTime + 0.5,
-	link4AnimationTime = link3AnimationTime + 0.5,
+  link1ColorHover = link1Color,
+  link2ColorHover = link1ColorHover,
+  link3ColorHover = link2ColorHover,
+  link4ColorHover = link3ColorHover,
+  link1Decoration = "none",
+  link2Decoration = link1Decoration,
+  link3Decoration = link2Decoration,
+  link4Decoration = link3Decoration,
+  link1Margin = "0",
+  link2Margin = link1Margin,
+  link3Margin = link2Margin,
+  link4Margin = link3Margin,
+  link1Padding = "0",
+  link2Padding = link1Padding,
+  link3Padding = link2Padding,
+  link4Padding = link3Padding,
+  link1Border = "none",
+  link2Border = link1Border,
+  link3Border = link2Border,
+  link4Border = link3Border,
+  link1Transition = 0.5,
+  link2Transition = link1Transition,
+  link3Transition = link2Transition,
+  link4Transition = link3Transition,
+  link1AnimationTime = 1.5,
+  link2AnimationTime = link1AnimationTime + 0.5,
+  link3AnimationTime = link2AnimationTime + 0.5,
+  link4AnimationTime = link3AnimationTime + 0.5,
 
-	searchIcon = false,
-	SearchIconElement,
-	searchIconMargin = '0',
-	searchIconUrl = '/Search',
-	searchIconSize = '2vmax',
-	searchIconColor = 'white',
-	searchIconColorHover = searchIconColor,
-	searchIconTransition = 0.5,
-	searchIconAnimationTime = 2,
+  searchIcon = false,
+  SearchIconElement,
+  searchIconMargin = "0",
+  searchIconUrl = "/Search",
+  searchIconSize = "2vmax",
+  searchIconColor = "white",
+  searchIconColorHover = searchIconColor,
+  searchIconTransition = 0.5,
+  searchIconAnimationTime = 2,
 
-	cartIcon = false,
-	CartIconElement,
-	cartIconMargin = '0',
-	cartIconUrl = '/Cart',
-	cartIconSize = '2vmax',
-	cartIconColor = 'white',
-	cartIconColorHover = cartIconColor,
-	cartIconTransition = 0.5,
-	cartIconAnimationTime = searchIconAnimationTime + 0.5,
+  cartIcon = false,
+  CartIconElement,
+  cartIconMargin = "0",
+  cartIconUrl = "/Cart",
+  cartIconSize = "2vmax",
+  cartIconColor = "white",
+  cartIconColorHover = cartIconColor,
+  cartIconTransition = 0.5,
+  cartIconAnimationTime = searchIconAnimationTime + 0.5,
 
-	profileIcon = false,
-	ProfileIconElement,
-	profileIconMargin = '0',
-	profileIconUrl = '/Account',
-	profileIconSize = '2.5vmax',
-	profileIconColor = 'white',
-	profileIconColorHover = profileIconColor,
-	profileIconTransition = 0.5,
-	profileIconAnimationTime = cartIconAnimationTime + 0.5,
+  profileIcon = false,
+  ProfileIconElement,
+  profileIconMargin = "0",
+  profileIconUrl = "/Account",
+  profileIconSize = "2.5vmax",
+  profileIconColor = "white",
+  profileIconColorHover = profileIconColor,
+  profileIconTransition = 0.5,
+  profileIconAnimationTime = cartIconAnimationTime + 0.5,
 }) => {
-	const [menuToggle, setMenuToggle] = useState(false);
-	const menuBurgerItem1 = useRef(null);
-	const menuBurgerItem2 = useRef(null);
-	const menuBurgerItem3 = useRef(null);
-	const menuBurger = useRef(null);
-	const nav100 = useRef(null);
-	const logoRef = useRef(null);
-	const link1 = useRef(null);
-	const link2 = useRef(null);
-	const link3 = useRef(null);
-	const link4 = useRef(null);
+  const [menuToggle, setMenuToggle] = useState(false);
+  const menuBurgerItem1 = useRef(null);
+  const menuBurgerItem2 = useRef(null);
+  const menuBurgerItem3 = useRef(null);
+  const menuBurger = useRef(null);
+  const nav100 = useRef(null);
+  const logoRef = useRef(null);
+  const link1 = useRef(null);
+  const link2 = useRef(null);
+  const link3 = useRef(null);
+  const link4 = useRef(null);
 
-	const menuToggleHandler = () => {
-		if (menuToggle) {
-			menuBurgerItem1.current.classList.remove('menuBurgerItem1');
-			menuBurgerItem2.current.classList.remove('menuBurgerItem2');
-			menuBurgerItem3.current.classList.remove('menuBurgerItem3');
-			nav100.current.classList.remove('nav100');
+  const menuToggleHandler = () => {
+    if (menuToggle) {
+      menuBurgerItem1.current.classList.remove("menuBurgerItem1");
+      menuBurgerItem2.current.classList.remove("menuBurgerItem2");
+      menuBurgerItem3.current.classList.remove("menuBurgerItem3");
+      nav100.current.classList.remove("nav100");
 
-			return setMenuToggle(false);
-		}
-		menuBurgerItem1.current.classList.add('menuBurgerItem1');
-		menuBurgerItem2.current.classList.add('menuBurgerItem2');
-		menuBurgerItem3.current.classList.add('menuBurgerItem3');
-		nav100.current.classList.add('nav100');
-		setMenuToggle(true);
-	};
+      return setMenuToggle(false);
+    }
+    menuBurgerItem1.current.classList.add("menuBurgerItem1");
+    menuBurgerItem2.current.classList.add("menuBurgerItem2");
+    menuBurgerItem3.current.classList.add("menuBurgerItem3");
+    nav100.current.classList.add("nav100");
+    setMenuToggle(true);
+  };
 
-	const closeBarOnClick = () => {
-		menuBurgerItem1.current.classList.remove('menuBurgerItem1');
-		menuBurgerItem2.current.classList.remove('menuBurgerItem2');
-		menuBurgerItem3.current.classList.remove('menuBurgerItem3');
-		nav100.current.classList.remove('nav100');
-		return setMenuToggle(false);
-	};
+  const closeBarOnClick = () => {
+    menuBurgerItem1.current.classList.remove("menuBurgerItem1");
+    menuBurgerItem2.current.classList.remove("menuBurgerItem2");
+    menuBurgerItem3.current.classList.remove("menuBurgerItem3");
+    nav100.current.classList.remove("nav100");
+    return setMenuToggle(false);
+  };
 
-	useEffect(() => {
-		menuBurger.current.addEventListener('mouseover', () => {
-			menuBurgerItem1.current.style.backgroundColor = burgerColorHover;
-			menuBurgerItem2.current.style.backgroundColor = burgerColorHover;
-			menuBurgerItem3.current.style.backgroundColor = burgerColorHover;
-		});
-		menuBurger.current.addEventListener('mouseleave', () => {
-			menuBurgerItem1.current.style.backgroundColor = burgerColor;
-			menuBurgerItem2.current.style.backgroundColor = burgerColor;
-			menuBurgerItem3.current.style.backgroundColor = burgerColor;
-		});
-	});
+  useEffect(() => {
+    menuBurger.current.addEventListener("mouseover", () => {
+      menuBurgerItem1.current.style.backgroundColor = burgerColorHover;
+      menuBurgerItem2.current.style.backgroundColor = burgerColorHover;
+      menuBurgerItem3.current.style.backgroundColor = burgerColorHover;
+    });
+    menuBurger.current.addEventListener("mouseleave", () => {
+      menuBurgerItem1.current.style.backgroundColor = burgerColor;
+      menuBurgerItem2.current.style.backgroundColor = burgerColor;
+      menuBurgerItem3.current.style.backgroundColor = burgerColor;
+    });
+  });
 
-	return (
+  return (
     <Fragment>
       <div className="menuBurger" ref={menuBurger} onClick={menuToggleHandler}>
         <div
           ref={menuBurgerItem1}
           className="menuBurgerItem"
-          style={{ backgroundColor: burgerColor }}
+          style={{ backgroundColor: "#082a59" }}
         ></div>
         <div
           ref={menuBurgerItem2}
           className="menuBurgerItem"
-          style={{ backgroundColor: burgerColor }}
+          style={{ backgroundColor: "#082a59" }}
         ></div>
         <div
           ref={menuBurgerItem3}
           className="menuBurgerItem"
-          style={{ backgroundColor: burgerColor }}
+          style={{ backgroundColor: "#082a59" }}
         ></div>
       </div>
 
