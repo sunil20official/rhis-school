@@ -67,37 +67,51 @@ function App() {
         <div className="App">
           <div style={{ margin: "0rem" }}>
             <Header />
-            <NavbarTwo/>
+            <NavbarTwo />
           </div>
-          <div style={{}} className="container-lg">
+          <div className="container-lg custom-container-lg">
             <Routes>
               <Route path="/" element={<Home />} />
 
               {/* ------------------- about ------page ----------- routes ------------ */}
               <Route path="/about" element={<About />} />
-              <Route path="/about/rhis" element={<Rhis/>} />
-              <Route path="/about/roots" element={<Root/>} />
-              <Route path="/about/directordesk" element={<DirectorDesk/>} />
-              <Route path="/about/principalmsg" element={<PrincipalMsg/>} />
-              <Route path="/about/social-initiatives" element={<SocialInitiatives/>} />
+              <Route path="/about/rhis" element={<Rhis />} />
+              <Route path="/about/roots" element={<Root />} />
+              <Route path="/about/directordesk" element={<DirectorDesk />} />
+              <Route path="/about/principalmsg" element={<PrincipalMsg />} />
+              <Route
+                path="/about/social-initiatives"
+                element={<SocialInitiatives />}
+              />
 
               {/* ------------------- academics ------page ----------- routes ------------ */}
-              <Route path="/academics/academic-program" element={<AcademicProgram />} />
-              <Route path="/academics/cocurricular-activities" element={<CurricularActivity />} />
+              <Route
+                path="/academics/academic-program"
+                element={<AcademicProgram />}
+              />
+              <Route
+                path="/academics/cocurricular-activities"
+                element={<CurricularActivity />}
+              />
               <Route path="/academics/transport" element={<Transport />} />
               <Route path="/academics/we-care" element={<WeCare />} />
 
               {/*-------------------------- admission page routes--------- */}
-              <Route path="/admission/admission-procedure" element={<AdmissionProcedure/>} />
-              <Route path="/admission/fee-structure" element={<FeeStructure/>} />
+              <Route
+                path="/admission/admission-procedure"
+                element={<AdmissionProcedure />}
+              />
+              <Route
+                path="/admission/fee-structure"
+                element={<FeeStructure />}
+              />
 
-              <Route path="/franchise" element={<Franchise/>} />
-              <Route path="/careers" element={<Career/>} />
-              <Route path="/contact-us" element={<GetInTouch/>} />
-              <Route path="/gallery" element={<Gallery/>} />
+              <Route path="/franchise" element={<Franchise />} />
+              <Route path="/careers" element={<Career />} />
+              <Route path="/contact-us" element={<GetInTouch />} />
+              <Route path="/gallery" element={<Gallery />} />
 
               <Route path="*" element={<NotFound />} />
-
             </Routes>
           </div>
           <Footer />

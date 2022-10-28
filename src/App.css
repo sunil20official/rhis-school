@@ -245,6 +245,9 @@
 
 /* media query for phone screen */
 @media screen and (max-width: 576px) {
+	.custom-container-lg{
+		overflow-x: hidden;
+	}
 	.carousel-img {
 		height: 50vh;
 	}
