@@ -30,7 +30,7 @@
   background: url(../../media/images/feature_bg.png);
   background-size: cover;
   position: absolute;
-  top: 60px;
+  top: 65px;
   float: left;
   z-index: 1;
   padding: 50px 30px;
@@ -44,6 +44,7 @@
 
 .feature-left-part > p{
   font-weight: 200;
+  font-size: 14px;
 }
 
 .feature-right-part {
