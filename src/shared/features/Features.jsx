@@ -1,38 +1,46 @@
-import React from "react";
+import React , {useState} from "react";
 import "./Features.css";
 
 import slide1_img from "../../media/images/feature_slide_1.jpg";
 import slide2_img from "../../media/images/feature_slide_2.png";
 import slide3_img from "../../media/images/feature_slide_3.jpg";
-import slide4_img from "../../media/images/feature_slide_4.png";
-import features_bg from "../../media/images/feature_bg.png";
 
 const Features = () => {
+
+  const [first, setFirst] = useState(true);
+  const [second, setSecond] = useState(false);
+  const [third, setThird] = useState(false);
+
+  const handleClickFirst = () => {
+    setFirst(true);
+    setSecond(false);
+    setThird(false);
+  }
+
+  const handleClickSecond = () => {
+    setFirst(false);
+    setSecond(true);
+    setThird(false);
+  };
+
+  const handleClickThird = () => {
+    setFirst(false);
+    setSecond(false);
+    setThird(true);
+  };
+
+
   return (
     <div className="features-container">
-      <h1>Features</h1>
+      <h1 className="feature-heading">Features</h1>
       <div className="feature-carousel-cont">
         <div>
           <div
             id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
+            className="carousel slide custom_height"
+            // data-ride="carousel"
+            data-bs-ride="carousel"
           >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div className="each-feature">
@@ -100,49 +108,54 @@ const Features = () => {
                 </div>
               </div>
             </div>
-
-            {/* previous and next buttons and it should only be visible on the phone screen */}
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
         <div className="indicator-container">
-          <ul style={{listStyle:"none"}}>
-            <li>
+          <ul
+            style={{ listStyle: "none", display: "contents" }}
+            className="carousel-indicators"
+          >
+            <li
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
               <div className="ind-img">
-                <img src={slide1_img} alt="first slide" />
+                <img
+                  className={first ? "custom-active" : "custom-inactive"}
+                  src={slide1_img}
+                  onClick={handleClickFirst}
+                  alt="first slide"
+                />
               </div>
             </li>
-            <li>
+            <li
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            >
               <div className="ind-img">
-                <img src={slide2_img} alt="first slide" />
+                <img
+                  className={second ? "custom-active" : "custom-inactive"}
+                  src={slide2_img}
+                  onClick={handleClickSecond}
+                  alt="first slide"
+                />
               </div>
             </li>
-            <li>
+            <li
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            >
               <div className="ind-img">
-                <img src={slide3_img} alt="first slide" />
+                <img
+                  className={third ? "custom-active" : "custom-inactive"}
+                  src={slide3_img}
+                  onClick={handleClickThird}
+                  alt="first slide"
+                />
               </div>
             </li>
           </ul>
