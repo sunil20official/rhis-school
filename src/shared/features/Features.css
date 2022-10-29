@@ -1,0 +1,46 @@
+.features-container {
+  padding: 4rem 1rem;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+
+.feature-carousel-cont {
+  display: grid;
+  grid-template-columns: 85% 1fr;
+  position: relative;
+}
+
+.each-feature {
+}
+
+.feature-left-part {
+  background: url(../../media/images/feature_bg.png);
+  background-size: cover;
+  position: absolute;
+  top: 60px;
+  float: left;
+  z-index: 1;
+  padding: 50px 30px;
+  width: 33%;
+  color: white;
+}
+
+.feature-right-part{
+  width: 70%;
+  float: right;
+}
+
+.carousel-item > img {
+  height: 100%;
+}
+
+.indicator-container{
+
+}
+
+.ind-img > img{
+  width: 180px;
+  height: 150px;
+  margin: 5px;
+}

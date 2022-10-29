@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 // import $ from 'jquery';
 
 import Carousel from '../shared/carousel/Carousel';
-import Testimonials from '../shared/Testimonials';
+// import Testimonials from '../shared/Testimonials';
+import Features from '../shared/features/Features';
 import WhatWeOffer from '../shared/whatWeOffer/WhatWeOffer';
 import Staff from '../shared/staff/Staff';
 import story from '../media/images/book-solid.svg';
@@ -40,6 +41,7 @@ const Home = () => {
       <Carousel />
       <div className="container-lg">
         <Facility />
+        <Features />
         <WhatWeOffer />
         <div id="story" className="story-section" data-aos="zoom-out">
           <h1 style={{ fontWeight: "bolder" }}>Our Story</h1>
