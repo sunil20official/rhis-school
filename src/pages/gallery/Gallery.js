@@ -8,7 +8,7 @@ const Gallery = () => {
       <h1
         style={{
           textAlign: "center",
-          margin: "5rem auto 1rem",
+          margin: "7rem auto 2rem",
           padding: "1rem",
           width: "80%",
           borderBottom: "#ff7000 3px solid",

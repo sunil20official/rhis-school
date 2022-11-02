@@ -1,5 +1,9 @@
 import React from "react";
 import "./SocialInitiatives.css";
+import avoidplastic from '../../../media/images/plastic.png';
+import worldenvday from '../../../media/images/worldenvday.png';
+import water from '../../../media/images/savewater.png';
+
 
 const SocialInitiatives = () => {
   return (
@@ -36,7 +40,7 @@ const SocialInitiatives = () => {
 
       <div className="flex">
         <div className="img-cont">
-          <img className="campaign-img" src="" alt="avoid plastic"></img>
+          <img className="campaign-img" src={avoidplastic} alt="avoid plastic"></img>
         </div>
         <div className="text-cont">
           <p>
@@ -62,7 +66,7 @@ const SocialInitiatives = () => {
 
       <div className="flex flex-rev">
         <div className="img-cont">
-          <img className="campaign-img" src="" alt="avoid plastic"></img>
+          <img className="campaign-img" src={water} alt="avoid plastic"></img>
         </div>
         <div className="text-cont">
           <p>
@@ -89,7 +93,7 @@ const SocialInitiatives = () => {
 
       <div className="flex">
         <div className="img-cont">
-          <img className="campaign-img" src="" alt="avoid plastic"></img>
+          <img className="campaign-img" src={worldenvday} alt="avoid plastic"></img>
         </div>
         <div className="text-cont">
           <p>

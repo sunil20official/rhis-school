@@ -46,16 +46,17 @@ const Features = () => {
                 <div className="each-feature">
                   <div className="feature-left-part">
                     <h1>
-                      Boarding <br /> Houses
+                      Celebration Of <br /> Festivals
                     </h1>
                     <p>
-                      The boarding house design is a fine blend of comfort and
-                      safety where structures and open spaces merge beautifully
-                      to create a vibrant environment for congenial coexistence.
-                      Students of the Kasiga family find school an extension of
-                      their home; a place where learning takes place in a caring
-                      and safe environment under the care of experienced
-                      pastoral staff.
+                      There is a future we believe in, fostered by strong souls
+                      and inventive minds. We believe the way to usher in
+                      change, is to empower young minds with stellar education,
+                      thus creating the enablers of tomorrow. Laying its
+                      foundation stone in 2021, Royal Hills International School
+                      was set up with a vision: To create leaders of tomorrow by
+                      imparting education. free from all prejudices with a focus
+                      on the holistic development of students.
                     </p>
                   </div>
                   <div className="feature-right-part">
@@ -68,7 +69,7 @@ const Features = () => {
                 <div className="each-feature">
                   <div className="feature-left-part">
                     <h1>
-                      Second <br /> Heading
+                      Educational Tours <br /> & Excursions
                     </h1>
                     <p>
                       The boarding house design is a fine blend of comfort and
@@ -90,7 +91,7 @@ const Features = () => {
                 <div className="each-feature">
                   <div className="feature-left-part">
                     <h1>
-                      Third <br /> Heading
+                      Recreational <br /> Activities
                     </h1>
                     <p>
                       The boarding house design is a fine blend of comfort and
