@@ -52,24 +52,40 @@ const NavbarTwo = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Action
+                    <Link to="/about/rhis" class="dropdown-item">
+                      RHIS
                     </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider custom-divider" />
                   </li>
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Another action
+                    <Link to="/about/roots" class="dropdown-item">
+                      Roots - A Play School
                     </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider custom-divider" />
                   </li>
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Something else here
+                    <Link to="/about/directordesk" class="dropdown-item">
+                      Director's Desk
+                    </Link>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
+                    <Link to="/about/principalmsg" class="dropdown-item">
+                      Principal's Message
+                    </Link>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
+                    <Link to="/about/social-initiatives" class="dropdown-item">
+                      Social Initiatives
                     </Link>
                   </li>
                 </ul>
@@ -89,24 +105,38 @@ const NavbarTwo = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Action
+                    <Link
+                      to="/academics/academic-program"
+                      class="dropdown-item"
+                    >
+                      Academic Programs
                     </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider custom-divider" />
                   </li>
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Another action
+                    <Link
+                      to="/academics/cocurricular-activities"
+                      class="dropdown-item"
+                    >
+                      Co-Curricular Activities
                     </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider custom-divider" />
                   </li>
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Something else here
+                    <Link to="/academics/transport" class="dropdown-item">
+                      Transport
+                    </Link>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
+                    <Link to="/academics/we-care" class="dropdown-item">
+                      We Care
                     </Link>
                   </li>
                 </ul>
@@ -126,24 +156,19 @@ const NavbarTwo = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Action
+                    <Link
+                      to="/admission/admission-procedure"
+                      class="dropdown-item"
+                    >
+                      Admission Procedure
                     </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider custom-divider" />
                   </li>
                   <li>
-                    <Link to="/" class="dropdown-item">
-                      Another action
-                    </Link>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider custom-divider" />
-                  </li>
-                  <li>
-                    <Link to="/" class="dropdown-item">
-                      Something else here
+                    <Link to="/admission/fee-structure" class="dropdown-item">
+                      Fee Structure
                     </Link>
                   </li>
                 </ul>
