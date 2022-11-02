@@ -7,10 +7,16 @@ const Root = () => {
     <div className="main-container-rhis">
       <div className="rhis-container">
         <div className="heading-cont">
-          <h1 style={{ textAlign: "center"}}>Roots</h1>
-          <p
-            style={{ textAlign: "center",fontSize: "20px" }}
+          <h1
+            style={{
+              textAlign: "center",
+              margin: "2rem auto 0.5rem",
+              letterSpacing: "3px",
+            }}
           >
+            Roots
+          </h1>
+          <p style={{ textAlign: "center", fontSize: "20px" }}>
             {" "}
             A Playway School
           </p>

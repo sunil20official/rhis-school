@@ -6,7 +6,7 @@ const RhisYouTube = () => {
 	return (
     <>
       <div className="youtube">
-        <div className="row" style={{alignItems:"center"}}>
+        <div className="row" style={{ alignItems: "center" }}>
           <div className="col-md-6 youtube-text">
             <h3
               style={{
@@ -20,13 +20,15 @@ const RhisYouTube = () => {
               <span>SHAPING FUTURE</span>
             </h3>
 
-            <h6 style={{lineHeight:"50px"}}>
-              We have grown into one of India's leading group of K-12
-              institutions, providing academic excellence to our students. This
-              is facilitated by dedicated educators who are trained to
-              channelize their energy and resources towards child-centered
-              learning. We have also reached out internationally, to establish
-              friendship institutions all across the globe.
+            <h6 style={{ lineHeight: "25px" }}>
+              Lerro Learning Foundation, registered on 17th May 2021, in Patna
+              laid a foundation by establishing Royal Hills International School
+              and Royal Hills International School Junior in Sitamarhi, with
+              objective of establishing educational institutions with holistic
+              educations. The prime objective of the of Lerro Learning
+              Foundation is to provide facilities for quality education to boys
+              and girls of all ages by establishing schools that offer
+              pre-primary to middle stage education.
             </h6>
             <button className="btn px-4 py-2 m-4">
               <a

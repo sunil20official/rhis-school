@@ -22,7 +22,7 @@ const Carousel = () => {
         className="carousel slide carousel-fade mr-top-4"
         data-bs-ride="carousel"
         style={{
-          marginTop: "0rem",
+          marginTop: "2.5rem",
           position: "relative",
           left: "calc(-50vw + 50%)",
           width: "100vw",

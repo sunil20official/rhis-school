@@ -8,13 +8,14 @@ const DirectorDesk = () => {
       <h1
         style={{
           textAlign: "center",
-          margin: "6rem auto 0rem",
           padding: "2rem",
           width: "80%",
           borderBottom: "#ff7000 3px solid",
+          margin: "6rem auto 0.5rem",
+          letterSpacing: "1px",
         }}
       >
-        From Director's Desk
+        Director's Desk
       </h1>
       <div className="management-container">
         <div className="man-image-container">

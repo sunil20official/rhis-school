@@ -2,8 +2,10 @@ import React from "react";
 import "./Founder.css";
 import founder from "../../media/director-img.png";
 import { CgMoreO } from "react-icons/cg";
+import { useNavigate } from 'react-router-dom';
 
 const Founder = () => {
+  const navigate = useNavigate();
   return (
     <div className="founder-container">
       <div className="img-founder">
@@ -13,18 +15,24 @@ const Founder = () => {
         <h1 style={{ fontSize: "26px", color: "#054099", fontWeight: "600" }}>
           Ashutosh Vibhu
         </h1>
-        <p style={{ fontSize: "16px", color: "#5c93d2" }}>Founder , RHIS</p>
+        <p style={{ fontSize: "16px", color: "#5c93d2" }}>Director , RHIS</p>
         <p
           style={{ color: "#676666", fontWeight: "500", textAlign: "justify" }}
         >
-          Ryan Group is the realization of a vision. A vision to transform the
-          educational landscape in the country and to make quality education
-          available for one and all.
+          Lerro Learning Foundation, registered on 17th May 2021, in Patna laid
+          a foundation by establishing Royal Hills International School and
+          Royal Hills International School Junior in Sitamarhi, with objective
+          of establishing educational institutions with holistic educations.
           <br />
-          It was in 1976 that Dr. Augustine F. Pinto, a graduate from the
-          reputed Loyola College, Chennai, laid the foundation of this vision.
+          The prime objective of the of Lerro Learning Foundation is to provide
+          facilities for quality education to boys and girls of all ages by
+          establishing schools that offer pre-primary to middle stage education.
         </p>
-        <button style={{}} className="view-more-founder">
+        <button
+          onClick={() => navigate("/about/directordesk")}
+          style={{}}
+          className="view-more-founder"
+        >
           <CgMoreO style={{ marginRight: "10px" }} />
           View More
         </button>
@@ -44,11 +52,11 @@ const Founder = () => {
         <p
           style={{ color: "#676666", fontWeight: "400", textAlign: "justify" }}
         >
-          National Education Society's International School Mumbai, has been
-          awarded the British Council International Award 2019 and accreditation
-          for the period 2019-2022. NESISM has also been ranked No. 1 in
-          Maharashtra and No. 1 in Mumbai amongst Maharashtra's Top IB
-          International School's Survey.
+          The curriculum at Royal Hills International School Junior is conceived
+          in such a way that everything the child learns at the preschool
+          prepares him for an easy transition into Grade 1 in any formal
+          schools. This smooth step towards a bigger future is accomplished via
+          series of activities that are woven into academic programs.
         </p>
       </div>
     </div>

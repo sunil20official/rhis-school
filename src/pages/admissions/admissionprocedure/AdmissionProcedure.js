@@ -8,8 +8,8 @@ const AdmissionProcedure = () => {
 			<h1
 				style={{
 					textAlign: 'center',
-					margin: '5rem auto 1rem',
-					padding: '1rem',
+					margin: '7rem auto 2rem',
+					padding: '2rem',
 					width: '100%',
 					borderBottom: '#ff7000 3px solid',
 				}}

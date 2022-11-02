@@ -7,9 +7,8 @@ const SocialInitiatives = () => {
       <h1
         style={{
           textAlign: "center",
-          margin: "5rem auto 0rem",
+          margin: "5rem auto 0,5rem",
           padding: "1rem",
-          width: "80%",
           borderBottom: "#ff7000 3px solid",
         }}
       >

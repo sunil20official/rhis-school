@@ -150,12 +150,10 @@ const NavbarTwo = () => {
               </li>
               <li class="nav-item">
                 <a
+                  href="https://rhis.nletschool.com/site/login"
                   target="_blank"
-                  href="#!"
+                  rel="noreferrer"
                   className="nav-link nav-erp-btn"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   <span>
                     <GrResources className="nav-erp-svg" />

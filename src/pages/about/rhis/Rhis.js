@@ -6,12 +6,25 @@ const Rhis = () => {
   return (
     <div className="main-container-rhis">
       <div className="rhis-container">
-        <div className="heading-cont">
-          <h1 style={{ textAlign: "center"}}>
+        <div
+          className="heading-cont"
+          style={{ borderBottom: "3px solid rgb(255, 112, 0)" }}
+        >
+          <h1
+            style={{
+              textAlign: "center",
+              margin: "2rem auto 0.5rem",
+              letterSpacing: "3px",
+            }}
+          >
             Royal Hills
           </h1>
           <p
-            style={{ textAlign: "center",fontSize: "20px"}}
+            style={{
+              textAlign: "center",
+              fontSize: "20px",
+              letterSpacing: "2px",
+            }}
           >
             Internatinal School
           </p>

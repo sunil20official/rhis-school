@@ -16,7 +16,7 @@ import logo from '../../../media/logo-rhis-cropped.jpeg';
 const TopBar = () => {
 	return (
     <div className="fixed-top-bar">
-      <Link to='/'>
+      <Link to="/">
         <div className="logo-container">
           <img className="logo-image" src={logo} alt="logo" />
         </div>
@@ -30,7 +30,7 @@ const TopBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/admission">Admissions</Link>
+            <Link to="/admission/admission-procedure">Admissions</Link>
           </li>
           <li>
             <a

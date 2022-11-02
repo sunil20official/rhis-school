@@ -6,7 +6,7 @@ const FeeStructure = () => {
 			<h1
 				style={{
 					textAlign: 'center',
-					margin: '5rem auto 1rem',
+					margin: '7rem auto 2rem',
 					padding: '1rem',
 					width: '80%',
 					borderBottom: '#ff7000 3px solid',
@@ -14,18 +14,7 @@ const FeeStructure = () => {
 			>
 				Fee Details
 			</h1>
-			<ul style={{ listStyle: 'none' }}>
-				<li style={{ margin: '3rem auto' }}>
-					<a href='/' target='_blank' rel='noreferrer'>
-						<button className='btn btn-primary'>RHIS Fee Structure</button>
-					</a>
-				</li>
-				<li style={{ margin: '3rem auto' }}>
-					<a href='/' target='_blank' rel='noreferrer'>
-						<button className='btn btn-primary'>Roots Fee Structure</button>
-					</a>
-				</li>
-			</ul>
+			
 		</div>
 	);
 };
