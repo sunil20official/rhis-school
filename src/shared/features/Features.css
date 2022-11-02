@@ -52,10 +52,6 @@
   float: right;
 }
 
-.carousel-item > img {
-  height: 100%;
-}
-
 .carousel-indicators [data-bs-target]{
   text-indent: unset;
   height: fit-content;

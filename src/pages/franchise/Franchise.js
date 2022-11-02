@@ -298,7 +298,7 @@ const Franchise = () => {
             onChange={OnSetMsg}
           />
         </div>
-        <div style={{ margin: "4rem auto", textAlign: "center" }}>
+        <div style={{ margin: "2rem auto 4rem", textAlign: "center" }}>
           <button
             style={{ background: "#337c87", color: "white" }}
             type="button"

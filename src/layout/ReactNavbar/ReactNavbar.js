@@ -889,7 +889,7 @@ const ReactNavbar = ({
                 </li>
                 <li>
                   <Link
-                    to="about"
+                    to="/academics/transport"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
@@ -898,7 +898,7 @@ const ReactNavbar = ({
                 </li>
                 <li>
                   <Link
-                    to="about"
+                    to="/academics/we-care"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
@@ -947,7 +947,7 @@ const ReactNavbar = ({
               >
                 <li>
                   <Link
-                    to="/about"
+                    to="/admission/admission-procedure"
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >

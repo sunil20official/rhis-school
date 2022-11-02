@@ -73,17 +73,17 @@ const Career = () => {
     e.preventDefault();
 
     if (
-      fname == "" ||
-      lname == "" ||
-      phone == "" ||
-      email == "" ||
-      dob == "" ||
-      workExp == "" ||
-      hqual == "" ||
-      expertise == "" ||
-      type == "" ||
-      msg == "" ||
-      cv == null
+      fname === "" ||
+      lname === "" ||
+      phone === "" ||
+      email === "" ||
+      dob === "" ||
+      workExp === "" ||
+      hqual === "" ||
+      expertise === "" ||
+      type === "" ||
+      msg === "" ||
+      cv === null
     ) {
       alert("Plese Enter all the Details");
     } else {
@@ -416,7 +416,7 @@ const Career = () => {
           </p>
         </div>
 
-        <div style={{ margin: "4rem auto", textAlign: "center" }}>
+        <div style={{ margin: "2rem auto 4rem", textAlign: "center" }}>
           <button
             style={{ background: "#337c87", color: "white" }}
             type="button"
