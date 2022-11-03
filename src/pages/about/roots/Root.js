@@ -6,7 +6,10 @@ const Root = () => {
   return (
     <div className="main-container-rhis">
       <div className="rhis-container">
-        <div className="heading-cont">
+        <div
+          className="heading-cont"
+          style={{ borderBottom: "3px solid rgb(255, 112, 0)" }}
+        >
           <h1
             style={{
               textAlign: "center",
