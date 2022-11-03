@@ -27,7 +27,7 @@ const Home = () => {
 		// if()
 		{
 			sessionStorage.getItem('popup') === 'true' &&
-				setTimeout(() => setOpen(sessionStorage.getItem('popup')), 2000);
+				setTimeout(() => setOpen(sessionStorage.getItem('popup')), 10000);
 		}
 		// setOpen(true);
 	}, []);
