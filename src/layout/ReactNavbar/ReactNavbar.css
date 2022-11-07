@@ -163,7 +163,7 @@ body {
 }
 
 .media-transform {
-  transform: translate(-15px, 50px) !important;
+  transform: translate(-10px, 50px) !important;
 }
 
 .academics-transform {
@@ -360,7 +360,7 @@ body {
   }
 
   .trans-about {
-    transform: translate(-70px, 40px) !important;
+    transform: translate(-60px, 40px) !important;
   }
 
   .trans-academics {
