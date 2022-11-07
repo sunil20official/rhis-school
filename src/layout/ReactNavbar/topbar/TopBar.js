@@ -24,10 +24,10 @@ const TopBar = () => {
       <div className="list-container">
         <ul>
           <li>
-            <Link to="tel:8766265528">
+            <a href="tel:8002515700">
               <BsTelephone style={{ fontSize: "24px", padding: "0px 4px" }} />
-              12345679
-            </Link>
+              8002515700
+            </a>
           </li>
           <li>
             <Link to="/admission/admission-procedure">Admissions</Link>
