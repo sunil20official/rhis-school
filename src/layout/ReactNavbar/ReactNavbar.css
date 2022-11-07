@@ -137,7 +137,7 @@ body {
 }
 
 .custom-dropdown {
-  background: rgba(255,255,255,0.3) !important;
+  background: rgba(255, 255, 255, 0.3) !important;
   color: black !important;
   border: none !important;
   font-weight: 900 !important;
@@ -293,20 +293,20 @@ body {
   }
 
   .menuBurgerItem1 {
-  transform: rotateZ(45deg);
-  top: 2vmax;
-  position: absolute;
-  background-color: whitesmoke !important;
-}
-.menuBurgerItem2 {
-  transform: translateX(-200%);
-}
-.menuBurgerItem3 {
-  transform: rotateZ(-45deg);
-  top: 2vmax;
-  position: absolute;
-  background-color: whitesmoke !important;
-}
+    transform: rotateZ(45deg);
+    top: 2vmax;
+    position: absolute;
+    background-color: whitesmoke !important;
+  }
+  .menuBurgerItem2 {
+    transform: translateX(-200%);
+  }
+  .menuBurgerItem3 {
+    transform: rotateZ(-45deg);
+    top: 2vmax;
+    position: absolute;
+    background-color: whitesmoke !important;
+  }
 
   .nav1 {
     display: none !important;
@@ -373,5 +373,8 @@ body {
 
   .trans-careers {
     transform: translate(-70px, 40px) !important;
+  }
+  .media-transform {
+    transform: translate(0px, 50px) !important;
   }
 }
