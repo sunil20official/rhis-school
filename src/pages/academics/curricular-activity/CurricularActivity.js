@@ -19,7 +19,6 @@ const CurricularActivity = () => {
         <p
           style={{
             fontWeight: "bold",
-            fontSize: "14px",
           }}
         >
           BECAUSE LEARNING IS NOT LIMITED TO TEXT BOOKS AND EXAMS

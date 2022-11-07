@@ -1,6 +1,7 @@
 import React from "react";
 import "./Rhis.css";
 import rhisImg from "../../../media/rhis-image.png";
+import { fontWeight } from "@mui/system";
 
 const Rhis = () => {
   return (
@@ -89,14 +90,32 @@ const Rhis = () => {
               </li>
             </ul>
           </p>
-          <h4>Our Vision</h4>
+          <p
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bolder",
+              marginTop: "0rem",
+            }}
+            className="rhis-text"
+          >
+            Our Vision
+          </p>
           <p className="rhis-text">
             To establish an ideal preschool chain that leads in offering a
             powerful foundation to young children who will joyfully take-off on
             the journey to discover the world of happy thinking, learning and to
             create global citizens.
           </p>
-          <h4>Our Mission</h4>
+          <p
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bolder",
+              marginTop: "0rem",
+            }}
+            className="rhis-text"
+          >
+            Our Mission
+          </p>
           <p className="rhis-text">
             <ul>
               <li>
