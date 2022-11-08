@@ -98,11 +98,23 @@
 }
 
 .story-section {
-  margin: 3rem auto 0rem;
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  margin: 1rem auto 1rem;
   padding: 2rem 0rem;
   text-align: center;
   transition: all 3s ease-in-out;
-  margin-bottom: 2rem;
+}
+
+.our-story-heading {
+  color: #082a59;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 2rem 1rem;
 }
 
 .story-text {
@@ -179,6 +191,16 @@
   justify-content: center;
   background-color: #082a59;
   color: white;
+}
+
+.shaping-future-heading {
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 2rem 1rem;
 }
 
 .youtube-text {
@@ -280,7 +302,7 @@
     color: #8d91a3;
   }
   p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .youtube {
@@ -298,5 +320,23 @@
     background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
     border-radius: 10px;
     color: white !important;
+  }
+  .our-story-heading {
+    color: #082a59;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+  }
+  .shaping-future-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
   }
 }

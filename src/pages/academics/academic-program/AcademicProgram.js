@@ -41,7 +41,7 @@ const AcademicProgram = () => {
               width: "80%",
             }}
           >
-            Early Child Education (RHIS Junior)
+            <strong>Early Child Education (RHIS Junior)</strong>
           </p>
           <p>
             The Pre-Primary teaching broadly uses the Play Way Method to teach
@@ -52,6 +52,26 @@ const AcademicProgram = () => {
             classroom. Field Trips, Nature Walks, Celebrations of Festivals,
             Topic-based Projects, form a regular and integral part of learning-
             through-doing.
+          </p>
+          <p>
+            <strong>Play Group (Age Group: 1.5 – 2.5 Years)</strong>
+            <br />
+            Our play group provides children with a range of individual, small
+            and large group activities.
+            <br />
+            <br />
+            <strong>Nursery ((Age Group: 2.5 – 3.5 Years)</strong>
+            <br />
+            In Nursery, children are engaged in school readiness activities such
+            as reading, writing, counting numbers. Children are encouraged with
+            group activities.
+            <br />
+            <br />
+            <strong>Kindergarten</strong>
+            <br />
+            Junior KG (Age Group: 3.5 – 4.5 Years)
+            <br />
+            Senior KG (Age Group: 4.5 – 5.5 Years)
           </p>
         </div>
         <div className="img-cont">

@@ -12,6 +12,7 @@ import RhisYouTube from "../shared/RhisYouTube";
 import PopupModal from "../shared/PopupModal";
 import Founder from "../shared/founder/Founder";
 import Facility from "../shared/facilities/Facility";
+import quesmark from '../media/ques-mark.svg';
 
 const Home = () => {
   const [open, setOpen] = React.useState(false);
@@ -45,16 +46,27 @@ const Home = () => {
         <Features />
         <WhatWeOffer />
         <div id="story" className="story-section" data-aos="zoom-out">
-          <h1 style={{ fontWeight: "bolder" }}>Our Story</h1>
-          <div>
+          <h1 className="our-story-heading">Our Story</h1>
+          {/* <div>
             <img
               style={{ width: "100px", height: "100px", margin: "1rem auto" }}
               src={story}
               alt=""
             />
-          </div>
+          </div> */}
           <p className="story-text">
             <p>
+              <span>
+                <img
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    margin: "-10px 10px 0px 0px",
+                  }}
+                  src={quesmark}
+                  alt=""
+                />
+              </span>
               There is a future we believe in, fostered by strong souls and
               inventive minds. We believe the way to usher in change, is to
               empower young minds with stellar education, thus creating the
@@ -78,6 +90,18 @@ const Home = () => {
               and honesty. Not only this, but we also develop patriotic, social
               and ethical values among students for developing responsive
               citizenship to revive the past glory of Indian culture .
+              <span>
+                <img
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    margin: "-10px 0px 0px 10px",
+                    transform:"rotate(180deg)"
+                  }}
+                  src={quesmark}
+                  alt=""
+                />
+              </span>
             </p>
           </p>
         </div>

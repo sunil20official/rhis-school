@@ -8,7 +8,8 @@ import "./whatWeOffer.css";
 const WhatWeOffer = () => {
   return (
     <div id="whatweoffer" className="whatweoffer">
-      <h1 style={{ textAlign: "center", marginTop: "2.5rem" }}
+      <h1
+        className='whatweoffer-heading'
       >
         What We Offer
       </h1>
@@ -58,12 +59,12 @@ const WhatWeOffer = () => {
             <p>Education Programs</p>
           </div>
         </div>
-        <div className="icon-div">
+        {/* <div className="icon-div">
           <div data-aos="flip-left">
             <AiOutlineCalendar style={{ fontSize: "100px" }} />
             <p>Latest Events</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

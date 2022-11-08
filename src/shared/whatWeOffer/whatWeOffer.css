@@ -1,34 +1,56 @@
 .whatweoffer {
-	position: relative;
-	width: 100vw;
-	left: calc(-50vw + 50%);
-	background-color: #082a59;
-	color: white;
-	text-align: center;
-	padding: 30px 20px;
-	margin: 0rem;
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  background-color: #082a59;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 0rem;
+}
+
+.whatweoffer-heading {
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 2rem 1rem;
 }
 
 .icon-container {
-	display: flex;
-	padding: 20px;
-	margin: 40px 0px;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  padding: 20px;
+  margin: 40px 0px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .icon-div {
-	min-width: 250px;
-	margin: 20px;
-	cursor: pointer;
-	transition: all 0.8s ease-in-out;
+  min-width: 250px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
 }
 
 .icon-div:hover {
-	background-color: white;
-	color: #ea7d2a;
-	transform: scale(1.1);
-	border-radius: 10px;
+  background-color: white;
+  color: #ea7d2a;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .whatweoffer-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
 }
