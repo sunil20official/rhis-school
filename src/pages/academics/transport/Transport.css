@@ -5,6 +5,10 @@
   flex: 1 1;
   margin: 2rem auto 3rem;
   padding: 2rem;
+  position: relative;
+  left: calc(-50vw + 50%);
+  width: 100vw;
+  background: #082a59;
 }
 
 .transport-container > div {

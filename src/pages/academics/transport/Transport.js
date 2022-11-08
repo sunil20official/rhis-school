@@ -18,7 +18,7 @@ const Transport = () => {
       </h1>
       <div className="transport-container">
         <div className="transport-content">
-          <p>
+          <p style={{color:"white"}}>
             As far as we talk about the transport facilities, we ensure that our
             school provides the utmost safety to the students. Moreover, we run
             busses and vans for our students so that they can safely reach on
