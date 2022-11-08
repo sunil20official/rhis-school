@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../shared/management/Management.css';
-import principal from '../../../media/principal.png';
+import principal from '../../../media/principalpic.png';
 
 const PrincipalMsg = () => {
 	return (
@@ -46,18 +46,33 @@ const PrincipalMsg = () => {
           </h6>
           <p style={{ color: "rgb(92, 147, 210)" }}> RHIS Sitamarhi</p>
           <p className="management-message">
-            Ryan Group is the realization of a vision. A vision to transform the
-            educational landscape in the country and to make quality education
-            available for one and all. From humble beginnings to one of the
-            largest privately run educational institutes in the country, the
-            story of Ryan Group is a tale written in spunk, enterprise and a
-            compelling desire for palpable social change. It was in 1976 that
-            Dr. Augustine F. Pinto, a graduate from the reputed Loyola College,
-            Chennai, laid the foundation of this vision. The initial setbacks
-            and challenges were never a concern for this man who had tremendous
-            faith in God and in his dream. It is his commitment, prudence and
-            visionary approach to school education that has made him one of the
-            most admired figures in the contemporary education sector.
+            It gives me immense pleasure of accomplishment to be addressed as
+            the Principal and successfully impart years of knowledge and wisdom
+            to this prestigious institute. The High academic standards of this
+            school have strived well to maintain the excellence and the
+            ever-changing dynamics of the education sector.
+            <br /><br />
+            In order to let them
+            attain their highest potential, we shape our student’s minds with
+            knowledge and provide a variety of opportunities that ensures their
+            self-growth. The role of a school is to strengthen the character and
+            make students ready to withstand the upcoming challenges of life. We
+            want our students to develop a sense of pride in everything they do
+            without merely focusing on being competitive. We aim to build giant
+            strides with our curriculum and utmost dedication with constant hard
+            work. We thoroughly seek to build personalities from their initial
+            days of education so that they can excel in all their future
+            prospects.
+            <br/><br/>
+            We are a dedicated team of faculty sheerly enthusiastic
+            about shaping the future of the students and making them compatible
+            enough for this fiercely competitive world. Also, we take pride in
+            providing a congenial atmosphere for learning and developing
+            exemplary stamina with a lot of courage and compassion to deal with
+            things. With all things being said, we ensure you that the students
+            enrolled here will get the right knowledge along with the collective
+            guidance in shaping them into better individuals with all the values
+            and high Morales.
           </p>
         </div>
       </div>

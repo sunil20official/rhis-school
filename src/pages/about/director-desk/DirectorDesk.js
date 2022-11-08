@@ -42,21 +42,35 @@ const DirectorDesk = () => {
             RHIS , Lerro Learning Foundation
           </p>
           <p className="management-message">
-            Ryan Group is the realization of a vision. A vision to transform the
-            educational landscape in the country and to make quality education
-            available for one and all. From humble beginnings to one of the
-            largest privately run educational institutes in the country, the
-            story of Ryan Group is a tale written in spunk, enterprise and a
-            compelling desire for palpable social change.
+            <strong>
+              "Somewhere, something incredible is waiting to be known." -Carl
+              Sagan
+            </strong>{" "}
             <br />
             <br />
-            It was in 1976 that Dr. Augustine F. Pinto, a graduate from the
-            reputed Loyola College, Chennai, laid the foundation of this vision.
-            The initial setbacks and challenges were never a concern for this
-            man who had tremendous faith in God and in his dream. It is his
-            commitment, prudence and visionary approach to school education that
-            has made him one of the most admired figures in the contemporary
-            education sector.
+            This quote is relevant for all of us: children, parents and
+            teachers. RHIS focuses on all-round development of its students.
+            Education is the most powerful tool to enrich one's personality and
+            also to inculcate positive changes in society. It is the only medium
+            that enables us to move from darkness to light. I strongly believe
+            that the education system is the most influential factor to drive
+            and improve our nation's prosperity and social- economic well-being.
+            <br />
+            <br />
+            The school is founded on the belief that children should be
+            encouraged to dream, and passionately pursue their dreams. We work
+            towards opening their minds, help them identify their interests and
+            aspirations, and nourish their individual talents. We believe that
+            every one of our students has the potential to become a leader of
+            tomorrow.
+            <br />
+            <br />
+            We should all remember that "Honesty is the first chapter in the
+            book of wisdom" and we should inculcate honesty and integrity in all
+            that we do. I earnestly hope and trust that the academicians and
+            budding children will continue to work with sincerity, honesty and
+            dedication and thereby contribute to make this world a better place
+            to live.
           </p>
         </div>
       </div>

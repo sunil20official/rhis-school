@@ -1,42 +1,43 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 // import $ from 'jquery';
 
-import Carousel from '../shared/carousel/Carousel';
+import Carousel from "../shared/carousel/Carousel";
 // import Testimonials from '../shared/Testimonials';
-import Features from '../shared/features/Features';
-import WhatWeOffer from '../shared/whatWeOffer/WhatWeOffer';
-import Staff from '../shared/staff/Staff';
-import story from '../media/images/book-solid.svg';
-import CountUp from '../shared/countup/CountUp';
-import RhisYouTube from '../shared/RhisYouTube';
-import PopupModal from '../shared/PopupModal';
-import Founder from '../shared/founder/Founder';
-import Facility from '../shared/facilities/Facility';
+import Features from "../shared/features/Features";
+import WhatWeOffer from "../shared/whatWeOffer/WhatWeOffer";
+import Staff from "../shared/staff/Staff";
+import story from "../media/images/book-solid.svg";
+import CountUp from "../shared/countup/CountUp";
+import RhisYouTube from "../shared/RhisYouTube";
+import PopupModal from "../shared/PopupModal";
+import Founder from "../shared/founder/Founder";
+import Facility from "../shared/facilities/Facility";
 
 const Home = () => {
-	const [open, setOpen] = React.useState(false);
-	const handleClose = () => {
-		setOpen(false);
-		sessionStorage.setItem('popup', 'false');
-	};
-	useEffect(() => {
-		// sessionStorage.setItem('popup', { sessionStorage.getItem('popup') ? 'true' : 'false' });
-		{
-			!sessionStorage.getItem('popup') && sessionStorage.setItem('popup', 'true');
-		}
-		// if()
-		{
-			sessionStorage.getItem('popup') === 'true' &&
-				setTimeout(() => setOpen(sessionStorage.getItem('popup')), 10000);
-		}
-		// setOpen(true);
-	}, []);
+  const [open, setOpen] = React.useState(false);
+  const handleClose = () => {
+    setOpen(false);
+    sessionStorage.setItem("popup", "false");
+  };
+  useEffect(() => {
+    // sessionStorage.setItem('popup', { sessionStorage.getItem('popup') ? 'true' : 'false' });
+    {
+      !sessionStorage.getItem("popup") &&
+        sessionStorage.setItem("popup", "true");
+    }
+    // if()
+    {
+      sessionStorage.getItem("popup") === "true" &&
+        setTimeout(() => setOpen(sessionStorage.getItem("popup")), 10000);
+    }
+    // setOpen(true);
+  }, []);
 
-	window.onunload = function () {
-		sessionStorage.removeItem('popup');
-	};
+  window.onunload = function () {
+    sessionStorage.removeItem("popup");
+  };
 
-	return (
+  return (
     <>
       <Carousel />
       <div className="container-lg">
@@ -80,13 +81,12 @@ const Home = () => {
             </p>
           </p>
         </div>
-
+        <CountUp />
         {/* <Testimonials /> */}
         <RhisYouTube />
         <PopupModal open={open} handleClose={handleClose} setOpen={setOpen} />
         <Founder />
-        <Staff />
-        <CountUp />
+        {/* <Staff /> */}
       </div>
     </>
   );

@@ -20,9 +20,8 @@
 
 .rhis-text {
   color: black;
-  margin: 3rem 20px 1rem;
+  margin: 1rem 20px 1rem;
   padding: 0px 30px;
-  font-size: 16px;
 }
 
 @media screen and (max-width: 500px) {
@@ -30,7 +29,6 @@
     color: black;
     margin: 0px;
     padding: 0px;
-    /* font-size: 13px; */
   }
 }
 

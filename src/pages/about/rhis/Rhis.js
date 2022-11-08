@@ -1,7 +1,6 @@
 import React from "react";
 import "./Rhis.css";
-import rhisImg from "../../../media/rhis-image.png";
-import { fontWeight } from "@mui/system";
+import rhisImg from "../../../media/royalhillsimage.jpg";
 
 const Rhis = () => {
   return (
@@ -38,28 +37,30 @@ const Rhis = () => {
           />
         </div>
         <div>
-          <p className="rhis-text">
-            Royal Hills International School Junior was established to provide a
-            platform of great opportunities to every child. We endeavor to
-            provide exceptional care to our children in a safe and secure
-            environment where children feel loved and develop to their fullest
-            potential. Here children are not just given wings, but the school
-            also ensures that they develop strong Royal Hills International
-            School Junior. Most importantly, children are loved and made to feel
-            cherished so that they approach life with a positive attitude.
+          <p style={{marginTop:"2rem"}} className="rhis-text">
+            There is a future we believe in, fostered by strong souls and
+            inventive minds. We believe the way to usher in change, is to
+            empower young minds with stellar education, thus creating the
+            enablers of tomorrow.
           </p>
           <p className="rhis-text">
-            The curriculum at Royal Hills International School Junior is
-            conceived in such a way that everything the child learns at the
-            preschool prepares him for an easy transition into Grade 1 in any
-            formal schools. This smooth step towards a bigger future is
-            accomplished via series of activities that are woven into academic
-            programs.
+            Laying its foundation stone in 2021, Royal Hills International
+            School was set up with a vision: To create leaders of tomorrow by
+            imparting education. free from all prejudices with a focus on the
+            holistic development of students.
           </p>
           <p className="rhis-text">
-            We are here for upgrading all round development of the children and
-            facilitating the youthful minds to cope with ever – growing
-            challenges of life.
+            RHIS offers a curriculum from Grades I onwards, mapped as per the
+            Central Board of Secondary Education, New Delhi. At RHIS, we
+            encourage our students to learn, play and create new opportunities
+            for themselves. Education is not the process of teaching by the
+            teacher, it is the process to encourage the learning process of the
+            student. Our main emphasis is on providing quality education and
+            excellence in all the fields to inspire the students to be morally
+            upright and possess qualities of integrity, truthfulness and
+            honesty. Not only this, but we also develop patriotic, social and
+            ethical values among students for developing responsive citizenship
+            to revive the past glory of Indian culture.
           </p>
           <p className="rhis-text">
             <ul>
@@ -71,10 +72,10 @@ const Rhis = () => {
                 <strong>QUALIFIED</strong>: Backed by a well-qualified team of
                 preschool teachers, we ensure to provide quality education.
               </li>
-              <li>
+              {/* <li>
                 <strong>EXPERIENCE</strong>: With immense experience, our early
                 childhood educators educate and care for children with .
-              </li>
+              </li> */}
               <li>
                 <strong>PLAY AREAS</strong>: We have play spaces that your
                 children will surely love! Our play areas keep children
@@ -101,10 +102,13 @@ const Rhis = () => {
             Our Vision
           </p>
           <p className="rhis-text">
-            To establish an ideal preschool chain that leads in offering a
-            powerful foundation to young children who will joyfully take-off on
-            the journey to discover the world of happy thinking, learning and to
-            create global citizens.
+            Some people follow a path they choose on their own. They discover
+            their true calling. They chase their dreams with passion, and excel
+            in their chosen discipline. But, best of all, they become what they
+            want to be. Royal Hills International School is the school for such
+            people. TO facilitate a learning environment that encourages
+            children to bring out the best in themselves and enables their
+            all-round development through the joy of learning.
           </p>
           <p
             style={{
@@ -119,31 +123,20 @@ const Rhis = () => {
           <p className="rhis-text">
             <ul>
               <li>
-                <strong>Transformation of the Education System</strong>: To
-                revolutionize the education system so that children are imparted
-                'Education for Life' which encompasses not only knowledge but
-                also enhances the talents and life skills necessary for the
-                holistic development of the child.
+                To provide an environment that helps young minds freely learn
+                and develop and help children evolve as complete individuals,
+                ready to transform as leaders of the 21st Century with values
+                and life skills inculcated in them.
               </li>
               <li>
-                <strong>Transformation of Parenting</strong>: To guide and
-                enlighten parents about positive parenting so as to enable them
-                to make their parenting experience richer, more joyful and more
-                rewarding.
+                To help children in encouraging values such as creative ability
+                - discover new ideas and skills.
               </li>
               <li>
-                <strong>
-                  Transformation in the role and status of teachers
-                </strong>
-                : To elevate the status and widen the horizons of teachers by
-                equipping them with knowledge, expertise and skills required to
-                transform them into leaders in education
+                To inculcate positive values i.e. moral development through
+                prayers, stories and poems.
               </li>
-              <li>
-                To initiate a vibrant journey that taps, unlocks and enhances
-                the potentials of the pre-scholars who transform into courageous
-                and motivated individuals.
-              </li>
+              <li>To foster independence and self-reliance.</li>
             </ul>
           </p>
         </div>
