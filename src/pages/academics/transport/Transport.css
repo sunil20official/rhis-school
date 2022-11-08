@@ -1,0 +1,27 @@
+.transport-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1;
+  margin: 2rem auto 3rem;
+  padding: 2rem;
+}
+
+.transport-container > div {
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .transport-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    margin: 1rem auto 3rem;
+    padding: 0px;
+  }
+  .transport-container > div {
+    padding: 20px 0px;
+  }
+}
