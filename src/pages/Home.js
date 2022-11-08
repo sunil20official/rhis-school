@@ -81,7 +81,7 @@ const Home = () => {
             </p>
           </p>
         </div>
-        <CountUp />
+        {/* <CountUp /> */}
         {/* <Testimonials /> */}
         <RhisYouTube />
         <PopupModal open={open} handleClose={handleClose} setOpen={setOpen} />

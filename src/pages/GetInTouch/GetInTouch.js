@@ -124,13 +124,13 @@ const GetInTouch = () => {
             </div>
             <div className="address">
               <MdEmail style={{ fontSize: "35px" }} />
-              <p style={{ width: "70%", marginBottom: "0px" }}>info@rhis.in</p>
+              <p style={{ width: "70%", marginBottom: "0px" }}>
+                royalhillsinternationalschool@gmail.com
+              </p>
             </div>
             <div className="address" style={{ marginTop: "2rem" }}>
               <BsFillTelephoneFill style={{ fontSize: "30px" }} />
-              <p style={{ width: "70%", marginBottom: "0px" }}>
-                8002515700 , 8002473700
-              </p>
+              <p style={{ width: "70%", marginBottom: "0px" }}>9031706635</p>
             </div>
           </div>
         </div>
@@ -186,14 +186,12 @@ const GetInTouch = () => {
               <div className="address">
                 <MdEmail style={{ fontSize: "35px" }} />
                 <p style={{ width: "70%", marginBottom: "0px" }}>
-                  info@rhis.in
+                  royalhillsinternationalschool@gmail.com
                 </p>
               </div>
               <div className="address" style={{ marginTop: "2rem" }}>
                 <BsFillTelephoneFill style={{ fontSize: "30px" }} />
-                <p style={{ width: "70%", marginBottom: "0px" }}>
-                  8002515700 , 8002473700
-                </p>
+                <p style={{ width: "70%", marginBottom: "0px" }}>9031706635</p>
               </div>
             </div>
 
@@ -235,14 +233,12 @@ const GetInTouch = () => {
               <div className="address">
                 <MdEmail style={{ fontSize: "35px" }} />
                 <p style={{ width: "70%", marginBottom: "0px" }}>
-                  info@rhis.in
+                  royalhillsinternationalschool@gmail.com
                 </p>
               </div>
               <div className="address" style={{ marginTop: "2rem" }}>
                 <BsFillTelephoneFill style={{ fontSize: "30px" }} />
-                <p style={{ width: "70%", marginBottom: "0px" }}>
-                  8002515700 , 8002473700
-                </p>
+                <p style={{ width: "70%", marginBottom: "0px" }}>9031706635</p>
               </div>
             </div>
 

@@ -1,16 +1,16 @@
 import React from 'react';
 import './Management.css';
-import principal from '../../media/principal.png';
+// import principal from '../../media/principal.png';
 
 const Management = () => {
 	return (
 		<div className='management-container'>
 			<div className='man-image-container'>
-				<img
+				{/* <img
 					className='management-image'
 					src={principal}
 					alt='director of school'
-				/>
+				/> */}
 			</div>
 			<div className='man-message-container'>
 				<h4 style={{ fontWeight: '700', marginLeft: '0px' }}>

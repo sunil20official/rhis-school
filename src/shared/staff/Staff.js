@@ -1,6 +1,6 @@
 import React from 'react';
 import './Staff.css';
-import staffuser from '../../media/staffuser.jpg';
+// import staffuser from '../../media/staffuser.jpg';
 
 const Staff = () => {
 	return (
@@ -20,19 +20,19 @@ const Staff = () => {
       <div className="staff-container">
         <div className="staff">
           <div data-aos="slide-up">
-            <img className="staff-img" src={staffuser} alt="staff" />
+            {/* <img className="staff-img" src={staffuser} alt="staff" /> */}
           </div>
           <p data-aos="slide-down">teacher name 1</p>
         </div>
         <div className="staff">
           <div data-aos="slide-up">
-            <img className="staff-img" src={staffuser} alt="staff" />
+            {/* <img className="staff-img" src={staffuser} alt="staff" /> */}
           </div>
           <p>teacher name 1</p>
         </div>
         <div className="staff">
           <div data-aos="slide-up">
-            <img className="staff-img" src={staffuser} alt="staff" />
+            {/* <img className="staff-img" src={staffuser} alt="staff" /> */}
           </div>
           <p>teacher name 1</p>
         </div>
