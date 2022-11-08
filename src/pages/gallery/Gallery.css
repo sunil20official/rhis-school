@@ -1,16 +1,26 @@
-.gallery-cont{
+.gallery-cont {
   margin: 3rem auto;
 }
-.gallery-grid{
+.gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-.gallery-img-cont{
-  border: 1px solid black;
+.gallery-img-cont {
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.gallery-img{
+.gallery-img {
   width: 100%;
   height: max-content;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
 }

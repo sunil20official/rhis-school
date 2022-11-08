@@ -27,7 +27,7 @@ import CurricularActivity from './pages/academics/curricular-activity/Curricular
 import Transport from './pages/academics/transport/Transport';
 import WeCare from './pages/academics/we-care/WeCare';
 
-
+import ComingSoon from "./pages/comingsoon/ComingSoon";
 import NotFound from "./pages/NotFound";
 import Franchise from "./pages/franchise/Franchise";
 import Career from "./pages/career/Career";
@@ -44,17 +44,6 @@ function App() {
       behavior: "smooth",
     });
   };
-
-  // const cursorRef = useRef(null);
-
-  // useEffect(() => {
-  //   document.addEventListener("mousemove", (e) => {
-  //     cursorRef.current.setAttribute(
-  //       "style",
-  //       "top: " + (e.pageY + 5) + "px; left: " + (e.pageX + 5) + "px;"
-  //     );
-  //   });
-  // }, []);
 
   return (
     <Router>
@@ -101,10 +90,11 @@ function App() {
                 path="/admission/admission-procedure"
                 element={<AdmissionProcedure />}
               />
-              <Route
-                path="/admission/fee-structure"
-                element={<FeeStructure />}
-              />
+              <Route path="/admission/fee-structure" element={<ComingSoon />} />
+              
+              {/* media pages with coming soon page */}
+              <Route path="/media/news" element={<ComingSoon />} />
+              <Route path="/media/events" element={<ComingSoon />} />
 
               <Route path="/franchise" element={<Franchise />} />
               <Route path="/careers" element={<Career />} />

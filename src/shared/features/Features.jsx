@@ -1,12 +1,11 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import "./Features.css";
 
-import slide1_img from "../../media/images/feature_slide_1.jpg";
-import slide2_img from "../../media/images/feature_slide_2.png";
-import slide3_img from "../../media/images/feature_slide_3.jpg";
+import slide1_img from "../../media/celebration.jpg";
+import slide2_img from "../../media/images/tour.jpg";
+import slide3_img from "../../media/recreational.jpg";
 
 const Features = () => {
-
   const [first, setFirst] = useState(true);
   const [second, setSecond] = useState(false);
   const [third, setThird] = useState(false);
@@ -15,7 +14,7 @@ const Features = () => {
     setFirst(true);
     setSecond(false);
     setThird(false);
-  }
+  };
 
   const handleClickSecond = () => {
     setFirst(false);
@@ -28,7 +27,6 @@ const Features = () => {
     setSecond(false);
     setThird(true);
   };
-
 
   return (
     <div className="features-container">
@@ -49,18 +47,21 @@ const Features = () => {
                       Celebration Of <br /> Festivals
                     </h1>
                     <p>
-                      There is a future we believe in, fostered by strong souls
-                      and inventive minds. We believe the way to usher in
-                      change, is to empower young minds with stellar education,
-                      thus creating the enablers of tomorrow. Laying its
-                      foundation stone in 2021, Royal Hills International School
-                      was set up with a vision: To create leaders of tomorrow by
-                      imparting education. free from all prejudices with a focus
-                      on the holistic development of students.
+                      We are happy to proclaim that we consider festivals an
+                      opportunity to make students come in proximity to their
+                      cultural beliefs.
+                      <br />
+                      <br />
+                      So, in order to shape their inventive minds, we let them
+                      experience the diverse festivity with sheer enthusiasm.
                     </p>
                   </div>
                   <div className="feature-right-part">
-                    <img src={slide1_img} alt="first slide " />
+                    <img
+                      className="sliding-image"
+                      src={slide1_img}
+                      alt="first slide "
+                    />
                   </div>
                 </div>
               </div>
@@ -72,17 +73,20 @@ const Features = () => {
                       Educational Tours <br /> & Excursions
                     </h1>
                     <p>
-                      The boarding house design is a fine blend of comfort and
-                      safety where structures and open spaces merge beautifully
-                      to create a vibrant environment for congenial coexistence.
-                      Students of the Kasiga family find school an extension of
-                      their home; a place where learning takes place in a caring
-                      and safe environment under the care of experienced
-                      pastoral staff.
+                      Since our priority is to provide quality education with
+                      utmost comfort to our students,
+                      <br />
+                      <br /> we make sure that they are taken to different
+                      educational tours that eventually broaden their
+                      perspective in every field.
                     </p>
                   </div>
                   <div className="feature-right-part">
-                    <img src={slide2_img} alt="first slide " />
+                    <img
+                      className="sliding-image"
+                      src={slide2_img}
+                      alt="second slide "
+                    />
                   </div>
                 </div>
               </div>
@@ -94,17 +98,22 @@ const Features = () => {
                       Recreational <br /> Activities
                     </h1>
                     <p>
-                      The boarding house design is a fine blend of comfort and
-                      safety where structures and open spaces merge beautifully
-                      to create a vibrant environment for congenial coexistence.
-                      Students of the Kasiga family find school an extension of
-                      their home; a place where learning takes place in a caring
-                      and safe environment under the care of experienced
-                      pastoral staff.
+                      Including recreational activities in the educational
+                      curriculum has been one of our primary mottos since the
+                      inception of our school. We believe that awakened senses
+                      in both psychological and physical terms is as important
+                      as your academics for overall holistic development. So, in
+                      order to cope with that, we come up with different
+                      recreational activities for our students at regular
+                      intervals of time.
                     </p>
                   </div>
                   <div className="feature-right-part">
-                    <img src={slide3_img} alt="first slide " />
+                    <img
+                      className="sliding-image"
+                      src={slide3_img}
+                      alt="third slide"
+                    />
                   </div>
                 </div>
               </div>
