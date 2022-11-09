@@ -21,12 +21,7 @@ const Facility = () => {
   return (
     <div className="facility-container">
       <h1
-        style={{
-          color: "white",
-          fontSize: "50px",
-          fontWeight: "bolder",
-          letterSpacing: "4px",
-        }}
+        className="facilities-heading"
       >
         FACILITIES
       </h1>
