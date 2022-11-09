@@ -2,12 +2,10 @@
   margin: 3rem auto;
 }
 
-.gallery-img-cont {
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.styles_lightroom__1X2qE {
+    background-color: rgba(73, 69, 69, 0.8) !important;
 }
+
 .styles_lightroomcontent__1SCaZ {
   /* margin: 3rem auto; */
   height: 100% !important;
@@ -40,8 +38,8 @@
   }
   .styles_topmenu__oGT_u {
     position: absolute;
-    right: 15% !important;
-    top: 20% !important;
+    left: 5% !important;
+    top: 10% !important;
     font-size: medium;
   }
 }

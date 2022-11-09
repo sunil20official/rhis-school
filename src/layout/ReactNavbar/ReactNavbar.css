@@ -141,7 +141,7 @@ body {
   color: black !important;
   border: none !important;
   font-weight: 900 !important;
-  min-width: 110px;
+  min-width: 130px;
 }
 
 .custom-dropdown:focus {
@@ -159,11 +159,11 @@ body {
 }
 
 .about-transform {
-  transform: translate(-38px, 50px) !important;
+  transform: translate(-25px, 50px) !important;
 }
 
 .media-transform {
-  transform: translate(-10px, 50px) !important;
+  transform: translate(2px, 50px) !important;
 }
 
 .academics-transform {
@@ -360,15 +360,15 @@ body {
   }
 
   .trans-about {
-    transform: translate(-60px, 40px) !important;
+    transform: translate(-48px, 40px) !important;
   }
 
   .trans-academics {
-    transform: translate(-40px, 40px) !important;
+    transform: translate(-23px, 40px) !important;
   }
 
   .trans-admission {
-    transform: translate(-37px, 40px) !important;
+    transform: translate(-20px, 40px) !important;
   }
 
   .trans-careers {

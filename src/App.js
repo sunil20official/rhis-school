@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-// import { useRef, useEffect } from "react";
 
 import Header from "./layout/Header";
 import Home from "./pages/Home";
@@ -11,7 +10,6 @@ import GetInTouch from "./pages/GetInTouch/GetInTouch";
 import Footer from "./layout/Footer/Footer";
 import TopBar from "./layout/ReactNavbar/topbar/TopBar";
 import NavbarTwo from "./layout/NavbarTwo/NavbarTwo";
-// import Admission from "./pages/admissions/Admission";
 
 //     about pages
 import About from "./pages/About";

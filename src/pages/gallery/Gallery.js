@@ -105,6 +105,13 @@ const Gallery = () => {
     mode: "dark",
   };
 
+  const srollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="gallery-cont">
       <h1
@@ -119,7 +126,7 @@ const Gallery = () => {
         Gallery
       </h1>
 
-      <div className="gallery-grid">
+      <div className="gallery-grid" onClick={() => srollTop()}>
         <Lightroom images={images} settings={settings} />
       </div>
     </div>
