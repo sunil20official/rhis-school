@@ -1,6 +1,6 @@
 import React from "react";
 import "./Rhis.css";
-import rhisImg from "../../../media/royalhillsimage.jpg";
+import rhisImg from "../../../media/rhis-trial.jpg";
 
 const Rhis = () => {
   return (

@@ -88,6 +88,14 @@ const NavbarTwo = () => {
                       Social Initiatives
                     </Link>
                   </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
+                    <Link to="/gallery" class="dropdown-item">
+                      Gallery
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -135,6 +143,25 @@ const NavbarTwo = () => {
                     <hr class="dropdown-divider custom-divider" />
                   </li>
                   <li>
+                    <Link
+                      to="/admission/admission-procedure"
+                      class="dropdown-item"
+                    >
+                      Admission Procedure
+                    </Link>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
+                    <Link to="/admission/fee-structure" class="dropdown-item">
+                      Fee Structure
+                    </Link>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
                     <Link to="/academics/we-care" class="dropdown-item">
                       We Care
                     </Link>
@@ -152,23 +179,36 @@ const NavbarTwo = () => {
                   <span>
                     <RiBuilding4Fill />
                   </span>
-                  Admissions
+                  Careers
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <Link
-                      to="/admission/admission-procedure"
-                      class="dropdown-item"
-                    >
-                      Admission Procedure
+                    <Link to="/careers" class="dropdown-item">
+                      Careers
                     </Link>
                   </li>
                   <li>
                     <hr class="dropdown-divider custom-divider" />
                   </li>
                   <li>
-                    <Link to="/admission/fee-structure" class="dropdown-item">
-                      Fee Structure
+                    <Link to="/franchise" class="dropdown-item">
+                      Franchise
+                    </Link>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
+                    <Link to="/media/news" class="dropdown-item">
+                      News
+                    </Link>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider custom-divider" />
+                  </li>
+                  <li>
+                    <Link to="/media/events" class="dropdown-item">
+                      Events
                     </Link>
                   </li>
                 </ul>
