@@ -257,6 +257,10 @@
   margin: 8rem auto 2rem;
 }
 
+p {
+  text-align: justify;
+}
+
 /* this will apply above 992px */
 @media screen and (min-width: 992px) {
   .nav-link {
@@ -303,6 +307,7 @@
   }
   p {
     font-size: 15px;
+    text-align: justify;
   }
 
   .youtube {

@@ -3,7 +3,7 @@
 }
 
 .styles_lightroom__1X2qE {
-    background-color: rgba(73, 69, 69, 0.8) !important;
+  background-color: rgba(57, 51, 51, 0.8) !important;
 }
 
 .styles_lightroomcontent__1SCaZ {
@@ -21,9 +21,16 @@
   top: 8% !important;
   font-size: medium;
 }
-.gallery-img {
-  width: 100%;
-  height: max-content;
+.styles_column__2r45X {
+  overflow: hidden;
+}
+.styles_column__2r45X img {
+  transition: all ease-in-out 0.5s;
+  border-radius: 15px !important;
+}
+.styles_column__2r45X img:hover {
+  transform: rotate(5deg) scale(1.2);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {

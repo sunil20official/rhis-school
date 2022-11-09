@@ -21,6 +21,7 @@
 
 .grid-cont > div > p {
 	margin-bottom: 0px;
+	text-align: center;
 }
 
 @media screen and (max-width: 1100px) {

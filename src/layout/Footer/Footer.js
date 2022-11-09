@@ -44,16 +44,21 @@ const Footer = () => {
           <h5>ACADEMICS</h5>
           <ul className="useful-links-list">
             <li>
-              <Link to="/">CBSE</Link>
+              <Link to="/admission/admission-procedure">
+                Admission Procedure
+              </Link>
             </li>
             <li>
-              <Link to="/">ICSE</Link>
+              <Link to="/academics/academic-program">Academic Programs</Link>
             </li>
             <li>
-              <Link to="/">IGCSE</Link>
+              <Link to="/academics/transport">Transport</Link>
             </li>
             <li>
-              <Link to="/">IB</Link>
+              <Link to="/academics/we-care">We Care</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
             </li>
           </ul>
         </div>
@@ -64,7 +69,7 @@ const Footer = () => {
               <Link to="/">Blogs</Link>
             </li>
             <li>
-              <Link to="/">FAQs</Link>
+              <Link to="/franchise">Franchise</Link>
             </li>
             <li>
               <Link to="/contact-us">Contact Us</Link>
