@@ -8,7 +8,7 @@ const RhisYouTube = () => {
       <div className="youtube">
         <div className="row" style={{ alignItems: "center" }}>
           <h1 className="shaping-future-heading">SHAPING FUTURE</h1>
-          <div className="col-md-6 youtube-text">
+          <div style={{display:"flex",flexDirection:"column",justifyContent:"center"}} className="col-md-6 youtube-text">
             <h6 style={{ lineHeight: "25px" }}>
               Lerro Learning Foundation, registered on 17th May 2021, in Patna
               laid a foundation by establishing Royal Hills International School

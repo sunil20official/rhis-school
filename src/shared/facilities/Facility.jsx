@@ -20,11 +20,7 @@ import { GiEarthAsiaOceania } from "react-icons/gi";
 const Facility = () => {
   return (
     <div className="facility-container">
-      <h1
-        className="facilities-heading"
-      >
-        FACILITIES
-      </h1>
+      <h1 className="facilities-heading">FACILITIES</h1>
       <div className="facilities-wrap">
         <div className="academic-block">
           <h1 className="facility-block-heading">
@@ -94,7 +90,7 @@ const Facility = () => {
               style={{ stroke: "white", fontSize: "60px" }}
               className="yoga"
             />
-            <p className="sport-name">
+            <p style={{ textAlign: "center" }} className="sport-name">
               Free Health <br />
               Check-up Camps
             </p>
@@ -104,7 +100,7 @@ const Facility = () => {
               style={{ stroke: "white", fontSize: "60px" }}
               className="yoga"
             />
-            <p className="sport-name">
+            <p style={{ textAlign: "center" }} className="sport-name">
               Mental Health
               <br />
               Acitvites
@@ -123,7 +119,7 @@ const Facility = () => {
               style={{ stroke: "white", fontSize: "60px" }}
               className="yoga"
             />
-            <p className="sport-name">
+            <p style={{ textAlign: "center" }} className="sport-name">
               Counselling
               <br />& Guidance
             </p>
@@ -133,7 +129,9 @@ const Facility = () => {
               style={{ stroke: "white", fontSize: "60px" }}
               className="yoga"
             />
-            <p className="sport-name">Social Initiatives</p>
+            <p style={{ textAlign: "center" }} className="sport-name">
+              Social Initiatives
+            </p>
           </div>
         </div>
       </div>

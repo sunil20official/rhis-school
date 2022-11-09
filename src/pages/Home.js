@@ -55,13 +55,13 @@ const Home = () => {
             />
           </div> */}
           <p className="story-text">
-            <p>
+            <p style={{ textAlign: "center" }}>
               <span>
                 <img
                   style={{
-                    width: "20px",
-                    height: "20px",
-                    margin: "-10px 10px 0px 0px",
+                    width: "30px",
+                    height: "30px",
+                    margin: "-20px 10px 0px 0px",
                   }}
                   src={quesmark}
                   alt=""
@@ -72,13 +72,13 @@ const Home = () => {
               empower young minds with stellar education, thus creating the
               enablers of tomorrow.
             </p>
-            <p>
+            <p style={{ textAlign: "center" }}>
               Laying its foundation stone in 2021, Royal Hills International
               School was set up with a vision: To create leaders of tomorrow by
               imparting education. free from all prejudices with a focus on the
               holistic development of students.
             </p>
-            <p>
+            <p style={{ textAlign: "center" }}>
               RHIS offers a curriculum from Grades I onwards, mapped as per the
               Central Board of Secondary Education, New Delhi. At RHIS, we
               encourage our student to learn, play and create new opportunities
@@ -93,10 +93,10 @@ const Home = () => {
               <span>
                 <img
                   style={{
-                    width: "20px",
-                    height: "20px",
-                    margin: "-10px 0px 0px 10px",
-                    transform:"rotate(180deg)"
+                    width: "30px",
+                    height: "30px",
+                    margin: "-15px 0px 0px 10px",
+                    transform: "rotate(180deg)",
                   }}
                   src={quesmark}
                   alt=""
