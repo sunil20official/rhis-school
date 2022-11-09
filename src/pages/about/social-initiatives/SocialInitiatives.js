@@ -1,8 +1,8 @@
 import React from "react";
 import "./SocialInitiatives.css";
-import avoidplastic from '../../../media/images/plastic.png';
-import worldenvday from '../../../media/images/worldenvday.png';
-import water from '../../../media/images/savewater.png';
+import avoidplastic from '../../../media/images/plastic.jpg';
+import worldenvday from '../../../media/images/worldenvday.jpg';
+import water from '../../../media/images/savewater.jpg';
 
 
 const SocialInitiatives = () => {
@@ -93,7 +93,7 @@ const SocialInitiatives = () => {
 
       <div className="flex">
         <div className="img-cont">
-          <img className="campaign-img" src={worldenvday} alt="avoid plastic"></img>
+          <img style={{borderRadius:"50%"}} className="campaign-img" src={worldenvday} alt="avoid plastic"></img>
         </div>
         <div className="text-cont">
           <p>

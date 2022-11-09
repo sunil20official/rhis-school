@@ -4,6 +4,7 @@
 
 .social-init-p{
   font-size: 1rem;
+  text-align: justify;
 }
 
 .flex{
@@ -21,7 +22,7 @@
 }
 
 .img-cont{
-  flex: 4;
+  flex: 1;
   text-align: center;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .text-cont{
-  flex: 6;
+  flex: 1;
 }
 
 /*  -------------- css for the mobile screen ---------- */
@@ -39,6 +40,7 @@
 @media screen and (max-width:800px){
   .social-init-p{
     font-size: 0.8rem;
+    text-align: justify;
   }
   .flex{
     flex-direction: column;
