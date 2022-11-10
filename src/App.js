@@ -88,7 +88,7 @@ function App() {
                 path="/admission/admission-procedure"
                 element={<AdmissionProcedure />}
               />
-              <Route path="/admission/fee-structure" element={<ComingSoon />} />
+              <Route path="/admission/fee-structure" element={<FeeStructure />} />
               
               {/* media pages with coming soon page */}
               <Route path="/media/news" element={<ComingSoon />} />
