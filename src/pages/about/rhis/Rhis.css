@@ -1,6 +1,9 @@
 .main-container-rhis {
-  margin: 4rem auto;
-  padding: 20px;
+  margin: 4rem auto 0rem;
+  padding: 20px 20px 0px 20px;
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
 }
 
 .heading-cont {
@@ -8,7 +11,17 @@
   color: black;
 }
 
+.upper-half {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+  flex-wrap: wrap;
+}
+
 .rhis-img-cont {
+  width: 50%;
   text-align: center;
   margin: 20px 0px;
 }
@@ -18,10 +31,104 @@
   border-radius: 25px;
 }
 
+.rhis-right-cont {
+  padding: 2rem 1rem;
+  width: 50%;
+  background-color: white;
+  border-right: 5px dashed #082a59;
+  -webkit-box-shadow: -19px 18px 21px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -19px 18px 21px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: -19px 18px 21px -7px rgba(0, 0, 0, 0.75);
+}
+
+.rhis-property {
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-left: 5px dashed #082a59;
+  -webkit-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 17px 1px rgba(0, 0, 0, 0.75);
+}
+
+.prop-cont{
+  list-style: none;
+}
+
+.prop-title{
+  font-size: 18px;
+  font-weight: bolder;
+  color: #082a59;
+}
+
+.prop-text{
+  font-size: 16px;
+  margin: 0.5rem;
+}
+
+.checked-icon{
+  font-size: 30px;
+  margin: 0.5rem 1rem;
+}
+
+.checked-icon > path{
+  fill: #a6153e !important;
+}
+
 .rhis-text {
   color: black;
   margin: 1rem 20px 1rem;
   padding: 0px 30px;
+}
+
+.vision-mission-cont{
+  position: relative;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  display: flex;
+  padding: 2rem 1rem;
+  border: 1px solid black;
+  background-color: #f4f4f4;
+}
+
+.vision-mission-cont > div{
+  padding: 20px;
+}
+
+.vision-box{
+  width: 50%;
+}
+
+.mission-box{
+  width: 50%;
+}
+
+.horizontal-line-rhis{
+  width: 50px;
+  height: 3px;
+  background-color: #a6153e;
+}
+
+.vision-heading{
+  font-size: 20px;
+  color: #082a59;
+  font-weight: bolder;
+  display: inline;
+  margin: 5px;
+}
+
+.vision-mission-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-mission-img{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 1rem auto;
 }
 
 @media screen and (max-width: 500px) {
