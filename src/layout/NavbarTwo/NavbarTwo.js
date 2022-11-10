@@ -181,7 +181,7 @@ const NavbarTwo = () => {
                   </span>
                   Careers
                 </a>
-                <ul class="dropdown-menu">
+                <ul style={{minWidth:"6rem",left:"35px"}} class="dropdown-menu">
                   <li>
                     <Link to="/careers" class="dropdown-item">
                       Careers
