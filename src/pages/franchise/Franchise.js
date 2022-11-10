@@ -1,7 +1,6 @@
 import "./Franchise.css";
 import { useRef, useState } from "react";
-import emailjs from '@emailjs/browser';
-
+import emailjs from "@emailjs/browser";
 
 const Franchise = () => {
   const [fname, setFname] = useState("");
@@ -19,7 +18,7 @@ const Franchise = () => {
   const [msg, setMsg] = useState("");
 
   const form = useRef();
- 
+
   const OnSetFname = (e) => {
     setFname(e.target.value);
     console.log("fname", fname);
@@ -79,27 +78,55 @@ const Franchise = () => {
   const OnSendInquiry = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_wvgq9fa', 'template_5g1t6no', form.current , 'wZ5tg1ipI-zrH-NCJ')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      }).then(() => {
-        alert('Your Inquiry has been submitted successfully')
-        setFname('');
-        setLname('');
-        setEmail('');
-        setPhone('');
-        setParea('');
-        setCarea('');
-        setAdd1('');
-        setAdd2('');
-        setAdd3('');
-        setCity('');
-        setState('');
-        setZip('');
-        setMsg('');
-      });
+    if (
+      fname === "" ||
+      lname === "" ||
+      email === "" ||
+      phone === "" ||
+      parea === "" ||
+      carea === "" ||
+      add1 === "" ||
+      city === "" ||
+      state === "" ||
+      zip === "" ||
+      msg === ""
+    ) {
+      alert("Plese Enter all the Details");
+    } else {
+      emailjs
+        .sendForm(
+          "service_pgh2s4a",
+          "template_f50dqay",
+          form.current,
+          "5mzFEWSgXxF6meZf1"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        )
+        .then(() => {
+          alert(
+            "Form submitted successfully , We will get back to you very soon"
+          );
+          setFname("");
+          setLname("");
+          setEmail("");
+          setPhone("");
+          setParea("");
+          setCarea("");
+          setAdd1("");
+          setAdd2("");
+          setAdd3("");
+          setCity("");
+          setState("");
+          setZip("");
+          setMsg("");
+        });
+    }
   };
 
   return (
@@ -141,6 +168,15 @@ const Franchise = () => {
         </h6>
 
         <div className="col-md-6">
+          {/* this input is basically to provide the subject value in the emaijs mails and it will be always hidden */}
+          <input
+            style={{ display: "none" }}
+            type="text"
+            name="subject"
+            value="FRANCHISE INQUIRY"
+            className="form-control"
+          />
+          {/* ------------------ */}
           <label htmlFor="fname" className="form-label">
             First Name
           </label>
@@ -266,22 +302,37 @@ const Franchise = () => {
           <label htmlFor="city" className="form-label">
             City
           </label>
-          <input type="text" name="city" value={city}
-            onChange={OnSetCity} className="form-control" />
+          <input
+            type="text"
+            name="city"
+            value={city}
+            onChange={OnSetCity}
+            className="form-control"
+          />
         </div>
         <div className="col-md-4">
           <label htmlFor="state" className="form-label">
             State
           </label>
-          <input type="text" name="state" value={state}
-            onChange={OnSetState} className="form-control" />
+          <input
+            type="text"
+            name="state"
+            value={state}
+            onChange={OnSetState}
+            className="form-control"
+          />
         </div>
         <div className="col-md-2">
           <label htmlFor="zip" className="form-label">
             Zip
           </label>
-          <input type="number" name="zip" value={zip}
-            onChange={OnSetZip} className="form-control" />
+          <input
+            type="number"
+            name="zip"
+            value={zip}
+            onChange={OnSetZip}
+            className="form-control"
+          />
         </div>
 
         <h6 style={{ fontWeight: "bold" }}>Other Deails</h6>

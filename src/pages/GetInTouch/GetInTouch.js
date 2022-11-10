@@ -1,20 +1,68 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import './GetInTouch.css';
+
+import emailjs from "@emailjs/browser";
 import { GoLocation } from 'react-icons/go';
 import { MdEmail } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 
 const GetInTouch = () => {
-	const [data, setData] = useState({
-		first_name: '',
-		last_name: '',
-		email: '',
-		message: '',
-	});
+  const form = useRef();
+	const [fname, setFname] = useState('');
+	const [lname, setLname] = useState('');
+	const [email, setEmail] = useState('');
+	const [msg, setMsg] = useState('');
 
-	const onChange = (e) => {
-		setData({ ...data, [e.target.name]: e.target.value });
-	};
+	const onChangeFname = (e) => {
+		setFname(e.target.value)
+  };
+  const onChangeLname = (e) => {
+    setLname(e.target.value);
+  };
+  const onChangeEmail = (e) => {
+		setEmail(e.target.value)
+  };
+  const onChangeMsg = (e) => {
+    setMsg(e.target.value);
+  };
+  
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    if (
+      fname === "" ||
+      lname === "" ||
+      email === "" ||
+      msg === ""
+    ) {
+      alert("Plese Enter all the Details");
+    } else {
+      emailjs
+        .sendForm(
+          "service_pgh2s4a",
+          "template_f50dqay",
+          form.current,
+          "5mzFEWSgXxF6meZf1"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        )
+        .then(() => {
+          alert(
+            "Form submitted successfully , We will get back to you very soon"
+          );
+          setFname("");
+          setLname("");
+          setEmail("");
+          setMsg("");
+        });
+    }
+  }
 
 	return (
     <>
@@ -32,7 +80,16 @@ const GetInTouch = () => {
             >
               Get In Touch
             </h1>
-            <form className="row g-2">
+            <form className="row g-2" ref={form}>
+              {/* this input is basically to provide the subject value in the emaijs mails and it will be always hidden */}
+              <input
+                style={{ display: "none" }}
+                type="text"
+                name="subject"
+                value="GET IN TOUCH"
+                className="form-control"
+              />
+              {/* ------------------ */}
               <div className="col-md-6">
                 <label htmlFor="validationDefault01" className="form-label">
                   First name
@@ -41,9 +98,9 @@ const GetInTouch = () => {
                   type="text"
                   className="form-control"
                   id="validationDefault01"
-                  name="first_name"
-                  value={data.first_name}
-                  onChange={onChange}
+                  name="fname"
+                  value={fname}
+                  onChange={onChangeFname}
                   required
                 />
               </div>
@@ -54,10 +111,10 @@ const GetInTouch = () => {
                 <input
                   type="text"
                   className="form-control"
-                  name="last_name"
+                  name="lname"
                   id="validationDefault02"
-                  value={data.last_name}
-                  onChange={onChange}
+                  value={lname}
+                  onChange={onChangeLname}
                   required
                 />
               </div>
@@ -78,7 +135,8 @@ const GetInTouch = () => {
                     name="email"
                     id="validationDefaultUsername"
                     aria-describedby="inputGroupPrepend2"
-                    onChange={onChange}
+                    value={email}
+                    onChange={onChangeEmail}
                     required
                   />
                 </div>
@@ -89,12 +147,13 @@ const GetInTouch = () => {
                   className="form-control"
                   name="message"
                   aria-label="With textarea"
-                  onChange={onChange}
+                  value={msg}
+                  onChange={onChangeMsg}
                   style={{ height: "10rem" }}
                 ></textarea>
               </div>
               <div className="col-12" style={{ textAlign: "center" }}>
-                <button className="btn btn-primary" type="submit">
+                <button className="btn btn-primary" onClick={submitForm}>
                   Submit form
                 </button>
               </div>

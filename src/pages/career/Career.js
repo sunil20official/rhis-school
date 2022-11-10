@@ -20,22 +20,18 @@ const Career = () => {
 
   const OnSetFname = (e) => {
     setFname(e.target.value);
-    console.log("fname", fname);
   };
 
   const OnSetLname = (e) => {
     setLname(e.target.value);
-    console.log("lname", lname);
   };
 
   const OnSetEmail = (e) => {
     setEmail(e.target.value);
-    console.log("email", email);
   };
 
   const OnSetPhone = (e) => {
     setPhone(e.target.value);
-    console.log("phone", phone);
   };
 
   const OnSetDob = (e) => {
@@ -48,6 +44,7 @@ const Career = () => {
 
   const OnSetHqual = (e) => {
     setHqual(e.target.value);
+    console.log(hqual,'highes qualification***')
   };
 
   const OnSetExpertise = (e) => {
@@ -57,7 +54,6 @@ const Career = () => {
   const OnSetType = (e) => {
     setType(e.target.value);
     console.log(type);
-    console.log(e.target.value);
   };
 
   const OnSetMsg = (e) => {
@@ -66,7 +62,6 @@ const Career = () => {
 
   const OnSetCv = (e) => {
     setCv(e.target.value);
-    console.log(e.target.value);
   };
 
   const OnSendInquiry = (e) => {
@@ -89,10 +84,10 @@ const Career = () => {
     } else {
       emailjs
         .sendForm(
-          "service_wvgq9fa",
-          "template_jejihkm",
+          "service_pgh2s4a",
+          "template_mnncqsq",
           form.current,
-          "wZ5tg1ipI-zrH-NCJ"
+          "5mzFEWSgXxF6meZf1"
         )
         .then(
           (result) => {
@@ -115,7 +110,7 @@ const Career = () => {
           setType("");
 
           setMsg("");
-          setCv(null);
+          setCv("");
         });
     }
   };
@@ -346,7 +341,7 @@ const Career = () => {
           </label>
           <input
             type="text"
-            name="hqal"
+            name="hqual"
             value={hqual}
             onChange={OnSetHqual}
             className="form-control"

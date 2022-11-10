@@ -1,13 +1,8 @@
 import React, { useEffect } from "react";
-// import $ from 'jquery';
 
 import Carousel from "../shared/carousel/Carousel";
-// import Testimonials from '../shared/Testimonials';
 import Features from "../shared/features/Features";
 import WhatWeOffer from "../shared/whatWeOffer/WhatWeOffer";
-import Staff from "../shared/staff/Staff";
-import story from "../media/images/book-solid.svg";
-import CountUp from "../shared/countup/CountUp";
 import RhisYouTube from "../shared/RhisYouTube";
 import PopupModal from "../shared/PopupModal";
 import Founder from "../shared/founder/Founder";
