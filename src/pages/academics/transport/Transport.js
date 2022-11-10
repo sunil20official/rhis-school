@@ -1,6 +1,6 @@
 import React from 'react';
 import './Transport.css';
-import transport from '../../../media/transport.jpg';
+import transport from '../../../media/transport-1.jpg';
 
 const Transport = () => {
   return (
@@ -18,7 +18,17 @@ const Transport = () => {
       </h1>
       <div className="transport-container">
         <div className="transport-content">
-          <p style={{color:"white"}}>
+          <h4
+            style={{
+              textAlign: "center",
+              color: "#082a59",
+              fontWeight: "bold",
+              marginBottom:"2rem"
+            }}
+          >
+            TRANSPORT FACILITIES
+          </h4>
+          <p style={{ background: "#a6153e",color:"white",padding:"20px",borderRadius:"20px" }}>
             As far as we talk about the transport facilities, we ensure that our
             school provides the utmost safety to the students. Moreover, we run
             busses and vans for our students so that they can safely reach on
@@ -26,7 +36,11 @@ const Transport = () => {
           </p>
         </div>
         <div className="transport-image">
-          <img style={{width:"100%",borderRadius:"20px"}} src={transport} alt="transport vehicles"/>
+          <img
+            style={{ width: "100%", borderRadius: "20px" }}
+            src={transport}
+            alt="transport vehicles"
+          />
         </div>
       </div>
     </div>

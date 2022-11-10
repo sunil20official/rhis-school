@@ -8,11 +8,20 @@
   position: relative;
   left: calc(-50vw + 50%);
   width: 100vw;
-  background: #082a59;
 }
 
-.transport-container > div {
+.transport-image {
+  width: 50%;
   padding: 20px;
+}
+
+.transport-content {
+  padding: 40px;
+  width: 50%;
+}
+
+.transport-content > p {
+  text-align: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -27,5 +36,14 @@
   }
   .transport-container > div {
     padding: 20px 0px;
+  }
+  .transport-image {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .transport-content {
+    padding: 40px;
+    width: 90%;
   }
 }
