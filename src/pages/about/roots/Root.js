@@ -17,7 +17,7 @@ const Root = () => {
               letterSpacing: "3px",
             }}
           >
-            Roots
+            RHIS JUNIOR
           </h1>
           <p style={{ textAlign: "center", fontSize: "20px" }}>
             {" "}

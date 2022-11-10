@@ -138,7 +138,7 @@ const Rhis = () => {
                 discover their true calling. They chase their dreams with
                 passion, and excel in their chosen discipline. But, best of all,
                 they become what they want to be. Royal Hills International
-                School is the school for such people. TO facilitate a learning
+                School is the school for such people. To facilitate a learning
                 environment that encourages children to bring out the best in
                 themselves and enables their all-round development through the
                 joy of learning.

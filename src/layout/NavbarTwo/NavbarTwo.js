@@ -61,7 +61,7 @@ const NavbarTwo = () => {
                   </li>
                   <li>
                     <Link to="/about/roots" class="dropdown-item">
-                      Roots - A Play School
+                      RHIS - Junior
                     </Link>
                   </li>
                   <li>

@@ -165,7 +165,7 @@ export default function BasicModal({ open, handleClose, setOpen }) {
                             fontSize: "22px",
                           }}
                         />
-                        088-9878965
+                        9031706635
                       </h3>
                     </div>
                   </div>

@@ -26,7 +26,7 @@
   margin: 20px 0px;
 }
 
-.rhis-img{
+.rhis-img {
   width: 90%;
 }
 
@@ -158,6 +158,45 @@
     color: black;
     margin: 0px;
     padding: 0px;
+  }
+  .rhis-property {
+    margin: 4rem auto;
+    padding: 2rem 0rem;
+    background-color: white;
+    border-left: 5px dashed #082a59;
+    box-shadow: 10px 10px 17px 1px rgb(0 0 0 / 75%);
+  }
+  .checked-icon {
+    font-size: 30px;
+    margin: 0.5rem 1rem 0rem 0rem;
+  }
+  .prop-cont {
+    list-style: none;
+    margin-left: -10px;
+  }
+  .prop-cont > li {
+    margin-top: 1rem;
+  }
+  .vision-mission-cont {
+    position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+  }
+  .vision-box {
+    width: 100%;
+  }
+  .mission-box {
+    width: 100%;
+  }
+  .vision-mission-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin: 1rem auto;
   }
 }
 

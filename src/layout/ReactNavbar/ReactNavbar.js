@@ -278,7 +278,7 @@ const ReactNavbar = ({
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
-                    Roots – A Play School
+                    RHIS - Junior
                   </Link>
                 </li>
                 <li>
@@ -799,7 +799,7 @@ const ReactNavbar = ({
                     class="dropdown-item"
                     onClick={closeBarOnClick}
                   >
-                    Roots – A Play School
+                    RHIS - Junior
                   </Link>
                 </li>
                 <li>
