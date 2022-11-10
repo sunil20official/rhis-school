@@ -48,7 +48,7 @@ body {
 .nav100 {
   width: 100vw;
   height: 100vh;
-  background-image: url(../../media/ss1.png);
+  background-image: url(../../media/nav-bg-1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   background-attachment: fixed;
@@ -79,6 +79,7 @@ body {
   z-index: 100;
   position: fixed;
   display: flex;
+  background: rgba(8, 42, 89, 0.6);
 }
 .nav1 {
   left: 0%;
@@ -109,7 +110,7 @@ body {
   height: 3px;
   top: 100%;
   left: 15px;
-  background: #ff7000;
+  background: white;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: left;
@@ -122,7 +123,7 @@ body {
   height: 3px;
   top: 100%;
   left: 15px;
-  background: #ff7000;
+  background: white;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: left;
@@ -137,10 +138,10 @@ body {
 }
 
 .custom-dropdown {
-  background: rgba(255, 255, 255, 0.3) !important;
-  color: black !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: #082a59 !important;
   border: none !important;
-  font-weight: 900 !important;
+  /* font-weight: 900 !important; */
   min-width: 130px;
 }
 
@@ -153,13 +154,13 @@ body {
 }
 
 .custom-dropdown-menu {
-  background-color: #337c87 !important;
+  background-color: #082a59 !important;
   min-width: 8rem !important;
   text-align: center !important;
 }
 
 .about-transform {
-  transform: translate(-25px, 50px) !important;
+  transform: translate(-15px, 50px) !important;
 }
 
 .media-transform {
@@ -189,12 +190,12 @@ body {
   margin: 0px auto !important;
   color: white !important;
   font-size: 13px;
-  font-weight: 900;
+  /* font-weight: 900; */
   transition: 00ms all ease-in-out;
 }
 
 .custom-dropdown-menu > li > a:hover {
-  color: #ea7d2a !important;
+  color: #082a59 !important;
 }
 
 .nav-mobile {
@@ -256,7 +257,7 @@ body {
 }
 
 .bg-blue {
-  background-color: #337c87 !important;
+  background-color: #082a59 !important;
   color: #fff !important;
   border: 1px solid whitesmoke;
 }
@@ -317,9 +318,10 @@ body {
     justify-content: center !important;
     left: 0% !important;
     width: 100% !important;
-    background-image: url(../../media/ss1.png);
+    background-image: url(../../media/nav-bg-1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
   }
 
   .nav2 > a::after {
@@ -329,7 +331,7 @@ body {
     height: 3px;
     top: 100%;
     left: 15px;
-    background: #ff7000;
+    background: white;
     transition: transform 0.5s;
     transform: scaleX(0);
     transform-origin: left;
@@ -376,5 +378,12 @@ body {
   }
   .media-transform {
     transform: translate(0px, 50px) !important;
+  }
+  .custom-dropdown {
+    background: rgba(255, 255, 255, 0.8) !important;
+    color: #082a59 !important;
+    border: none !important;
+    font-weight: 900 !important;
+    min-width: 130px;
   }
 }

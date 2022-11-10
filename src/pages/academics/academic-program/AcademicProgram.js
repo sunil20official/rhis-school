@@ -60,7 +60,7 @@ const AcademicProgram = () => {
             and large group activities.
             <br />
             <br />
-            <strong>Nursery ((Age Group: 2.5 – 3.5 Years)</strong>
+            <strong>Nursery (Age Group: 2.5 – 3.5 Years)</strong>
             <br />
             In Nursery, children are engaged in school readiness activities such
             as reading, writing, counting numbers. Children are encouraged with
@@ -87,7 +87,9 @@ const AcademicProgram = () => {
               width: "80%",
             }}
           >
-            Primary Education (Royal Hills International School)
+            <strong>
+              Primary Education (Royal Hills International School)
+            </strong>
           </p>
           <p>
             RHIS Sitamarhi follows a curriculum mapped as per the Central Board
