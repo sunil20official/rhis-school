@@ -14,10 +14,10 @@ const Founder = () => {
           <img style={{ width: "300px" }} src={founder} alt="" />
         </div>
         <div className="about-founder">
-          <h1 style={{ fontSize: "26px", color: "#054099", fontWeight: "600" }}>
+          <h1 style={{ fontSize: "26px", color: "#054099", fontWeight: "600" ,textAlign:"center"}}>
             Ashutosh Vibhu
           </h1>
-          <p style={{ fontSize: "16px", color: "#5c93d2" }}>Director , RHIS</p>
+          <p style={{ fontSize: "16px", color: "#5c93d2",textAlign:"center" }}>Director , RHIS</p>
           <p
             style={{
               color: "#676666",
@@ -53,6 +53,7 @@ const Founder = () => {
               fontWeight: "400",
               borderTop: "4px solid #ddd203",
               borderRadius: "7px",
+              textAlign:"center"
             }}
           >
             Highlights
