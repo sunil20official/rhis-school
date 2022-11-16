@@ -13,17 +13,17 @@ import NavbarTwo from "./layout/NavbarTwo/NavbarTwo";
 
 //     about pages
 import About from "./pages/About";
-import Rhis from './pages/about/rhis/Rhis';
-import Root from './pages/about/roots/Root';
+import Rhis from "./pages/about/rhis/Rhis";
+import Root from "./pages/about/roots/Root";
 import DirectorDesk from "./pages/about/director-desk/DirectorDesk";
 import PrincipalMsg from "./pages/about/principal-msg/PrincipalMsg";
 import SocialInitiatives from "./pages/about/social-initiatives/SocialInitiatives";
 
 //     academics pages
-import AcademicProgram from './pages/academics/academic-program/AcademicProgram';
-import CurricularActivity from './pages/academics/curricular-activity/CurricularActivity';
-import Transport from './pages/academics/transport/Transport';
-import WeCare from './pages/academics/we-care/WeCare';
+import AcademicProgram from "./pages/academics/academic-program/AcademicProgram";
+import CurricularActivity from "./pages/academics/curricular-activity/CurricularActivity";
+import Transport from "./pages/academics/transport/Transport";
+import WeCare from "./pages/academics/we-care/WeCare";
 
 import ComingSoon from "./pages/comingsoon/ComingSoon";
 import NotFound from "./pages/NotFound";
@@ -33,9 +33,7 @@ import AdmissionProcedure from "./pages/admissions/admissionprocedure/AdmissionP
 import FeeStructure from "./pages/admissions/feestructure/FeeStructure";
 import Gallery from "./pages/gallery/Gallery";
 
-
 function App() {
-  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -65,7 +63,7 @@ function App() {
               <Route path="/about/rhis" element={<Rhis />} />
               <Route path="/about/roots" element={<Root />} />
               <Route path="/about/directordesk" element={<DirectorDesk />} />
-              <Route path="/about/principalmsg" element={<PrincipalMsg />} />
+              <Route path="/about/principalmsg" element={<ComingSoon />} />
               <Route
                 path="/about/social-initiatives"
                 element={<SocialInitiatives />}
@@ -88,8 +86,11 @@ function App() {
                 path="/admission/admission-procedure"
                 element={<AdmissionProcedure />}
               />
-              <Route path="/admission/fee-structure" element={<FeeStructure />} />
-              
+              <Route
+                path="/admission/fee-structure"
+                element={<FeeStructure />}
+              />
+
               {/* media pages with coming soon page */}
               <Route path="/media/news" element={<ComingSoon />} />
               <Route path="/media/events" element={<ComingSoon />} />
