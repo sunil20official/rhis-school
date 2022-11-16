@@ -82,6 +82,16 @@
   display: none;
 }
 
+@media screen and (max-width:350px) {
+  .features-container {
+    padding: 2rem 0rem;
+    margin: auto;
+    position: relative;
+    left: calc(-50vw + 50%);
+    width: 100vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .features-container {
     padding: 2rem 0rem;
@@ -89,7 +99,7 @@
   }
   .feature-heading {
     color: #a6153e;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     letter-spacing: 4px;
     text-transform: uppercase;

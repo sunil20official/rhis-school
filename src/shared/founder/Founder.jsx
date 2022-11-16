@@ -11,7 +11,7 @@ const Founder = () => {
       <h1 className="director-desk-heading">From director's desk</h1>
       <div className="founder-container">
         <div className="img-founder">
-          <img style={{ width: "300px" }} src={founder} alt="" />
+          <img src={founder} alt="" />
         </div>
         <div className="about-founder">
           <h1 style={{ fontSize: "26px", color: "#054099", fontWeight: "600" ,textAlign:"center"}}>
