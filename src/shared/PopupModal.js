@@ -121,14 +121,14 @@ export default function BasicModal({ open, handleClose, setOpen }) {
             <h2
               style={{
                 textAlign: "center",
-                margin: "2rem auto",
+                margin: "2rem auto 1rem",
                 color: "#ea7d2a",
                 fontWeight: "bold",
               }}
             >
               Admission Enquiry
             </h2>
-            <div class="modal-dialog p-2" style={{ marginTop: "35px" }}>
+            <div class="modal-dialog p-2" style={{ marginTop: "15px" }}>
               <div class="modal-content" style={{ border: "none" }}>
                 <div class="modal-body">
                   <form ref={form}>
@@ -257,8 +257,19 @@ export default function BasicModal({ open, handleClose, setOpen }) {
                               fontSize: "22px",
                             }}
                           />
-                          9031706635
+                          +91 612 228 0026
                         </h3>
+                        <p
+                          style={{
+                            fontSize: "13px",
+                            fontWeight: "700",
+                            margin: "1rem 0",
+                            textAlign: "center",
+                          }}
+                        >
+                          Dial 1 – Connect with Front Desk Office (For Admission
+                          Enquiry/Appointment)
+                        </p>
                       </div>
                     </div>
                   </form>

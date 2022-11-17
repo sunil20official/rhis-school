@@ -132,7 +132,6 @@ const Rhis = () => {
               style={{ padding: "20px 0px" }}
               className="vision-mission-content"
             >
-              <img className="vision-mission-img" src={vision} alt="vision" />
               <p>
                 Some people follow a path they choose on their own. They
                 discover their true calling. They chase their dreams with
@@ -160,7 +159,6 @@ const Rhis = () => {
               style={{ padding: "20px 0px" }}
               className="vision-mission-content"
             >
-              <img className="vision-mission-img" src={mission} alt="vision" />
               <p>
                 <ul>
                   <li>

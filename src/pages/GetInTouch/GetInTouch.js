@@ -319,7 +319,7 @@ const GetInTouch = () => {
             >
               In order to reach out to us in case of any queries, inquiries or
               complaints. please dial toll free number
-              <span style={{ color: "#a6153e" }}>+91 612 228 0026</span>
+              <span style={{ color: "#a6153e" }}>{' '}+91 612 228 0026</span>
             </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <ul className="ivr-list">

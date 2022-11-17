@@ -24,9 +24,9 @@ const TopBar = () => {
       <div className="list-container">
         <ul>
           <li>
-            <a href="tel:9031706635">
+            <a href="tel:+91 612 228 0026">
               <BsTelephone style={{ fontSize: "24px", padding: "0px 4px" }} />
-              9031706635
+              +91 612 228 0026
             </a>
           </li>
           <li>

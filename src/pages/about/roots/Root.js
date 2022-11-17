@@ -130,7 +130,6 @@ const Root = () => {
               style={{ padding: "20px 0px" }}
               className="vision-mission-content"
             >
-              <img className="vision-mission-img" src={vision} alt="vision" />
               <p>
                 To establish an ideal preschool chain that leads in offering a
                 powerful foundation to young children who will joyfully take-off
@@ -154,7 +153,6 @@ const Root = () => {
               style={{ padding: "20px 0px" }}
               className="vision-mission-content"
             >
-              <img className="vision-mission-img" src={mission} alt="vision" />
               <p>
                 <ul>
                   <li>

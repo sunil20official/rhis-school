@@ -33,6 +33,9 @@ import AdmissionProcedure from "./pages/admissions/admissionprocedure/AdmissionP
 import FeeStructure from "./pages/admissions/feestructure/FeeStructure";
 import Gallery from "./pages/gallery/Gallery";
 
+import News from "./pages/media/news/News";
+import Events from "./pages/media/events/Events";
+
 function App() {
   const scrollToTop = () => {
     window.scrollTo({
@@ -92,8 +95,8 @@ function App() {
               />
 
               {/* media pages with coming soon page */}
-              <Route path="/media/news" element={<ComingSoon />} />
-              <Route path="/media/events" element={<ComingSoon />} />
+              <Route path="/media/news" element={<News />} />
+              <Route path="/media/events" element={<Events />} />
 
               <Route path="/franchise" element={<Franchise />} />
               <Route path="/careers" element={<Career />} />
