@@ -1,4 +1,4 @@
-.management-container{
+.management-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -9,57 +9,57 @@
   border-radius: 20px;
 }
 
-.man-image-container{
-  flex:1;
+.man-image-container {
+  flex: 1;
   margin: 10px;
   align-self: baseline;
   animation: imageAnim 2s;
 }
 
 @keyframes imageAnim {
-  from{
+  from {
     transform: translateX(-500px);
   }
 }
 
-.man-message-container{
+.man-message-container {
   flex: 2;
   padding: 16px;
   animation: msgAnim 2s;
 }
 
 @keyframes msgAnim {
-  from{
+  from {
     transform: translateX(500px);
   }
 }
 
-.management-image{
+.management-image {
   width: 100%;
   border-radius: 50%;
 }
 
-.management-message{
+.management-message {
   color: #4e546d;
 }
 
-@media screen and (max-width:850px) {
-  .management-container{
+@media screen and (max-width: 850px) {
+  .management-container {
     display: flex;
     flex-direction: column;
     margin: 2rem auto 5rem;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  background-color: #f2f2f2;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* background-color: #f2f2f2; */
+    box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
   }
-  .management-image{
+  .management-image {
     width: 50%;
   }
-  .man-image-container{
-    flex:1;
+  .man-image-container {
+    flex: 1;
     align-self: baseline;
     text-align: center;
     margin: 30px 0px;
