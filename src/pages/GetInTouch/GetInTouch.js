@@ -1,40 +1,35 @@
-import React, { useState,useRef } from 'react';
-import './GetInTouch.css';
+import React, { useState, useRef } from "react";
+import "./GetInTouch.css";
 
 import emailjs from "@emailjs/browser";
-import { GoLocation } from 'react-icons/go';
-import { MdEmail } from 'react-icons/md';
-import { BsFillTelephoneFill } from 'react-icons/bs';
+import { GoLocation } from "react-icons/go";
+import { MdEmail } from "react-icons/md";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const GetInTouch = () => {
   const form = useRef();
-	const [fname, setFname] = useState('');
-	const [lname, setLname] = useState('');
-	const [email, setEmail] = useState('');
-	const [msg, setMsg] = useState('');
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
 
-	const onChangeFname = (e) => {
-		setFname(e.target.value)
+  const onChangeFname = (e) => {
+    setFname(e.target.value);
   };
   const onChangeLname = (e) => {
     setLname(e.target.value);
   };
   const onChangeEmail = (e) => {
-		setEmail(e.target.value)
+    setEmail(e.target.value);
   };
   const onChangeMsg = (e) => {
     setMsg(e.target.value);
   };
-  
+
   const submitForm = (e) => {
     e.preventDefault();
 
-    if (
-      fname === "" ||
-      lname === "" ||
-      email === "" ||
-      msg === ""
-    ) {
+    if (fname === "" || lname === "" || email === "" || msg === "") {
       alert("Plese Enter all the Details");
     } else {
       emailjs
@@ -62,9 +57,9 @@ const GetInTouch = () => {
           setMsg("");
         });
     }
-  }
+  };
 
-	return (
+  return (
     <>
       <div className="get-in-touch-container">
         <div className="get-in-touch-form-container">
@@ -165,8 +160,8 @@ const GetInTouch = () => {
             style={{
               margin: "2rem auto",
               borderBottom: "3px solid #f89503",
-              width: "60%",
-              paddingBottom: "2rem",
+              width: "80%",
+              paddingBottom: "1rem",
               textAlign: "center",
             }}
           >
@@ -176,36 +171,31 @@ const GetInTouch = () => {
             <div className="address" style={{ marginBottom: "2rem" }}>
               <GoLocation style={{ fontSize: "35px" }} />
               <p style={{ width: "70%" }}>
-                Admin Office , RHIS Building , Nahar Road,
-                <br /> Near Nahar Chowk , Shanti Nagar ,Sitamarhi ,<br />
-                BIHAR - 843302
+                Lerro Learning Foundation, <br />
+                201-Maa Enclave, Kesari Nagar, Veer Kunwar Singh Chowk, <br />
+                Patna - 800024
               </p>
             </div>
             <div className="address">
               <MdEmail style={{ fontSize: "35px" }} />
-              <p style={{ width: "70%", marginBottom: "0px" }}>
+              <p
+                style={{
+                  width: "70%",
+                  marginBottom: "0px",
+                  wordBreak: "break-all",
+                }}
+              >
                 royalhillsinternationalschool@gmail.com
               </p>
             </div>
             <div className="address" style={{ marginTop: "2rem" }}>
               <BsFillTelephoneFill style={{ fontSize: "30px" }} />
-              <p style={{ width: "70%", marginBottom: "0px" }}>9031706635</p>
+              <p style={{ width: "70%", marginBottom: "0px" }}>
+                +91 612 228 0026
+              </p>
             </div>
           </div>
         </div>
-      </div>
-
-      <div style={{ textAlign: "center", margin: "2rem 0rem" }}>
-        <iframe
-          title="location of royal hills internation school"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin"
-          className="map"
-          height="400"
-          style={{ border: "2px soild black" }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
       </div>
 
       <div className="branch-main-container">
@@ -213,8 +203,8 @@ const GetInTouch = () => {
           style={{
             margin: "2rem auto",
             borderBottom: "3px solid #f89503",
-            width: "60%",
-            paddingBottom: "2rem",
+            width: "80%",
+            paddingBottom: "1rem",
             textAlign: "center",
           }}
         >
@@ -222,98 +212,136 @@ const GetInTouch = () => {
         </h1>
         <div className="branch-container">
           <div className="address-container1">
-            <h1
+            <h3
               style={{
                 margin: "2rem auto",
-                borderBottom: "3px solid #f89503",
-                // width: '30%',
-                paddingBottom: "2rem",
+                paddingBottom: "1rem",
                 textAlign: "center",
               }}
             >
               RHIS, Sitamarhi
-            </h1>
+              <hr />
+            </h3>
+
             <div>
               <div className="address" style={{ marginBottom: "2rem" }}>
                 <GoLocation style={{ fontSize: "35px" }} />
                 <p style={{ width: "70%" }}>
-                  Royal Hills INternational School , RHIS Building , Nahar Road,
-                  <br /> Near Nahar Chowk , Shanti Nagar ,Sitamarhi ,<br />
-                  BIHAR - 843302
+                  Admin Office, RHIS Building, Nahar Road, Near Nahar Chowk,
+                  <br />
+                  Shanti Nagar, Sitamarhi BIHAR - 843302
                 </p>
               </div>
               <div className="address">
                 <MdEmail style={{ fontSize: "35px" }} />
-                <p style={{ width: "70%", marginBottom: "0px" }}>
+                <p
+                  style={{
+                    width: "70%",
+                    marginBottom: "0px",
+                    wordBreak: "break-all",
+                  }}
+                >
                   royalhillsinternationalschool@gmail.com
                 </p>
               </div>
               <div className="address" style={{ marginTop: "2rem" }}>
                 <BsFillTelephoneFill style={{ fontSize: "30px" }} />
-                <p style={{ width: "70%", marginBottom: "0px" }}>9031706635</p>
+                <p style={{ width: "70%", marginBottom: "0px" }}>
+                  +91 612 228 0026
+                </p>
               </div>
-            </div>
-
-            <div style={{ textAlign: "center", margin: "2rem 0rem" }}>
-              <iframe
-                title="location of royal hills internation school"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin"
-                className="map"
-                height="400"
-                style={{ border: "0px" }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
             </div>
           </div>
 
           <div className="address-container2">
-            <h1
+            <h3
               style={{
                 margin: "2rem auto",
-                borderBottom: "3px solid #f89503",
-                // width: '30%',
-                paddingBottom: "2rem",
+                paddingBottom: "1rem",
                 textAlign: "center",
               }}
             >
-              Roots, Sitamarhi
-            </h1>
+              RHIS JUNIOR, Sitamarhi
+              <hr />
+            </h3>
+
             <div>
               <div className="address" style={{ marginBottom: "2rem" }}>
                 <GoLocation style={{ fontSize: "35px" }} />
                 <p style={{ width: "70%" }}>
-                  ROOTS , RHIS Building , Nahar Road,
-                  <br /> Near Nahar Chowk , Shanti Nagar ,Sitamarhi ,<br />
-                  BIHAR - 843302
+                  Admin Office, RHIS Building, Nahar Road, Near Nahar Chowk,
+                  <br />
+                  Shanti Nagar, Sitamarhi BIHAR - 843302
                 </p>
               </div>
               <div className="address">
                 <MdEmail style={{ fontSize: "35px" }} />
-                <p style={{ width: "70%", marginBottom: "0px" }}>
+                <p
+                  style={{
+                    width: "70%",
+                    marginBottom: "0px",
+                    wordBreak: "break-all",
+                  }}
+                >
                   royalhillsinternationalschool@gmail.com
                 </p>
               </div>
               <div className="address" style={{ marginTop: "2rem" }}>
                 <BsFillTelephoneFill style={{ fontSize: "30px" }} />
-                <p style={{ width: "70%", marginBottom: "0px" }}>9031706635</p>
+                <p style={{ width: "70%", marginBottom: "0px" }}>
+                  +91 612 228 0026
+                </p>
               </div>
             </div>
-
-            <div style={{ textAlign: "center", margin: "2rem 0rem" }}>
-              <iframe
-                title="location of royal hills internation school"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.084294872143!2d85.51515241487566!3d26.581670183271243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ecf1b60f77444b%3A0x945ee11e49dab320!2sRoyal%20Hills%20International%20School%20Junior!5e0!3m2!1sen!2sin!4v1662620024754!5m2!1sen!2sin"
-                className="map"
-                height="400"
-                style={{ border: "0px" }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
           </div>
+        </div>
+        <div className="ivr-container">
+          <p>
+            <h5
+              style={{
+                color: "#082a59",
+                textAlign: "center",
+                fontWeight: "bolder",
+                letterSpacing: "1px",
+                textTransform: "capitalize",
+              }}
+            >
+              important points
+              <hr />
+            </h5>
+            <div
+              style={{
+                fontWeight: "bolder",
+                fontSize: "14px",
+                margin: "20px 0px",
+                textAlign: "center",
+              }}
+            >
+              In order to reach out to us in case of any queries, inquiries or
+              complaints. please dial toll free number
+              <span style={{ color: "#a6153e" }}>+91 612 228 0026</span>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <ul className="ivr-list">
+                <li>
+                  <span style={{ color: "#a6153e" }}>Dial 1 –</span> Connect
+                  with Front Desk Office (For Admission Enquiry/Appointment)
+                </li>
+                <li>
+                  <span style={{ color: "#a6153e" }}>Dial 2 –</span> Connect
+                  Accounts Department (For Fee Enquiry)
+                </li>
+                <li>
+                  <span style={{ color: "#a6153e" }}>Dial 3 –</span> Connect
+                  Transport Department (For Transport Enquiry)
+                </li>
+                <li>
+                  <span style={{ color: "#a6153e" }}>Dial 4 –</span> Connect for
+                  Feedbacks and Complaints
+                </li>
+              </ul>
+            </div>
+          </p>
         </div>
       </div>
     </>

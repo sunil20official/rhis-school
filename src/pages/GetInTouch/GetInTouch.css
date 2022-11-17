@@ -63,8 +63,8 @@
 
 .address-container1 {
   width: 96%;
-  margin: 10px;
-  padding: 10px;
+  margin: auto;
+  padding: 25px 10px;
   animation: addressAnim 2s;
 	border: 1px solid black;
   border-radius: 10px;
@@ -72,8 +72,8 @@
 
 .address-container2 {
   width: 96%;
-  margin: 10px;
-  padding: 10px;
+  margin: 0.5rem auto;
+  padding: 25px 10px;
   animation: addressAnim 2s;
 	border: 1px solid black;
   border-radius: 10px;
@@ -81,7 +81,7 @@
 
 .branch-main-container {
 	background: white;
-  margin-top: 10rem;
+  margin-top: 5rem;
 	margin-bottom: 2rem;
 	border: 1px solid black;
   border-radius: 10px;
@@ -89,8 +89,20 @@
 
 .branch-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+}
+
+.ivr-container{
+  margin: 1rem auto;
+  padding: 20px 10px;
+}
+
+.ivr-list > li{
+  font-size: 13px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 10px 5px;
 }
 
 @keyframes getInTouchAnim {
