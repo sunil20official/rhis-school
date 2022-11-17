@@ -25,7 +25,7 @@ const FeeStructure = () => {
           <hr />
         </p>
         <div className="table-responsive">
-          <table style={{ textAlign: "center" }} class="table table-striped">
+          <table style={{ textAlign: "center",fontSize:"13px" }} class="table table-striped">
             <thead>
               <tr>
                 <th scope="col">Fee Break-up</th>
