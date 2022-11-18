@@ -96,10 +96,12 @@
 
 .vision-box {
   width: 100%;
+  background: lightcoral;
 }
 
 .mission-box {
   width: 100%;
+  background: aquamarine;
 }
 
 .horizontal-line-rhis {
@@ -189,9 +191,11 @@
   }
   .vision-box {
     width: 100%;
+    background: lightcoral;
   }
   .mission-box {
     width: 100%;
+    background: aquamarine;
   }
   .vision-mission-img {
     width: 260px;
