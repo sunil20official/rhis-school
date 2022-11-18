@@ -15,12 +15,14 @@
 }
 
 .txt-cont{
+  padding: 0px 10px;
   flex: 2;
   /* font-size: 20px; */
 }
 
 .img-cont{
   flex: 1;
+  padding: 0px 10px;
 }
 
 .img-kid{

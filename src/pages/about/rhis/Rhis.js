@@ -1,6 +1,6 @@
 import React from "react";
 import "./Rhis.css";
-import rhisImg from "../../../media/rhis-trial.jpg";
+import rhisImg from "../../../media/latest/classroom.jpg";
 import vision from '../../../media/images/vision-image.jpg';
 import mission from '../../../media/images/rhis-mission.jpg';
 import { AiFillCheckCircle } from 'react-icons/ai';

@@ -1,6 +1,7 @@
 import React from "react";
 import "./AcademicProgram.css";
-import kidplaying from "../../../media/kid-playing.png";
+import rhis_acad_prog from "../../../media/latest/classroom-3.jpg";
+import junior_acad_prog from "../../../media/latest/teacher.jpg";
 
 const AcademicProgram = () => {
   return (
@@ -75,7 +76,7 @@ const AcademicProgram = () => {
           </p>
         </div>
         <div className="img-cont">
-          <img className="img-kid" src={kidplaying} alt="kid playing" />
+          <img className="img-kid" src={junior_acad_prog} alt="kid playing" />
         </div>
       </div>
 
@@ -122,7 +123,7 @@ const AcademicProgram = () => {
           </p>
         </div>
         <div className="img-cont">
-          <img className="img-kid" src={kidplaying} alt="kid playing" />
+          <img className="img-kid" src={rhis_acad_prog} alt="kid playing" />
         </div>
       </div>
     </div>

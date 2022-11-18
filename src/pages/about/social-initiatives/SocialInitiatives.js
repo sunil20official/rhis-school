@@ -1,7 +1,7 @@
 import React from "react";
 import "./SocialInitiatives.css";
 import avoidplastic from '../../../media/images/plastic.jpg';
-import worldenvday from '../../../media/images/worldenvday.jpg';
+import worldenvday from '../../../media/latest/kids-planting.jpg';
 import water from '../../../media/images/savewater.jpg';
 
 

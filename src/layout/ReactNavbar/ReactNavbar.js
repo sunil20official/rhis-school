@@ -1,7 +1,7 @@
 import React, { useState, useRef, Fragment, useEffect } from 'react';
 import './ReactNavbar.css';
 import { Link } from 'react-router-dom';
-import navImage from '../../media/ss1.png';
+// import navImage from '../../media/ss1.png';
 
 const ReactNavbar = ({
   burgerColor = "#082a59",
@@ -674,7 +674,7 @@ const ReactNavbar = ({
           className="nav2"
           style={{
             transform: menuToggle ? "translateY(0)" : "translateY(-100vmax)",
-            backgroundImage: navImage,
+            // backgroundImage: navImage,
             flexDirection: nav2FlexDirection,
             alignItems: nav2alignItems,
             justifyContent: nav2justifyContent,

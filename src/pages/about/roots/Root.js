@@ -1,6 +1,6 @@
 import React from "react";
 import "../rhis/Rhis.css";
-import rhisImg from "../../../media/rhis-trial.jpg";
+import rhisjunior from "../../../media/latest/classroom-5.jpg";
 import vision from "../../../media/images/vision-image.jpg";
 import mission from "../../../media/images/rhis-mission.jpg";
 import { AiFillCheckCircle } from "react-icons/ai";
@@ -27,7 +27,7 @@ const Root = () => {
           <div className="rhis-img-cont">
             <img
               className="rhis-img"
-              src={rhisImg}
+              src={rhisjunior}
               alt="royal hills internation school"
             />
           </div>
