@@ -346,3 +346,9 @@ p {
     padding: 1rem;
   }
 }
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 900px) and (orientation: landscape) {
+  .custom-container-lg {
+    overflow-x: hidden;
+  }
+}
