@@ -2,7 +2,9 @@ import React from 'react';
 import './Carousel.css';
 
 import img2 from '../../media/carousel-img-1.png';
+import img2_mobile from '../../media/carousel-img-1-mobile.jpg'
 import img3 from '../../media/carousel-img-2.png';
+import img3_mobile from "../../media/carousel-img-2-mobile.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownLong } from '@fortawesome/free-solid-svg-icons';
 
@@ -75,10 +77,28 @@ const Carousel = () => {
             <img src={img1} className="d-block w-100 carousel-img" alt="..." />
           </div> */}
           <div className="carousel-item active">
-            <img src={img2} className="d-block w-100 carousel-img" alt="..." />
+            <img
+              src={img2}
+              className="w-100 carousel-img"
+              alt="carousel on home page"
+            />
+            <img
+              src={img2_mobile}
+              className="w-100 carousel-img-mobile"
+              alt="carousel on home page"
+            />
           </div>
           <div className="carousel-item">
-            <img src={img3} className="d-block w-100 carousel-img" alt="..." />
+            <img
+              src={img3}
+              className="w-100 carousel-img"
+              alt="carousel on home page"
+            />
+            <img
+              src={img3_mobile}
+              className="w-100 carousel-img-mobile"
+              alt="carousel on home page"
+            />
           </div>
         </div>
         <button

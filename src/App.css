@@ -30,7 +30,8 @@
   cursor: pointer;
   border-radius: 100%;
   /* background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%); */
-  background-color: blue;
+  background-color: rgba(8,42,89,1);
+  border: 1px solid white;
   color: white;
   transition: all 1s ease-in-out;
   animation: scrollBtnAnim 2s alternate infinite;
@@ -212,9 +213,10 @@
 
 .youtube-text button {
   margin: 2rem auto !important;
-  background-color: #337c87;
+  background-color: rgba(8,42,89,1);
+  border: 1px solid whitesmoke;
   border-radius: 50px;
-  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .youtube-text button:hover {
@@ -276,9 +278,6 @@ p {
 @media screen and (max-width: 576px) {
   .custom-container-lg {
     overflow-x: hidden;
-  }
-  .carousel-img {
-    height: 50vh;
   }
   .testimonialmain {
     background-color: #fafafa;

@@ -351,7 +351,7 @@ const Franchise = () => {
         </div>
         <div style={{ margin: "2rem auto 4rem", textAlign: "center" }}>
           <button
-            style={{ background: "#337c87", color: "white" }}
+            style={{ background: "rgba(8,42,89,1)", color: "white" }}
             type="button"
             class="btn"
             onClick={OnSendInquiry}

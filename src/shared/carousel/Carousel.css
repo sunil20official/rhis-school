@@ -103,10 +103,15 @@
 }
 
 .carousel-img {
+	display: block;
 	height: 98vh;
 	/* margin-top: 3rem; */
 	/* padding: 10px; */
 }
+
+.carousel-img-mobile{
+		display: none;
+	}
 
 .carousel-btn-container {
 	display: flex;
@@ -191,7 +196,11 @@
 
 @media screen and (max-width: 576px) {
 	.carousel-img {
-		height: 50vh;
+		display: none;
+	}
+	.carousel-img-mobile{
+		display: block;
+		height: 60vh;
 	}
 	.scl-name-container {
 		padding: 20px 10px;
