@@ -19,7 +19,7 @@ const RhisYouTube = () => {
               and girls of all ages by establishing schools that offer
               pre-primary to middle stage education.
             </h6>
-            <button className="btn px-4 py-2 m-4">
+            {/* <button className="btn px-4 py-2 m-4">
               <a
                 className="text-white"
                 href="!"
@@ -28,7 +28,7 @@ const RhisYouTube = () => {
               >
                 Visit Our Channel
               </a>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

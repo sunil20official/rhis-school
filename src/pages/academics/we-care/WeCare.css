@@ -1,12 +1,37 @@
 .wecare-page-cont {
-	margin: 4rem auto;
+  margin: 4rem auto;
 }
 
 .we-care-list-container {
-	margin: 2rem auto;
+  margin: 2rem auto;
 }
 
-.we-care-list-container > ul > li {
+.care-cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 20px;
+  margin: 30px 0px;
+  background: #082a59;
+  color: white;
+  border-radius: 10px;
+}
+
+.care-text {
+  width: 70%;
+}
+
+.care-img-cont {
+  width: 30%;
+  text-align: center;
+}
+
+.care-img {
+  font-size: 80px;
+  /* text-align: center; */
+}
+
+/* .we-care-list-container > ul > li {
 	padding: 10px;
 	margin: 20px 20px 20px 0px;
 	border-radius: 10px;
@@ -17,4 +42,29 @@
 .we-care-list-container > ul > li > p {
 	margin-bottom: 0;
 	padding: 10px;
+} */
+
+@media screen and (max-width: 800px) {
+  .care-cont {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: 30px 0px;
+    background: #082a59;
+    color: white;
+    border-radius: 10px;
+  }
+  .care-text {
+    width: 100%;
+		padding: 10px;
+  }
+
+  .care-img-cont {
+    width: 100%;
+		padding: 5px;
+		margin: 10px;
+    text-align: center;
+  }
 }

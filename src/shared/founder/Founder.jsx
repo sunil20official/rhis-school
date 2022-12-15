@@ -14,10 +14,21 @@ const Founder = () => {
           <img src={founder} alt="" />
         </div>
         <div className="about-founder">
-          <h1 style={{ fontSize: "26px", color: "#054099", fontWeight: "600" ,textAlign:"center"}}>
+          <h1
+            style={{
+              fontSize: "26px",
+              color: "#054099",
+              fontWeight: "600",
+              textAlign: "center",
+            }}
+          >
             Ashutosh Vibhu
           </h1>
-          <p style={{ fontSize: "16px", color: "#5c93d2",textAlign:"center" }}>Director , RHIS</p>
+          <p
+            style={{ fontSize: "16px", color: "#5c93d2", textAlign: "center" }}
+          >
+            Director , RHIS
+          </p>
           <p
             style={{
               color: "#676666",
@@ -35,6 +46,13 @@ const Founder = () => {
             provide facilities for quality education to boys and girls of all
             ages by establishing schools that offer pre-primary to middle stage
             education.
+            <br />
+            The school is founded on the belief that children should be
+            encouraged to dream, and passionately pursue their dreams. We work
+            towards opening their minds, help them identify their interests and
+            aspirations, and nourish their individual talents. We believe that
+            every one of our students has the potential to become a leader of
+            tomorrow.
           </p>
           <button
             onClick={() => navigate("/about/directordesk")}
@@ -45,7 +63,7 @@ const Founder = () => {
             View More
           </button>
         </div>
-        <div className="highlights">
+        {/* <div className="highlights">
           <p
             style={{
               fontSize: "26px",
@@ -72,7 +90,7 @@ const Founder = () => {
             accomplished via series of activities that are woven into academic
             programs.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

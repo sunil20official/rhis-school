@@ -22,15 +22,15 @@ const Rhis = () => {
           >
             Royal Hills
           </h1>
-          <p
+          <h1
             style={{
               textAlign: "center",
-              fontSize: "20px",
-              letterSpacing: "2px",
+              margin: "0rem auto 0.5rem",
+              letterSpacing: "1px",
             }}
           >
             Internatinal School
-          </p>
+          </h1>
         </div>
         <div className="upper-half">
           <div className="rhis-img-cont">

@@ -54,11 +54,11 @@ const Gallery = () => {
       desc: "",
       sub: "",
     },
-    {
-      src: img5,
-      desc: "",
-      sub: "",
-    },
+    // {
+    //   src: img5,
+    //   desc: "",
+    //   sub: "",
+    // },
     {
       src: img6,
       desc: "",
