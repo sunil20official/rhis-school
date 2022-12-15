@@ -30,19 +30,6 @@ const RhisYouTube = () => {
               </a>
             </button>
           </div>
-          {/* <div className="col-md-6">
-            <ReactPlayer
-              width="100%"
-              height="400px"
-              controls
-              url="https://youtu.be/lFsrFjXF83w"
-              onReady={() => console.log("onReady callback")}
-              onStart={() => console.log("onStart callback")}
-              onPause={() => console.log("onPause callback")}
-              onEnded={() => console.log("onEnded callback")}
-              onError={() => console.log("onError callback")}
-            />
-          </div> */}
         </div>
       </div>
     </>
@@ -50,7 +37,3 @@ const RhisYouTube = () => {
 };
 
 export default RhisYouTube;
-
-// https://www.youtube.com/watch?v=lFsrFjXF83w&ab_channel=KIDZEE%2CRoyalHillsInternationalSchool%F0%9F%93%92%F0%9F%93%9D
-// lFsrFjXF83w&ab
-// https://youtu.be/lFsrFjXF83w
