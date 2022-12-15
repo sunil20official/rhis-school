@@ -1,6 +1,6 @@
 import React from 'react';
 import './Transport.css';
-import transport from '../../../media/transport-1.jpg';
+import transport from '../../../media/transport.jpg';
 
 const Transport = () => {
   return (
@@ -23,16 +23,32 @@ const Transport = () => {
               textAlign: "center",
               color: "#082a59",
               fontWeight: "bold",
-              marginBottom:"2rem"
+              marginBottom: "2rem",
             }}
           >
             TRANSPORT FACILITIES
           </h4>
-          <p style={{ background: "#a6153e",color:"white",padding:"20px",borderRadius:"20px" }}>
+          <p
+            style={{
+              background: "#a6153e",
+              color: "white",
+              padding: "20px",
+              borderRadius: "20px",
+            }}
+          >
             As far as we talk about the transport facilities, we ensure that our
             school provides the utmost safety to the students. Moreover, we run
             busses and vans for our students so that they can safely reach on
             time.
+            <br />
+            <br/>
+            A comfortable school bus with the required capacity to
+            accommodate students.
+            <br />
+            <br/>
+            School bus drivers are responsible for picking up and dropping off
+            students at their designated stops within an hour of the school day
+            starting and ending.
           </p>
         </div>
         <div className="transport-image">
