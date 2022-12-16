@@ -60,6 +60,7 @@ function App() {
           <div className="container-lg custom-container-lg">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/blogs" element={<ComingSoon />} />
 
               {/* ------------------- about ------page ----------- routes ------------ */}
               <Route path="/about" element={<About />} />

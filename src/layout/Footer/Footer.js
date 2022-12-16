@@ -66,7 +66,7 @@ const Footer = () => {
           <h5>USEFUL LINKS </h5>
           <ul className="useful-links-list">
             <li>
-              <Link to="/">Blogs</Link>
+              <Link to="/blogs">Blogs</Link>
             </li>
             <li>
               <Link to="/franchise">Franchise</Link>
