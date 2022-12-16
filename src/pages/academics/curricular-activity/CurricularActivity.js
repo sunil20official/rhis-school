@@ -1,5 +1,15 @@
 import React from "react";
 import "./CurricularActivity.css";
+import { GiStairsGoal } from 'react-icons/gi';
+import { MdOutlineEmojiEvents } from "react-icons/md";
+import { FaPrayingHands } from "react-icons/fa";
+import { MdOutlineFestival } from "react-icons/md";
+import { GiPuzzle } from "react-icons/gi";
+import { BiBus } from "react-icons/bi";
+import { MdOutlineSportsHandball } from "react-icons/md";
+import { TbYoga } from "react-icons/tb";
+import { GiHealthNormal } from "react-icons/gi";
+import { GiEarthAfricaEurope } from "react-icons/gi";
 
 const CurricularActivity = () => {
   return (
@@ -37,86 +47,97 @@ const CurricularActivity = () => {
         </p>
 
         <div className="grid-cont">
+          {/* 1 */}
           <div>
+            <div className="curr-icon-cont">
+              <GiStairsGoal className="curr-icon"></GiStairsGoal>
+            </div>
             <p>
-              <span>
-              Counselling and guidance
-              </span>
+              <span>Counselling and guidance</span>
             </p>
           </div>
-
+          {/* 2 */}
           <div>
+            <div className="curr-icon-cont">
+              {/* <img className="curr-icon" src={competition} alt='competition'></img> */}
+              <MdOutlineEmojiEvents className="curr-icon"></MdOutlineEmojiEvents>
+            </div>
             <p>
-              <span>
-              Competitions
-              </span>
+              <span>Competitions</span>
             </p>
           </div>
-
+          {/* 3 */}
           <div>
+            <div className="curr-icon-cont">
+              <FaPrayingHands className="curr-icon"></FaPrayingHands>
+            </div>
             <p>
-              <span>
-              Daily Assembly
-              </span>
+              <span>Daily Assembly</span>
             </p>
           </div>
-
+          {/* 4 */}
           <div>
+            <div className="curr-icon-cont">
+              <MdOutlineFestival className="curr-icon"></MdOutlineFestival>
+            </div>
             <p>
-              <span>
-              Celebration of Special Assemblies and Festivals
-              </span>
+              <span>Celebration of Special Assemblies and Festivals</span>
             </p>
           </div>
-
+          {/* 5 */}
           <div>
+            <div className="curr-icon-cont">
+              <GiPuzzle className="curr-icon"></GiPuzzle>
+            </div>
             <p>
-              <span>
-              Recreational Activities
-              </span>
+              <span>Recreational Activities</span>
             </p>
           </div>
-
+          {/* 6 */}
           <div>
+            <div className="curr-icon-cont">
+              <BiBus className="curr-icon"></BiBus>
+            </div>
             <p>
-              <span>
-              Educational Tours and Excursions
-              </span>
+              <span>Educational Tours and Excursions</span>
             </p>
           </div>
-
+          {/* 7 */}
           <div>
+            <div className="curr-icon-cont">
+              <MdOutlineSportsHandball className="curr-icon"></MdOutlineSportsHandball>
+            </div>
             <p>
-              <span>
-              Indoor and Outdoor Sports
-              </span>
+              <span>Indoor and Outdoor Sports</span>
             </p>
           </div>
-
+          {/* 8 */}
           <div>
+            <div className="curr-icon-cont">
+              <TbYoga className="curr-icon"></TbYoga>
+            </div>
             <p>
-              <span>
-              Physical exercise and Yoga
-              </span>
+              <span>Physical exercise and Yoga</span>
             </p>
           </div>
-
+          {/* 9 */}
           <div>
+            <div className="curr-icon-cont">
+              <GiHealthNormal className="curr-icon"></GiHealthNormal>
+            </div>
             <p>
-              <span>
-              Free Health Check-up Camps
-              </span>
+              <span>Free Health Check-up Camps</span>
             </p>
           </div>
-
+          {/* 10 */}
           <div>
+            <div className="curr-icon-cont">
+              <GiEarthAfricaEurope className="curr-icon"></GiEarthAfricaEurope>
+            </div>
             <p>
-              <span>
-              Social initiatives
-              </span>
+              <span>Social initiatives</span>
             </p>
           </div>
-
         </div>
       </div>
     </div>
