@@ -57,7 +57,7 @@ function App() {
             <Header />
             <NavbarTwo />
           </div>
-          <div className="container-lg custom-container-lg">
+          <div className="container-lg">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/blogs" element={<ComingSoon />} />
