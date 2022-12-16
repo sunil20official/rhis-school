@@ -185,13 +185,13 @@ const GetInTouch = () => {
                   wordBreak: "break-all",
                 }}
               >
-                royalhillsinternationalschool@gmail.com
+                info@rhis.co.in
               </p>
             </div>
             <div className="address" style={{ marginTop: "2rem" }}>
               <BsFillTelephoneFill style={{ fontSize: "30px" }} />
               <p style={{ width: "70%", marginBottom: "0px" }}>
-                +91 612 228 0026
+                +91 612 228 0026 / 9031662034
               </p>
             </div>
           </div>
@@ -241,13 +241,13 @@ const GetInTouch = () => {
                     wordBreak: "break-all",
                   }}
                 >
-                  royalhillsinternationalschool@gmail.com
+                  info@rhis.co.in
                 </p>
               </div>
               <div className="address" style={{ marginTop: "2rem" }}>
                 <BsFillTelephoneFill style={{ fontSize: "30px" }} />
                 <p style={{ width: "70%", marginBottom: "0px" }}>
-                  +91 612 228 0026
+                  9031662031 /9031662033
                 </p>
               </div>
             </div>
@@ -283,13 +283,13 @@ const GetInTouch = () => {
                     wordBreak: "break-all",
                   }}
                 >
-                  royalhillsinternationalschool@gmail.com
+                  info@rhis.co.in
                 </p>
               </div>
               <div className="address" style={{ marginTop: "2rem" }}>
                 <BsFillTelephoneFill style={{ fontSize: "30px" }} />
                 <p style={{ width: "70%", marginBottom: "0px" }}>
-                  +91 612 228 0026
+                  9031662031 /9031662033
                 </p>
               </div>
             </div>
@@ -319,26 +319,30 @@ const GetInTouch = () => {
             >
               In order to reach out to us in case of any queries, inquiries or
               complaints. please dial toll free number
-              <span style={{ color: "#a6153e" }}>{' '}+91 612 228 0026</span>
+              <span style={{ color: "#a6153e" }}>
+                {" "}
+                +91 612 228 0026 / 9031662034
+              </span>
             </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <ul className="ivr-list">
                 <li>
-                  <span style={{ color: "#a6153e" }}>Dial 1 –</span> Connect
-                  with Front Desk Office (For Admission Enquiry/Appointment)
+                  <span style={{ color: "#a6153e" }}>Dial 9031662031 –</span>{" "}
+                  Connect with Front Desk Office (For Admission
+                  Enquiry/Appointment)
                 </li>
                 <li>
-                  <span style={{ color: "#a6153e" }}>Dial 2 –</span> Connect
-                  Accounts Department (For Fee Enquiry)
+                  <span style={{ color: "#a6153e" }}>Dial 9031662033 –</span>{" "}
+                  Connect Accounts Department (For Fee Enquiry)
                 </li>
                 <li>
-                  <span style={{ color: "#a6153e" }}>Dial 3 –</span> Connect
-                  Transport Department (For Transport Enquiry)
+                  <span style={{ color: "#a6153e" }}>Dial 9031662032 –</span>{" "}
+                  Connect Transport Department (For Transport Enquiry)
                 </li>
-                <li>
+                {/* <li>
                   <span style={{ color: "#a6153e" }}>Dial 4 –</span> Connect for
                   Feedbacks and Complaints
-                </li>
+                </li> */}
               </ul>
             </div>
           </p>

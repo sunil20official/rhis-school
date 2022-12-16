@@ -257,7 +257,9 @@ export default function BasicModal({ open, handleClose, setOpen }) {
                               fontSize: "22px",
                             }}
                           />
-                          +91 612 228 0026
+                          <span style={{ fontSize: "15px" }}>
+                            +91 612 228 0026 /<br /> 9031662034{" "}
+                          </span>
                         </h3>
                         <p
                           style={{
@@ -267,8 +269,8 @@ export default function BasicModal({ open, handleClose, setOpen }) {
                             textAlign: "center",
                           }}
                         >
-                          Dial 1 – Connect with Front Desk Office (For Admission
-                          Enquiry/Appointment)
+                          Dial - 9031662031 – Connect with Front Desk Office (For
+                          Admission Enquiry/Appointment)
                         </p>
                       </div>
                     </div>
