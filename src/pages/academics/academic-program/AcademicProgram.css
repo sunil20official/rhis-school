@@ -15,14 +15,15 @@
 }
 
 .txt-cont{
-  padding: 0px 10px;
+  padding: 20px;
   flex: 2;
   /* font-size: 20px; */
 }
 
 .img-cont{
   flex: 1;
-  padding: 0px 10px;
+  padding: 10px;
+  border: 3px solid #082a59;
 }
 
 .img-kid{
@@ -36,6 +37,7 @@
   .txt-cont{
     flex: 2;
     font-size: 15px;
+    padding: 10px;
   }
   .flex-r{
     flex-direction: column !important;

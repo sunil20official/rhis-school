@@ -2,7 +2,7 @@ import React from "react";
 import "./News.css";
 import img1 from "../../../media/news/new_rangoli.jpg";
 import img2 from "../../../media/news/new_teachersday.jpg";
-import img3 from "../../../media/news/raksha_bandhan_news.jpg";
+import img3 from "../../../media/news/news_radhakrishna.jpg";
 import { useState } from "react";
 
 const News = () => {
