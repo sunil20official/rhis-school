@@ -39,8 +39,12 @@ const SocialInitiatives = () => {
       {/*  ------------ box 1------------------ */}
 
       <div className="flex">
-        <div className="img-cont">
-          <img className="campaign-img" src={avoidplastic} alt="avoid plastic"></img>
+        <div style={{ border: "none" }} className="img-cont">
+          <img
+            className="campaign-img"
+            src={avoidplastic}
+            alt="avoid plastic"
+          ></img>
         </div>
         <div className="text-cont">
           <p>
@@ -65,7 +69,7 @@ const SocialInitiatives = () => {
       {/*  ------------ box 2 ------------------ */}
 
       <div className="flex flex-rev">
-        <div className="img-cont">
+        <div style={{ border: "none" }} className="img-cont">
           <img className="campaign-img" src={water} alt="avoid plastic"></img>
         </div>
         <div className="text-cont">
@@ -92,8 +96,13 @@ const SocialInitiatives = () => {
       {/*  ------------ box 3 ------------------ */}
 
       <div className="flex">
-        <div className="img-cont">
-          <img style={{borderRadius:"50%"}} className="campaign-img" src={worldenvday} alt="avoid plastic"></img>
+        <div style={{ border: "none" }} className="img-cont">
+          <img
+            style={{ borderRadius: "50%" }}
+            className="campaign-img"
+            src={worldenvday}
+            alt="avoid plastic"
+          ></img>
         </div>
         <div className="text-cont">
           <p>
