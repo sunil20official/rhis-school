@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../shared/management/Management.css';
-import director from '../../../media/director-img.png';
+import director from '../../../media/director-img.jpg';
 
 const DirectorDesk = () => {
 	return (

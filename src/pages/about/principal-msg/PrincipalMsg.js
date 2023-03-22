@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../shared/management/Management.css';
-// import principal from '../../../media/principalpic.png';
+// import principal from '../../../media/principal_image.jpg';
 
 const PrincipalMsg = () => {
 	return (
@@ -33,7 +33,7 @@ const PrincipalMsg = () => {
             }}
           >
             {" "}
-            Sujeet Soni{" "}
+            Name of Principal{" "}
           </h4>
           <h6
             style={{

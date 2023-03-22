@@ -67,7 +67,7 @@ function App() {
               <Route path="/about/rhis" element={<Rhis />} />
               <Route path="/about/roots" element={<Root />} />
               <Route path="/about/directordesk" element={<DirectorDesk />} />
-              <Route path="/about/principalmsg" element={<ComingSoon />} />
+              <Route path="/about/principalmsg" element={<PrincipalMsg />} />
               <Route
                 path="/about/social-initiatives"
                 element={<SocialInitiatives />}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Founder.css";
-import founder from "../../media/director-img.png";
+import founder from "../../media/director-img.jpg";
 import { CgMoreO } from "react-icons/cg";
 import { useNavigate } from 'react-router-dom';
 
