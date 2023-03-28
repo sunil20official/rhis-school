@@ -34,7 +34,7 @@ const DirectorDesk = () => {
             }}
           >
             {" "}
-            Ashutosh Vibhu{" "}
+            Mr. Ashutosh Vibhu{" "}
           </h4>
           <h6 style={{ marginBottom: "0px", fontWeight: "700" }}>Director,</h6>
           <p style={{ color: "rgb(92, 147, 210)" }}>

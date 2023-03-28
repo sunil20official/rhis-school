@@ -33,7 +33,7 @@ const PrincipalMsg = () => {
             }}
           >
             {" "}
-            Name of Principal{" "}
+            Mr. Abhay Kumar Pandey{" "}
           </h4>
           <h6
             style={{
@@ -46,33 +46,23 @@ const PrincipalMsg = () => {
           </h6>
           <p style={{ color: "rgb(92, 147, 210)" }}> RHIS Sitamarhi</p>
           <p className="management-message">
-            It gives me immense pleasure of accomplishment to be addressed as
-            the Principal and successfully impart years of knowledge and wisdom
-            to this prestigious institute. The High academic standards of this
-            school have strived well to maintain the excellence and the
-            ever-changing dynamics of the education sector.
-            <br /><br />
-            In order to let them
-            attain their highest potential, we shape our student’s minds with
-            knowledge and provide a variety of opportunities that ensures their
-            self-growth. The role of a school is to strengthen the character and
-            make students ready to withstand the upcoming challenges of life. We
-            want our students to develop a sense of pride in everything they do
-            without merely focusing on being competitive. We aim to build giant
-            strides with our curriculum and utmost dedication with constant hard
-            work. We thoroughly seek to build personalities from their initial
-            days of education so that they can excel in all their future
-            prospects.
-            <br/><br/>
-            We are a dedicated team of faculty sheerly enthusiastic
-            about shaping the future of the students and making them compatible
-            enough for this fiercely competitive world. Also, we take pride in
-            providing a congenial atmosphere for learning and developing
-            exemplary stamina with a lot of courage and compassion to deal with
-            things. With all things being said, we ensure you that the students
-            enrolled here will get the right knowledge along with the collective
-            guidance in shaping them into better individuals with all the values
-            and high Morales.
+            It is a matter of great pleasure, and honor for Royal Hills
+            International School, Sitamarhi to welcome our new Principal{" "}
+            <strong>Mr. Abhay Kumar Pandey</strong>. He has previously worked
+            for more than 18 years as a teaching faculty in National Defence
+            Academy and Naval engineering College and more than 5 years as a
+            core management member in one of the renowned engineering colleges
+            of Uttar Pradesh.
+            <br />
+            <br />
+            As a faculty he has remained successful in delivering positive
+            results. He is very bold, and brave man with great ideology,
+            determinism, and vision. On behalf of the entire administration,
+            faculty, and student body, wholeheartedly we welcome him in our
+            institution. We hope that with his energy, enthusiasm, and focus on
+            education, and learning our institute achieves greater excellence.
+            Under his leadership and guidance, may we reach the next
+            levels of glory.
           </p>
         </div>
       </div>
