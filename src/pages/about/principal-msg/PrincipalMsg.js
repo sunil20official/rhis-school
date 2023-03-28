@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../shared/management/Management.css';
-// import principal from '../../../media/principal_image.jpg';
+import principal from '../../../media/principal-img.jpg';
 
 const PrincipalMsg = () => {
 	return (
@@ -20,7 +20,7 @@ const PrincipalMsg = () => {
         <div className="man-image-container">
           <img
             className="management-image"
-            // src={principal}
+            src={principal}
             alt="principal of school"
           />
         </div>
