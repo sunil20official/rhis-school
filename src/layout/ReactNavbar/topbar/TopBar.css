@@ -7,7 +7,7 @@
   width: 100%;
   position: fixed;
   top: 0px;
-  z-index: 100000;
+  z-index: 999;
   padding: 0px 10px;
   background-color: #082a59;
   animation: topBarAnim 3s;

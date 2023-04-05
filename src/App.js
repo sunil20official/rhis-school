@@ -102,7 +102,7 @@ function App() {
               <Route path="/franchise" element={<Franchise />} />
               <Route path="/careers" element={<Career />} />
               <Route path="/contact-us" element={<GetInTouch />} />
-              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/gallery" element={<ComingSoon />} />
 
               <Route path="*" element={<NotFound />} />
             </Routes>
